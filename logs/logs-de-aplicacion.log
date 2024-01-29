@@ -3617,3 +3617,278 @@ info: 2024-01-29T04:56:24.459Z ::1 - GET /productos HTTP/1.1 200 1044 - 3.804 ms
 info: 2024-01-29T04:57:45.859Z Usuario alida esta autenticado
 info: 2024-01-29T04:57:45.863Z ::1 - POST /productos/vender/65b72fc7cbead48113d11e0b HTTP/1.1 200 277 - 5.954 ms
 info: 2024-01-29T05:01:11.300Z Escuchando el puerto 3000.
+info: 2024-01-29T05:01:13.047Z Escuchando el puerto 3000.
+info: 2024-01-29T05:01:14.766Z Usuario carlos completo autenticación exitosamente.
+info: 2024-01-29T05:01:14.772Z ::1 - POST /usuarios/login HTTP/1.1 200 183 - 160.744 ms
+info: 2024-01-29T05:01:22.368Z Usuario carlos esta autenticado
+info: 2024-01-29T05:01:22.379Z Producto agregado a la colección productos {"$__":{"$versionError":null,"activePaths":{"paths":{"dueño":"require","moneda":"require","nombre":"require","precio":"require"},"states":{"default":{},"modify":{},"require":{"dueño":true,"moneda":true,"nombre":true,"precio":true}}},"backup":{"activePaths":{"default":{"_id":true},"modify":{"dueño":true,"moneda":true,"nombre":true,"precio":true,"stock":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"65b7312261938f4973f2f379","dueño":"carlos","moneda":"USD","nombre":"Perfume 5 machos","precio":29.99,"stock":50}}
+info: 2024-01-29T05:01:22.380Z ::1 - POST /productos HTTP/1.1 201 129 - 17.384 ms
+info: 2024-01-29T05:01:31.479Z Usuario carlos esta autenticado
+info: 2024-01-29T05:01:31.482Z Producto agregado a la colección productos {"$__":{"$versionError":null,"activePaths":{"paths":{"dueño":"require","moneda":"require","nombre":"require","precio":"require"},"states":{"default":{},"modify":{},"require":{"dueño":true,"moneda":true,"nombre":true,"precio":true}}},"backup":{"activePaths":{"default":{"_id":true},"modify":{"dueño":true,"moneda":true,"nombre":true,"precio":true,"stock":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"65b7312b61938f4973f2f37c","dueño":"carlos","moneda":"USD","nombre":"Perfume 7 machos","precio":29.99,"stock":50}}
+info: 2024-01-29T05:01:31.484Z ::1 - POST /productos HTTP/1.1 201 129 - 8.119 ms
+info: 2024-01-29T05:01:47.845Z Usuario carlos esta autenticado
+info: 2024-01-29T05:01:47.849Z ::1 - POST /productos/vender/65b72fc7cbead48113d11e0b HTTP/1.1 401 452 - 8.682 ms
+info: 2024-01-29T05:01:59.945Z ::1 - GET /productos HTTP/1.1 200 1304 - 4.702 ms
+info: 2024-01-29T05:02:06.810Z Usuario carlos esta autenticado
+info: 2024-01-29T05:02:06.815Z ::1 - POST /productos/vender/65b7312b61938f4973f2f37c HTTP/1.1 200 279 - 7.391 ms
+info: 2024-01-29T05:02:35.677Z Usuario carlos esta autenticado
+info: 2024-01-29T05:02:35.681Z ::1 - POST /productos/vender/65b7312b61938f4973f2f37c HTTP/1.1 200 279 - 5.980 ms
+info: 2024-01-29T05:02:39.956Z Usuario carlos esta autenticado
+info: 2024-01-29T05:02:39.960Z ::1 - POST /productos/vender/65b7312b61938f4973f2f37c HTTP/1.1 200 279 - 5.462 ms
+info: 2024-01-29T05:03:39.004Z Usuario carlos esta autenticado
+info: 2024-01-29T05:03:39.009Z ::1 - POST /productos/vender/65b7312b61938f4973f2f37c HTTP/1.1 200 278 - 7.882 ms
+info: 2024-01-29T05:29:46.756Z Escuchando el puerto 3000.
+info: 2024-01-29T05:29:59.029Z Escuchando el puerto 3000.
+info: 2024-01-29T05:32:55.543Z Escuchando el puerto 3000.
+info: 2024-01-29T05:33:18.575Z Escuchando el puerto 3000.
+info: 2024-01-29T05:33:23.795Z Escuchando el puerto 3000.
+info: 2024-01-29T05:33:26.503Z Escuchando el puerto 3000.
+info: 2024-01-29T05:33:30.815Z Escuchando el puerto 3000.
+info: 2024-01-29T05:33:32.034Z Escuchando el puerto 3000.
+info: 2024-01-29T05:33:55.499Z Escuchando el puerto 3000.
+info: 2024-01-29T05:33:57.777Z Escuchando el puerto 3000.
+info: 2024-01-29T05:33:59.747Z Usuario carlos completo autenticación exitosamente.
+info: 2024-01-29T05:33:59.754Z ::1 - POST /usuarios/login HTTP/1.1 200 183 - 131.430 ms
+info: 2024-01-29T05:34:08.973Z Usuario carlos esta autenticado
+info: 2024-01-29T05:34:08.988Z ::1 - POST /productos/vender/65b7312b61938f4973f2f37c HTTP/1.1 500 275 - 19.851 ms
+info: 2024-01-29T05:34:12.386Z Usuario carlos esta autenticado
+info: 2024-01-29T05:34:12.391Z ::1 - POST /productos/vender/65b7312b61938f4973f2f37c HTTP/1.1 500 275 - 7.741 ms
+info: 2024-01-29T05:34:32.913Z Escuchando el puerto 3000.
+info: 2024-01-29T05:34:49.692Z Escuchando el puerto 3000.
+info: 2024-01-29T05:34:52.522Z Escuchando el puerto 3000.
+info: 2024-01-29T05:35:43.528Z Escuchando el puerto 3000.
+info: 2024-01-29T05:36:06.726Z Escuchando el puerto 3000.
+error: 2024-01-29T05:36:12.403Z uncaughtException: Cannot find module '../ventas/ventas.model'
+Require stack:
+- D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\productos\productos.routes.js
+- D:\Proyectos\Api_Venta_De_Cosmeticos\index.js
+Error: Cannot find module '../ventas/ventas.model'
+Require stack:
+- D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\productos\productos.routes.js
+- D:\Proyectos\Api_Venta_De_Cosmeticos\index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\productos\productos.routes.js:10:15)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19) {"date":"Sun Jan 28 2024 23:36:12 GMT-0600 (hora estándar central)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":5085.062},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"],"cwd":"D:\\Proyectos\\Api_Venta_De_Cosmeticos","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18688447,"external":21062077,"heapTotal":29896704,"heapUsed":19745708,"rss":53456896},"pid":9620,"uid":null,"version":"v20.10.0"},"stack":"Error: Cannot find module '../ventas/ventas.model'\nRequire stack:\n- D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js\n- D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)\n    at Module._load (node:internal/modules/cjs/loader:985:27)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js:10:15)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Module._resolveFilename","line":1144,"method":"_resolveFilename","native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":985,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":15,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js","function":null,"line":10,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false}]}
+error: 2024-01-29T05:36:18.795Z uncaughtException: Cannot find module '../'
+Require stack:
+- D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\productos\productos.routes.js
+- D:\Proyectos\Api_Venta_De_Cosmeticos\index.js
+Error: Cannot find module '../'
+Require stack:
+- D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\productos\productos.routes.js
+- D:\Proyectos\Api_Venta_De_Cosmeticos\index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\productos\productos.routes.js:10:15)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19) {"date":"Sun Jan 28 2024 23:36:18 GMT-0600 (hora estándar central)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":5091.453},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"],"cwd":"D:\\Proyectos\\Api_Venta_De_Cosmeticos","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18688447,"external":21062077,"heapTotal":29896704,"heapUsed":19772248,"rss":52998144},"pid":2524,"uid":null,"version":"v20.10.0"},"stack":"Error: Cannot find module '../'\nRequire stack:\n- D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js\n- D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)\n    at Module._load (node:internal/modules/cjs/loader:985:27)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js:10:15)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Module._resolveFilename","line":1144,"method":"_resolveFilename","native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":985,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":15,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js","function":null,"line":10,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false}]}
+error: 2024-01-29T05:36:20.976Z uncaughtException: Cannot find module '../ventas'
+Require stack:
+- D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\productos\productos.routes.js
+- D:\Proyectos\Api_Venta_De_Cosmeticos\index.js
+Error: Cannot find module '../ventas'
+Require stack:
+- D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\productos\productos.routes.js
+- D:\Proyectos\Api_Venta_De_Cosmeticos\index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\productos\productos.routes.js:10:15)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19) {"date":"Sun Jan 28 2024 23:36:20 GMT-0600 (hora estándar central)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":5093.625},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"],"cwd":"D:\\Proyectos\\Api_Venta_De_Cosmeticos","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262455,"external":21062077,"heapTotal":29896704,"heapUsed":13571816,"rss":52961280},"pid":8164,"uid":null,"version":"v20.10.0"},"stack":"Error: Cannot find module '../ventas'\nRequire stack:\n- D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js\n- D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)\n    at Module._load (node:internal/modules/cjs/loader:985:27)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js:10:15)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Module._resolveFilename","line":1144,"method":"_resolveFilename","native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":985,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":15,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js","function":null,"line":10,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false}]}
+error: 2024-01-29T05:36:23.743Z uncaughtException: Cannot find module '../ventasDeProductos/ventasDeProductos.model'
+Require stack:
+- D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\productos\productos.routes.js
+- D:\Proyectos\Api_Venta_De_Cosmeticos\index.js
+Error: Cannot find module '../ventasDeProductos/ventasDeProductos.model'
+Require stack:
+- D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\productos\productos.routes.js
+- D:\Proyectos\Api_Venta_De_Cosmeticos\index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\productos\productos.routes.js:10:15)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19) {"date":"Sun Jan 28 2024 23:36:23 GMT-0600 (hora estándar central)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":5096.39},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"],"cwd":"D:\\Proyectos\\Api_Venta_De_Cosmeticos","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262455,"external":21062077,"heapTotal":29896704,"heapUsed":13564888,"rss":52539392},"pid":2504,"uid":null,"version":"v20.10.0"},"stack":"Error: Cannot find module '../ventasDeProductos/ventasDeProductos.model'\nRequire stack:\n- D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js\n- D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)\n    at Module._load (node:internal/modules/cjs/loader:985:27)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js:10:15)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Module._resolveFilename","line":1144,"method":"_resolveFilename","native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":985,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":15,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js","function":null,"line":10,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false}]}
+error: 2024-01-29T05:36:39.166Z uncaughtException: The argument 'id' must be a non-empty string. Received ''
+TypeError [ERR_INVALID_ARG_VALUE]: The argument 'id' must be a non-empty string. Received ''
+    at Module.require (node:internal/modules/cjs/loader:1230:11)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\productos\productos.routes.js:10:15)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\index.js:3:25) {"date":"Sun Jan 28 2024 23:36:39 GMT-0600 (hora estándar central)","error":{"code":"ERR_INVALID_ARG_VALUE"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":5111.812},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"],"cwd":"D:\\Proyectos\\Api_Venta_De_Cosmeticos","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262455,"external":21062077,"heapTotal":29896704,"heapUsed":13691920,"rss":52768768},"pid":8644,"uid":null,"version":"v20.10.0"},"stack":"TypeError [ERR_INVALID_ARG_VALUE]: The argument 'id' must be a non-empty string. Received ''\n    at Module.require (node:internal/modules/cjs/loader:1230:11)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js:10:15)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js:3:25)","trace":[{"column":11,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1230,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":15,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js","function":null,"line":10,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":25,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js","function":null,"line":3,"method":null,"native":false}]}
+error: 2024-01-29T05:36:41.711Z uncaughtException: Cannot find module '../'
+Require stack:
+- D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\productos\productos.routes.js
+- D:\Proyectos\Api_Venta_De_Cosmeticos\index.js
+Error: Cannot find module '../'
+Require stack:
+- D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\productos\productos.routes.js
+- D:\Proyectos\Api_Venta_De_Cosmeticos\index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\productos\productos.routes.js:10:15)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19) {"date":"Sun Jan 28 2024 23:36:41 GMT-0600 (hora estándar central)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":5114.359},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"],"cwd":"D:\\Proyectos\\Api_Venta_De_Cosmeticos","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18688447,"external":21062077,"heapTotal":29896704,"heapUsed":19763604,"rss":52969472},"pid":1488,"uid":null,"version":"v20.10.0"},"stack":"Error: Cannot find module '../'\nRequire stack:\n- D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js\n- D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)\n    at Module._load (node:internal/modules/cjs/loader:985:27)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js:10:15)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Module._resolveFilename","line":1144,"method":"_resolveFilename","native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":985,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":15,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js","function":null,"line":10,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false}]}
+info: 2024-01-29T05:36:44.946Z Escuchando el puerto 3000.
+info: 2024-01-29T05:36:54.177Z Usuario carlos completo autenticación exitosamente.
+info: 2024-01-29T05:36:54.182Z ::1 - POST /usuarios/login HTTP/1.1 200 183 - 112.289 ms
+info: 2024-01-29T05:37:02.313Z Usuario carlos esta autenticado
+info: 2024-01-29T05:37:02.330Z ::1 - POST /productos/vender/65b7312b61938f4973f2f37c HTTP/1.1 200 274 - 21.650 ms
+info: 2024-01-29T05:37:24.566Z ::1 - GET /productos/vender HTTP/1.1 400 18 - 0.354 ms
+info: 2024-01-29T05:38:16.242Z Escuchando el puerto 3000.
+info: 2024-01-29T05:38:17.321Z Escuchando el puerto 3000.
+info: 2024-01-29T05:38:19.575Z Usuario carlos completo autenticación exitosamente.
+info: 2024-01-29T05:38:19.581Z ::1 - POST /usuarios/login HTTP/1.1 200 183 - 111.152 ms
+info: 2024-01-29T05:38:27.257Z Usuario carlos esta autenticado
+info: 2024-01-29T05:38:27.274Z ::1 - POST /productos/vender/65b7312b61938f4973f2f37c HTTP/1.1 200 274 - 23.640 ms
+info: 2024-01-29T05:38:56.523Z ::1 - GET /productos/ventas HTTP/1.1 400 18 - 0.451 ms
+info: 2024-01-29T05:39:44.986Z ::1 - GET /ventas HTTP/1.1 404 145 - 1.169 ms
+info: 2024-01-29T05:39:49.996Z ::1 - GET /productos/ventas HTTP/1.1 400 18 - 0.261 ms
+info: 2024-01-29T05:41:36.767Z Escuchando el puerto 3000.
+info: 2024-01-29T05:41:44.572Z ::1 - GET /productos/ventas HTTP/1.1 400 18 - 2.369 ms
+info: 2024-01-29T05:41:56.246Z Usuario carlos completo autenticación exitosamente.
+info: 2024-01-29T05:41:56.248Z ::1 - POST /usuarios/login HTTP/1.1 200 183 - 107.333 ms
+info: 2024-01-29T05:42:13.698Z Usuario carlos esta autenticado
+info: 2024-01-29T05:42:13.721Z ::1 - POST /productos/vender/65b7312b61938f4973f2f37c HTTP/1.1 200 285 - 28.349 ms
+info: 2024-01-29T05:42:22.630Z ::1 - GET /productos/ventas HTTP/1.1 400 18 - 0.435 ms
+info: 2024-01-29T05:43:26.337Z Escuchando el puerto 3000.
+info: 2024-01-29T05:43:37.209Z Escuchando el puerto 3000.
+info: 2024-01-29T05:43:37.658Z ::1 - GET /productos/ventas HTTP/1.1 400 18 - 2.242 ms
+info: 2024-01-29T05:44:31.792Z Escuchando el puerto 3000.
+info: 2024-01-29T05:44:33.938Z Escuchando el puerto 3000.
+info: 2024-01-29T05:44:48.622Z ::1 - GET /productos/ventas HTTP/1.1 400 18 - 2.411 ms
+info: 2024-01-29T05:45:49.630Z Escuchando el puerto 3000.
+info: 2024-01-29T05:45:56.234Z ::1 - GET /productos/ventas HTTP/1.1 400 18 - 2.247 ms
+info: 2024-01-29T05:46:42.451Z Escuchando el puerto 3000.
+info: 2024-01-29T05:46:43.666Z Escuchando el puerto 3000.
+info: 2024-01-29T05:46:44.192Z ::1 - GET /productos/ventas HTTP/1.1 400 18 - 2.224 ms
+error: 2024-01-29T05:50:18.078Z uncaughtException: Identifier 'mongoose' has already been declared
+D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\ventasDeProducto\ventasDeProductos.model.js:3
+const mongoose = require("mongoose");
+      ^
+
+SyntaxError: Identifier 'mongoose' has already been declared
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\productos\productos.routes.js:10:15)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14) {"date":"Sun Jan 28 2024 23:50:18 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":5930.734},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"],"cwd":"D:\\Proyectos\\Api_Venta_De_Cosmeticos","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262455,"external":21062077,"heapTotal":29634560,"heapUsed":13698736,"rss":52887552},"pid":4788,"uid":null,"version":"v20.10.0"},"stack":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventasDeProductos.model.js:3\nconst mongoose = require(\"mongoose\");\n      ^\n\nSyntaxError: Identifier 'mongoose' has already been declared\n    at internalCompileFunction (node:internal/vm:77:18)\n    at wrapSafe (node:internal/modules/cjs/loader:1288:20)\n    at Module._compile (node:internal/modules/cjs/loader:1340:27)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js:10:15)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)","trace":[{"column":18,"file":"node:internal/vm","function":"internalCompileFunction","line":77,"method":null,"native":false},{"column":20,"file":"node:internal/modules/cjs/loader","function":"wrapSafe","line":1288,"method":null,"native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1340,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":15,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js","function":null,"line":10,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false}]}
+error: 2024-01-29T05:50:20.890Z uncaughtException: Cannot overwrite `Producto` model once compiled.
+OverwriteModelError: Cannot overwrite `Producto` model once compiled.
+    at Mongoose.model (D:\Proyectos\Api_Venta_De_Cosmeticos\node_modules\mongoose\lib\mongoose.js:562:13)
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\ventasDeProducto\ventasDeProductos.model.js:5:27)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\productos\productos.routes.js:10:15)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14) {"date":"Sun Jan 28 2024 23:50:20 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":5933.546},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"],"cwd":"D:\\Proyectos\\Api_Venta_De_Cosmeticos","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18688447,"external":21062077,"heapTotal":29896704,"heapUsed":19845656,"rss":52842496},"pid":2492,"uid":null,"version":"v20.10.0"},"stack":"OverwriteModelError: Cannot overwrite `Producto` model once compiled.\n    at Mongoose.model (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\node_modules\\mongoose\\lib\\mongoose.js:562:13)\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventasDeProductos.model.js:5:27)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js:10:15)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)","trace":[{"column":13,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\node_modules\\mongoose\\lib\\mongoose.js","function":"Mongoose.model","line":562,"method":"model","native":false},{"column":27,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventasDeProductos.model.js","function":null,"line":5,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":15,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js","function":null,"line":10,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false}]}
+error: 2024-01-29T05:50:36.802Z uncaughtException: Cannot overwrite `Producto` model once compiled.
+OverwriteModelError: Cannot overwrite `Producto` model once compiled.
+    at Mongoose.model (D:\Proyectos\Api_Venta_De_Cosmeticos\node_modules\mongoose\lib\mongoose.js:562:13)
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\ventasDeProducto\ventasDeProductos.model.js:4:27)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\productos\productos.routes.js:10:15)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14) {"date":"Sun Jan 28 2024 23:50:36 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":5949.453},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"],"cwd":"D:\\Proyectos\\Api_Venta_De_Cosmeticos","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18688447,"external":21062077,"heapTotal":29896704,"heapUsed":19765252,"rss":53362688},"pid":2120,"uid":null,"version":"v20.10.0"},"stack":"OverwriteModelError: Cannot overwrite `Producto` model once compiled.\n    at Mongoose.model (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\node_modules\\mongoose\\lib\\mongoose.js:562:13)\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventasDeProductos.model.js:4:27)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js:10:15)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)","trace":[{"column":13,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\node_modules\\mongoose\\lib\\mongoose.js","function":"Mongoose.model","line":562,"method":"model","native":false},{"column":27,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventasDeProductos.model.js","function":null,"line":4,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":15,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js","function":null,"line":10,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false}]}
+error: 2024-01-29T05:50:45.181Z uncaughtException: productoSchema is not defined
+ReferenceError: productoSchema is not defined
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\ventasDeProducto\ventasDeProductos.model.js:4:45)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\productos\productos.routes.js:10:15)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10) {"date":"Sun Jan 28 2024 23:50:45 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":5957.828},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"],"cwd":"D:\\Proyectos\\Api_Venta_De_Cosmeticos","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18688447,"external":21062077,"heapTotal":29896704,"heapUsed":19866804,"rss":53141504},"pid":7636,"uid":null,"version":"v20.10.0"},"stack":"ReferenceError: productoSchema is not defined\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventasDeProductos.model.js:4:45)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js:10:15)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)","trace":[{"column":45,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventasDeProductos.model.js","function":null,"line":4,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":15,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js","function":null,"line":10,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false}]}
+error: 2024-01-29T05:50:50.474Z uncaughtException: Cannot overwrite `Producto` model once compiled.
+OverwriteModelError: Cannot overwrite `Producto` model once compiled.
+    at Mongoose.model (D:\Proyectos\Api_Venta_De_Cosmeticos\node_modules\mongoose\lib\mongoose.js:562:13)
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\ventasDeProducto\ventasDeProductos.model.js:5:27)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\productos\productos.routes.js:10:15)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14) {"date":"Sun Jan 28 2024 23:50:50 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":5963.125},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"],"cwd":"D:\\Proyectos\\Api_Venta_De_Cosmeticos","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262455,"external":21062077,"heapTotal":29896704,"heapUsed":13653604,"rss":52957184},"pid":984,"uid":null,"version":"v20.10.0"},"stack":"OverwriteModelError: Cannot overwrite `Producto` model once compiled.\n    at Mongoose.model (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\node_modules\\mongoose\\lib\\mongoose.js:562:13)\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventasDeProductos.model.js:5:27)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js:10:15)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)","trace":[{"column":13,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\node_modules\\mongoose\\lib\\mongoose.js","function":"Mongoose.model","line":562,"method":"model","native":false},{"column":27,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventasDeProductos.model.js","function":null,"line":5,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":15,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js","function":null,"line":10,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false}]}
+info: 2024-01-29T05:50:53.129Z Escuchando el puerto 3000.
+info: 2024-01-29T05:51:30.164Z Escuchando el puerto 3000.
+info: 2024-01-29T05:51:36.557Z ::1 - GET /productos/ventas HTTP/1.1 400 18 - 3.419 ms
+info: 2024-01-29T05:51:52.212Z Escuchando el puerto 3000.
+info: 2024-01-29T05:51:53.482Z Escuchando el puerto 3000.
+info: 2024-01-29T05:51:54.177Z ::1 - GET /productos/ventas HTTP/1.1 400 18 - 2.205 ms
+info: 2024-01-29T05:51:56.992Z Usuario carlos completo autenticación exitosamente.
+info: 2024-01-29T05:51:56.993Z ::1 - POST /usuarios/login HTTP/1.1 200 183 - 103.436 ms
+info: 2024-01-29T05:52:05.069Z Usuario carlos esta autenticado
+info: 2024-01-29T05:52:05.090Z ::1 - POST /productos/vender/65b7312b61938f4973f2f37c HTTP/1.1 200 285 - 26.348 ms
+info: 2024-01-29T05:52:17.023Z ::1 - GET /productos/ventas HTTP/1.1 400 18 - 0.464 ms
+info: 2024-01-29T05:53:11.619Z Escuchando el puerto 3000.
+info: 2024-01-29T05:53:12.809Z Escuchando el puerto 3000.
+info: 2024-01-29T05:53:13.686Z ::1 - GET /productos/ventas HTTP/1.1 400 18 - 2.507 ms
+info: 2024-01-29T05:54:09.885Z Escuchando el puerto 3000.
+info: 2024-01-29T05:54:12.991Z Escuchando el puerto 3000.
+info: 2024-01-29T05:54:31.085Z ::1 - POST /usuarios HTTP/1.1 201 29 - 108.292 ms
+info: 2024-01-29T05:54:36.004Z ::1 - GET /usuarios HTTP/1.1 200 174 - 3.268 ms
+info: 2024-01-29T05:54:45.479Z Usuario alida completo autenticación exitosamente.
+info: 2024-01-29T05:54:45.480Z ::1 - POST /usuarios/login HTTP/1.1 200 183 - 86.615 ms
+info: 2024-01-29T05:54:54.396Z Usuario alida esta autenticado
+info: 2024-01-29T05:54:54.401Z Producto agregado a la colección productos {"$__":{"$versionError":null,"activePaths":{"paths":{"dueño":"require","moneda":"require","nombre":"require","precio":"require"},"states":{"default":{},"modify":{},"require":{"dueño":true,"moneda":true,"nombre":true,"precio":true}}},"backup":{"activePaths":{"default":{"_id":true},"modify":{"dueño":true,"moneda":true,"nombre":true,"precio":true,"stock":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"65b73daef8c5f7c0649df3d8","dueño":"alida","moneda":"USD","nombre":"Perfume 7 machos","precio":29.99,"stock":50}}
+info: 2024-01-29T05:54:54.403Z ::1 - POST /productos HTTP/1.1 201 128 - 11.544 ms
+info: 2024-01-29T05:55:03.002Z Usuario alida esta autenticado
+info: 2024-01-29T05:55:03.006Z ::1 - POST /productos/vender/65b7312b61938f4973f2f37c HTTP/1.1 404 349 - 8.021 ms
+info: 2024-01-29T05:55:07.812Z ::1 - GET /productos HTTP/1.1 200 130 - 1.942 ms
+info: 2024-01-29T05:55:13.420Z Usuario alida esta autenticado
+info: 2024-01-29T05:55:13.429Z ::1 - POST /productos/vender/65b73daef8c5f7c0649df3d8 HTTP/1.1 200 283 - 11.617 ms
+info: 2024-01-29T05:55:21.231Z ::1 - GET /productos/ventas HTTP/1.1 400 18 - 0.331 ms
+info: 2024-01-29T05:55:30.110Z ::1 - GET /productos/ventas HTTP/1.1 400 18 - 0.209 ms
+info: 2024-01-29T05:56:11.189Z Escuchando el puerto 3000.
+info: 2024-01-29T05:56:12.308Z Escuchando el puerto 3000.
+info: 2024-01-29T05:56:13.114Z ::1 - GET /productos/ventas HTTP/1.1 500 1245 - 2.532 ms
+info: 2024-01-29T05:56:34.596Z Escuchando el puerto 3000.
+info: 2024-01-29T05:56:35.650Z ::1 - GET /productos/ventas HTTP/1.1 400 18 - 2.238 ms

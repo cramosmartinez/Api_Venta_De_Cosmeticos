@@ -7,6 +7,7 @@ const productoController = require("./productos.controller");
 const jwtAuthhenticate = passport.authenticate("jwt", { session: false });
 const procesarErrores = require("../../libs/errorHandler").procesarErrores;
 const { ProductoNoExiste, UsuarioNoEsDueño } = require("./productos.error");
+const Venta = require("../ventasDeProducto/ventasDeProductos.model");
 
 function validarId(req, res, next) {
   let id = req.params.id;
@@ -122,7 +123,6 @@ productosRouter.delete(
   })
 );
 
-// Ruta para vender un producto
 productosRouter.post(
   "/vender/:id",
   [jwtAuthhenticate, validarId],
@@ -130,6 +130,7 @@ productosRouter.post(
     const idProducto = req.params.id;
     const usuarioVendedor = req.user.username;
     const nombreComprador = req.body.nombreComprador;
+    const cantidadAVender = req.body.cantidad || 1;
 
     // Obtener el producto que se va a vender
     const productoAVender = await productoController.obtenerProducto(
@@ -149,30 +150,53 @@ productosRouter.post(
       );
     }
 
-    // Agregar lógica para restar el producto del stock
-    const cantidadAVender = req.body.cantidad || 1; // Si no se proporciona la cantidad, se asume 1
-
+    // Verificar si hay suficiente stock
     if (productoAVender.stock < cantidadAVender) {
       throw new Error(
         `No hay suficiente stock disponible para vender ${cantidadAVender} unidades.`
       );
     }
 
+    // Actualizar el stock del producto
     productoAVender.stock -= cantidadAVender;
     await productoAVender.save();
 
-    // Agregar lógica para registrar la venta (puedes almacenar esta información en una base de datos o donde prefieras)
-    const ventaRegistrada = {
-      producto: productoAVender,
-      fecha: new Date(),
+    // Registrar la venta
+    const nuevaVenta = new Venta({
+      producto: productoAVender._id,
       vendedor: usuarioVendedor,
       comprador: nombreComprador,
       cantidad: cantidadAVender,
-    };
+    });
 
-    // Puedes guardar la información de la venta en una base de datos o en otro lugar según tus necesidades
+    await nuevaVenta.save();
 
-    res.json({ mensaje: "Venta realizada con éxito", venta: ventaRegistrada });
+    // Responder con el resultado de la venta
+    res.json({
+      mensaje: "Venta realizada con éxito",
+      venta: {
+        producto: productoAVender,
+        fecha: nuevaVenta.fecha,
+        vendedor: usuarioVendedor,
+        comprador: nombreComprador,
+        cantidad: cantidadAVender,
+      },
+    });
   })
 );
+
+// En productos.routes.js
+productosRouter.get(
+  "/ventas",
+  jwtAuthhenticate,
+  procesarErrores(async (req, res) => {
+    const usuario = req.user.username;
+
+    // Obtener todas las ventas del usuario (puedes ajustar según tus necesidades)
+    const ventas = await Venta.find({ vendedor: usuario });
+
+    res.json({ ventas });
+  })
+);
+
 module.exports = productosRouter;
