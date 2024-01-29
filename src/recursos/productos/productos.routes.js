@@ -122,14 +122,14 @@ productosRouter.delete(
   })
 );
 
-// vender
+// Ruta para vender un producto
 productosRouter.post(
   "/vender/:id",
   [jwtAuthhenticate, validarId],
   procesarErrores(async (req, res) => {
     const idProducto = req.params.id;
     const usuarioVendedor = req.user.username;
-    const nombreComprador = req.body.nombreComprador; // Asegúrate de incluir esta propiedad en el cuerpo de la solicitud
+    const nombreComprador = req.body.nombreComprador;
 
     // Obtener el producto que se va a vender
     const productoAVender = await productoController.obtenerProducto(
@@ -149,12 +149,25 @@ productosRouter.post(
       );
     }
 
+    // Agregar lógica para restar el producto del stock
+    const cantidadAVender = req.body.cantidad || 1; // Si no se proporciona la cantidad, se asume 1
+
+    if (productoAVender.stock < cantidadAVender) {
+      throw new Error(
+        `No hay suficiente stock disponible para vender ${cantidadAVender} unidades.`
+      );
+    }
+
+    productoAVender.stock -= cantidadAVender;
+    await productoAVender.save();
+
     // Agregar lógica para registrar la venta (puedes almacenar esta información en una base de datos o donde prefieras)
     const ventaRegistrada = {
       producto: productoAVender,
       fecha: new Date(),
       vendedor: usuarioVendedor,
       comprador: nombreComprador,
+      cantidad: cantidadAVender,
     };
 
     // Puedes guardar la información de la venta en una base de datos o en otro lugar según tus necesidades
@@ -162,5 +175,4 @@ productosRouter.post(
     res.json({ mensaje: "Venta realizada con éxito", venta: ventaRegistrada });
   })
 );
-
 module.exports = productosRouter;

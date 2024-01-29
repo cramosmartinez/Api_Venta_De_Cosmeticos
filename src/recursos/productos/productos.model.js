@@ -1,3 +1,4 @@
+// productos.model.js
 const mongoose = require("mongoose");
 
 const productoSchema = new mongoose.Schema({
@@ -19,6 +20,10 @@ const productoSchema = new mongoose.Schema({
   dueño: {
     type: String,
     required: [true, "Producto debe tener un dueño"],
+  },
+  stock: {
+    type: Number,
+    default: 0, // Puedes establecer el stock inicial según tus necesidades
   },
 });
 

@@ -3552,3 +3552,68 @@ info: 2024-01-29T04:36:36.204Z Usuario alida esta autenticado
 info: 2024-01-29T04:36:36.208Z ::1 - POST /productos/vender/65b7287c167c0075a902f70b HTTP/1.1 200 238 - 7.448 ms
 info: 2024-01-29T04:40:08.144Z Escuchando el puerto 3000.
 info: 2024-01-29T04:40:10.543Z Escuchando el puerto 3000.
+info: 2024-01-29T04:40:11.715Z Escuchando el puerto 3000.
+info: 2024-01-29T04:40:55.279Z Usuario alida completo autenticación exitosamente.
+info: 2024-01-29T04:40:55.285Z ::1 - POST /usuarios/login HTTP/1.1 200 183 - 110.014 ms
+info: 2024-01-29T04:41:04.339Z Usuario alida esta autenticado
+info: 2024-01-29T04:41:04.342Z ::1 - POST /productos/vender/65b7287c167c0075a902f70b HTTP/1.1 200 258 - 7.575 ms
+info: 2024-01-29T04:43:04.345Z Escuchando el puerto 3000.
+info: 2024-01-29T04:43:51.243Z Escuchando el puerto 3000.
+info: 2024-01-29T04:44:42.808Z Escuchando el puerto 3000.
+info: 2024-01-29T04:45:03.381Z Usuario alida completo autenticación exitosamente.
+info: 2024-01-29T04:45:03.385Z ::1 - POST /usuarios/login HTTP/1.1 200 183 - 107.444 ms
+info: 2024-01-29T04:45:37.410Z Usuario alida esta autenticado
+info: 2024-01-29T04:45:37.414Z ::1 - POST /productos HTTP/1.1 500 1298 - 7.103 ms
+error: 2024-01-29T04:46:49.498Z uncaughtException: Route.post() requires a callback function but got a [object Object]
+Error: Route.post() requires a callback function but got a [object Object]
+    at Route.<computed> [as post] (D:\Proyectos\Api_Venta_De_Cosmeticos\node_modules\express\lib\router\route.js:211:15)
+    at proto.<computed> [as post] (D:\Proyectos\Api_Venta_De_Cosmeticos\node_modules\express\lib\router\index.js:521:19)
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\productos\productos.routes.js:32:17)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\index.js:3:25) {"date":"Sun Jan 28 2024 22:46:49 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":2122.156},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"],"cwd":"D:\\Proyectos\\Api_Venta_De_Cosmeticos","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262455,"external":21062077,"heapTotal":29896704,"heapUsed":13604524,"rss":52125696},"pid":2084,"uid":null,"version":"v20.10.0"},"stack":"Error: Route.post() requires a callback function but got a [object Object]\n    at Route.<computed> [as post] (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\node_modules\\express\\lib\\router\\route.js:211:15)\n    at proto.<computed> [as post] (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\node_modules\\express\\lib\\router\\index.js:521:19)\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js:32:17)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js:3:25)","trace":[{"column":15,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\node_modules\\express\\lib\\router\\route.js","function":"Route.<computed> [as post]","line":211,"method":"<computed> [as post]","native":false},{"column":19,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\node_modules\\express\\lib\\router\\index.js","function":"proto.<computed> [as post]","line":521,"method":"<computed> [as post]","native":false},{"column":17,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js","function":null,"line":32,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":25,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js","function":null,"line":3,"method":null,"native":false}]}
+info: 2024-01-29T04:46:55.679Z Escuchando el puerto 3000.
+info: 2024-01-29T04:47:36.464Z Escuchando el puerto 3000.
+info: 2024-01-29T04:47:40.004Z Escuchando el puerto 3000.
+info: 2024-01-29T04:47:45.012Z Escuchando el puerto 3000.
+info: 2024-01-29T04:47:52.963Z Usuario alida completo autenticación exitosamente.
+info: 2024-01-29T04:47:52.967Z ::1 - POST /usuarios/login HTTP/1.1 200 183 - 105.163 ms
+info: 2024-01-29T04:48:01.603Z Usuario alida esta autenticado
+info: 2024-01-29T04:48:01.614Z Producto agregado a la colección productos {"$__":{"$versionError":null,"activePaths":{"paths":{"dueño":"require","moneda":"require","nombre":"require","precio":"require"},"states":{"default":{},"modify":{},"require":{"dueño":true,"moneda":true,"nombre":true,"precio":true}}},"backup":{"activePaths":{"default":{"_id":true},"modify":{"dueño":true,"moneda":true,"nombre":true,"precio":true,"stock":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"65b72e01d533186c8a952ff8","dueño":"alida","moneda":"USD","nombre":"Producto con Stock Prueba","precio":29.99,"stock":50}}
+info: 2024-01-29T04:48:01.616Z ::1 - POST /productos HTTP/1.1 201 137 - 17.172 ms
+info: 2024-01-29T04:48:09.166Z Usuario alida esta autenticado
+info: 2024-01-29T04:48:09.170Z ::1 - POST /productos/vender/65b7287c167c0075a902f70b HTTP/1.1 200 268 - 7.958 ms
+info: 2024-01-29T04:51:16.626Z Escuchando el puerto 3000.
+info: 2024-01-29T04:51:20.439Z Escuchando el puerto 3000.
+info: 2024-01-29T04:51:26.045Z Usuario alida completo autenticación exitosamente.
+info: 2024-01-29T04:51:26.049Z ::1 - POST /usuarios/login HTTP/1.1 200 183 - 105.299 ms
+info: 2024-01-29T04:51:49.765Z Usuario alida esta autenticado
+info: 2024-01-29T04:51:49.776Z Producto agregado a la colección productos {"$__":{"$versionError":null,"activePaths":{"paths":{"dueño":"require","moneda":"require","nombre":"require","precio":"require"},"states":{"default":{},"modify":{},"require":{"dueño":true,"moneda":true,"nombre":true,"precio":true}}},"backup":{"activePaths":{"default":{"_id":true},"modify":{"dueño":true,"moneda":true,"nombre":true,"precio":true,"stock":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"65b72ee5ee2367d29f5940d1","dueño":"alida","moneda":"USD","nombre":"Perfume 4 machos","precio":29.99,"stock":50}}
+info: 2024-01-29T04:51:49.777Z ::1 - POST /productos HTTP/1.1 201 128 - 16.412 ms
+info: 2024-01-29T04:52:14.123Z Usuario alida esta autenticado
+info: 2024-01-29T04:52:14.133Z ::1 - POST /productos/vender/65b72ee5ee2367d29f5940d1 HTTP/1.1 200 277 - 12.303 ms
+info: 2024-01-29T04:52:23.732Z ::1 - GET /productos HTTP/1.1 200 656 - 3.223 ms
+info: 2024-01-29T04:55:06.896Z Escuchando el puerto 3000.
+info: 2024-01-29T04:55:09.590Z Usuario alida completo autenticación exitosamente.
+info: 2024-01-29T04:55:09.594Z ::1 - POST /usuarios/login HTTP/1.1 200 183 - 103.876 ms
+info: 2024-01-29T04:55:14.845Z Usuario alida esta autenticado
+info: 2024-01-29T04:55:14.857Z Producto agregado a la colección productos {"$__":{"$versionError":null,"activePaths":{"paths":{"dueño":"require","moneda":"require","nombre":"require","precio":"require"},"states":{"default":{},"modify":{},"require":{"dueño":true,"moneda":true,"nombre":true,"precio":true}}},"backup":{"activePaths":{"default":{"_id":true},"modify":{"dueño":true,"moneda":true,"nombre":true,"precio":true,"stock":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"65b72fb2cbead48113d11e07","dueño":"alida","moneda":"USD","nombre":"Perfume 4 machos","precio":29.99,"stock":50}}
+info: 2024-01-29T04:55:14.859Z ::1 - POST /productos HTTP/1.1 201 128 - 17.249 ms
+info: 2024-01-29T04:55:30.016Z Usuario carlos completo autenticación exitosamente.
+info: 2024-01-29T04:55:30.017Z ::1 - POST /usuarios/login HTTP/1.1 200 183 - 84.099 ms
+info: 2024-01-29T04:55:35.748Z Usuario alida esta autenticado
+info: 2024-01-29T04:55:35.751Z Producto agregado a la colección productos {"$__":{"$versionError":null,"activePaths":{"paths":{"dueño":"require","moneda":"require","nombre":"require","precio":"require"},"states":{"default":{},"modify":{},"require":{"dueño":true,"moneda":true,"nombre":true,"precio":true}}},"backup":{"activePaths":{"default":{"_id":true},"modify":{"dueño":true,"moneda":true,"nombre":true,"precio":true,"stock":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"65b72fc7cbead48113d11e0b","dueño":"alida","moneda":"USD","nombre":"Perfume 4 machos","precio":29.99,"stock":50}}
+info: 2024-01-29T04:55:35.753Z ::1 - POST /productos HTTP/1.1 201 128 - 7.207 ms
+info: 2024-01-29T04:55:52.918Z Usuario carlos esta autenticado
+info: 2024-01-29T04:55:52.921Z Producto agregado a la colección productos {"$__":{"$versionError":null,"activePaths":{"paths":{"dueño":"require","moneda":"require","nombre":"require","precio":"require"},"states":{"default":{},"modify":{},"require":{"dueño":true,"moneda":true,"nombre":true,"precio":true}}},"backup":{"activePaths":{"default":{"_id":true},"modify":{"dueño":true,"moneda":true,"nombre":true,"precio":true,"stock":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"65b72fd8cbead48113d11e0e","dueño":"carlos","moneda":"USD","nombre":"Perfume 5 machos","precio":29.99,"stock":50}}
+info: 2024-01-29T04:55:52.922Z ::1 - POST /productos HTTP/1.1 201 129 - 6.531 ms
+info: 2024-01-29T04:56:15.415Z Usuario alida esta autenticado
+info: 2024-01-29T04:56:15.421Z ::1 - POST /productos/vender/65b72fd8cbead48113d11e0e HTTP/1.1 200 278 - 8.367 ms
+info: 2024-01-29T04:56:24.459Z ::1 - GET /productos HTTP/1.1 200 1044 - 3.804 ms
+info: 2024-01-29T04:57:45.859Z Usuario alida esta autenticado
+info: 2024-01-29T04:57:45.863Z ::1 - POST /productos/vender/65b72fc7cbead48113d11e0b HTTP/1.1 200 277 - 5.954 ms
+info: 2024-01-29T05:01:11.300Z Escuchando el puerto 3000.

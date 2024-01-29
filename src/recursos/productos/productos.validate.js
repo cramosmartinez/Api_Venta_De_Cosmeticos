@@ -5,6 +5,7 @@ const blueprintProducto = Joi.object({
   nombre: Joi.string().max(100).required(),
   precio: Joi.number().positive().precision(2).required(),
   moneda: Joi.string().length(3).uppercase(),
+  stock: Joi.number().integer().min(0).default(0), // Añadir la validación del campo stock
 });
 
 module.exports = (req, res, next) => {

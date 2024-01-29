@@ -1,29 +1,51 @@
+// productos.controller.js
 const Producto = require("./productos.model");
 
-function crearProducto(producto, dueño) {
+async function crearProducto(producto, dueño) {
   return new Producto({
     ...producto,
     dueño,
+    stock: producto.stock || 0, // Establecer un stock inicial si se proporciona
   }).save();
 }
-function obtenerProductos() {
+
+async function obtenerProductos() {
   return Producto.find({});
 }
 
-function obtenerProducto(id) {
+async function obtenerProducto(id) {
   return Producto.findById(id);
 }
 
-function borrarProducto(id) {
+async function borrarProducto(id) {
   return Producto.findByIdAndDelete(id);
 }
 
-function remplazarProducto(id, producto, username) {
+async function remplazarProducto(id, producto, username) {
   return Producto.findOneAndUpdate(
     { _id: id },
     { ...producto, dueño: username },
     { new: true, useFindAndModify: false }
   );
+}
+
+async function venderProducto(id, cantidad = 1) {
+  const producto = await Producto.findById(id);
+
+  if (!producto) {
+    throw new ProductoNoExiste(`El producto con id [${id}] no existe.`);
+  }
+
+  if (producto.stock < cantidad) {
+    throw new Error(
+      `No hay suficiente stock disponible para vender ${cantidad} unidades.`
+    );
+  }
+
+  producto.stock -= cantidad;
+  await producto.save();
+
+  return producto;
 }
 
 module.exports = {
@@ -32,4 +54,5 @@ module.exports = {
   obtenerProducto,
   borrarProducto,
   remplazarProducto,
+  venderProducto, // Agregamos la función venderProducto al export
 };
