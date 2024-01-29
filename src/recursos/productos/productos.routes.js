@@ -8,15 +8,7 @@ const jwtAuthhenticate = passport.authenticate("jwt", { session: false });
 const procesarErrores = require("../../libs/errorHandler").procesarErrores;
 const { ProductoNoExiste, UsuarioNoEsDueño } = require("./productos.error");
 const Venta = require("../ventasDeProducto/ventasDeProductos.model");
-
-function validarId(req, res, next) {
-  let id = req.params.id;
-  if (id.match(/^[a-fA-F0-9]{24}$/) === null) {
-    res.status(400).send("El id no es valido");
-    return;
-  }
-  next();
-}
+const validarId = require("../../libs/middleware").validarId;
 
 //Listar
 
@@ -122,7 +114,7 @@ productosRouter.delete(
     res.json(productoBorrado);
   })
 );
-
+//venta
 productosRouter.post(
   "/vender/:id",
   [jwtAuthhenticate, validarId],
@@ -132,44 +124,13 @@ productosRouter.post(
     const nombreComprador = req.body.nombreComprador;
     const cantidadAVender = req.body.cantidad || 1;
 
-    // Obtener el producto que se va a vender
-    const productoAVender = await productoController.obtenerProducto(
-      idProducto
-    );
-
-    if (!productoAVender) {
-      throw new ProductoNoExiste(
-        `El producto con id [${idProducto}] no existe.`
+    const { productoAVender, nuevaVenta } =
+      await productoController.realizarVenta(
+        idProducto,
+        usuarioVendedor,
+        nombreComprador,
+        cantidadAVender
       );
-    }
-
-    // Verificar que el usuario sea el dueño del producto
-    if (productoAVender.dueño !== usuarioVendedor) {
-      throw new UsuarioNoEsDueño(
-        `No eres dueño del producto con id [${idProducto}]. Solo puedes vender productos creados por ti.`
-      );
-    }
-
-    // Verificar si hay suficiente stock
-    if (productoAVender.stock < cantidadAVender) {
-      throw new Error(
-        `No hay suficiente stock disponible para vender ${cantidadAVender} unidades.`
-      );
-    }
-
-    // Actualizar el stock del producto
-    productoAVender.stock -= cantidadAVender;
-    await productoAVender.save();
-
-    // Registrar la venta
-    const nuevaVenta = new Venta({
-      producto: productoAVender._id,
-      vendedor: usuarioVendedor,
-      comprador: nombreComprador,
-      cantidad: cantidadAVender,
-    });
-
-    await nuevaVenta.save();
 
     // Responder con el resultado de la venta
     res.json({
@@ -188,11 +149,10 @@ productosRouter.post(
 // En productos.routes.js
 productosRouter.get(
   "/ventas",
-  jwtAuthhenticate,
   procesarErrores(async (req, res) => {
     const usuario = req.user.username;
 
-    // Obtener todas las ventas del usuario (puedes ajustar según tus necesidades)
+    // Obtener todas las ventas del usuario
     const ventas = await Venta.find({ vendedor: usuario });
 
     res.json({ ventas });
