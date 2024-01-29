@@ -1,21 +1,38 @@
 {
-  "name": "api_venta_de_cosmeticos",
+  "name": "vende_tus_corotos_api",
   "version": "1.0.0",
-  "description": "Prueba de uso de apis con node js",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --forceExit --runInBand",
+    "dev": "nodemon index.js"
   },
   "author": "Carlos Ramos",
   "license": "ISC",
-  "devDependencies": {
-    "nodemon": "^3.0.3"
-  },
   "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
     "express": "^4.18.2",
-    "mongoose": "^8.1.1",
+    "joi": "^17.11.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.4",
+    "morgan": "^1.10.0",
+    "passport": "^0.7.0",
+    "passport-http": "^0.3.0",
+    "passport-jwt": "^4.0.1",
     "underscore": "^1.13.6",
+    "uuid": "^9.0.1",
     "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4"
+  },
+  "jest":{
+    "testPathIgnorePatterns":[
+      "/config/"
+    ]
+
   }
 }
