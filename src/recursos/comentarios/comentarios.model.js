@@ -1,4 +1,3 @@
-// comentarios.model.js
 const mongoose = require("mongoose");
 
 const comentarioSchema = new mongoose.Schema({

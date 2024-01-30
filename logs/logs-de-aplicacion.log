@@ -5309,3 +5309,56 @@ info: 2024-01-30T20:46:07.471Z ::1 - GET /comentarios/ HTTP/1.1 404 151 - 0.474 
 info: 2024-01-30T20:46:13.351Z Usuario carlos esta autenticado
 info: 2024-01-30T20:46:13.357Z ::1 - POST /comentarios/65b956d56073d65d212c3cc0 HTTP/1.1 200 275 - 8.196 ms
 info: 2024-01-30T20:46:20.796Z ::1 - GET /productos/ HTTP/1.1 200 1258 - 3.837 ms
+info: 2024-01-30T21:21:53.707Z ::1 - POST /comentarios/65b956d56073d65d212c3cc0 HTTP/1.1 401 - - 2.044 ms
+info: 2024-01-30T21:21:58.089Z Usuario carlos completo autenticación exitosamente.
+info: 2024-01-30T21:21:58.090Z ::1 - POST /usuarios/login HTTP/1.1 200 183 - 99.686 ms
+info: 2024-01-30T21:22:07.969Z Usuario carlos esta autenticado
+info: 2024-01-30T21:22:07.979Z ::1 - POST /comentarios/65b956d56073d65d212c3cc0 HTTP/1.1 200 399 - 13.020 ms
+info: 2024-01-30T21:22:13.536Z ::1 - GET /productos/ HTTP/1.1 200 916 - 3.018 ms
+info: 2024-01-30T21:24:01.040Z Escuchando el puerto 3000.
+info: 2024-01-30T21:24:02.135Z Escuchando el puerto 3000.
+info: 2024-01-30T21:24:07.456Z Escuchando el puerto 3000.
+info: 2024-01-30T21:24:10.463Z Escuchando el puerto 3000.
+info: 2024-01-30T21:24:11.403Z Escuchando el puerto 3000.
+info: 2024-01-30T21:24:49.583Z ::1 - GET /productos/ventas HTTP/1.1 400 77 - 2.406 ms
+info: 2024-01-30T21:25:24.382Z ::1 - GET /productos/ventas HTTP/1.1 400 77 - 0.416 ms
+info: 2024-01-30T21:26:13.726Z ::1 - GET /productos/ HTTP/1.1 200 916 - 13.925 ms
+info: 2024-01-30T21:26:56.778Z ::1 - GET /productos/ventas HTTP/1.1 400 77 - 0.439 ms
+info: 2024-01-30T21:28:21.762Z Escuchando el puerto 3000.
+info: 2024-01-30T21:28:28.893Z Escuchando el puerto 3000.
+error: 2024-01-30T21:30:58.059Z uncaughtException: Cannot find module 'path/to/your/log'
+Require stack:
+- D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\comentarios\comentarios.routes.js
+- D:\Proyectos\Api_Venta_De_Cosmeticos\index.js
+Error: Cannot find module 'path/to/your/log'
+Require stack:
+- D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\comentarios\comentarios.routes.js
+- D:\Proyectos\Api_Venta_De_Cosmeticos\index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\comentarios\comentarios.routes.js:9:13)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19) {"date":"Tue Jan 30 2024 15:30:58 GMT-0600 (hora estándar central)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\comentarios\\comentarios.routes.js","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":14644.703},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"],"cwd":"D:\\Proyectos\\Api_Venta_De_Cosmeticos","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262464,"external":20636094,"heapTotal":30568448,"heapUsed":17459924,"rss":55664640},"pid":8608,"uid":null,"version":"v20.10.0"},"stack":"Error: Cannot find module 'path/to/your/log'\nRequire stack:\n- D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\comentarios\\comentarios.routes.js\n- D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)\n    at Module._load (node:internal/modules/cjs/loader:985:27)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\comentarios\\comentarios.routes.js:9:13)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Module._resolveFilename","line":1144,"method":"_resolveFilename","native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":985,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":13,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\comentarios\\comentarios.routes.js","function":null,"line":9,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false}]}
+error: 2024-01-30T21:30:59.410Z uncaughtException: Cannot find module 'path/to/your/log'
+Require stack:
+- D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\comentarios\comentarios.routes.js
+- D:\Proyectos\Api_Venta_De_Cosmeticos\index.js
+Error: Cannot find module 'path/to/your/log'
+Require stack:
+- D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\comentarios\comentarios.routes.js
+- D:\Proyectos\Api_Venta_De_Cosmeticos\index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\comentarios\comentarios.routes.js:9:13)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19) {"date":"Tue Jan 30 2024 15:30:59 GMT-0600 (hora estándar central)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\comentarios\\comentarios.routes.js","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":14646.062},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"],"cwd":"D:\\Proyectos\\Api_Venta_De_Cosmeticos","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262464,"external":20636094,"heapTotal":30568448,"heapUsed":17366060,"rss":57020416},"pid":2496,"uid":null,"version":"v20.10.0"},"stack":"Error: Cannot find module 'path/to/your/log'\nRequire stack:\n- D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\comentarios\\comentarios.routes.js\n- D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)\n    at Module._load (node:internal/modules/cjs/loader:985:27)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\comentarios\\comentarios.routes.js:9:13)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Module._resolveFilename","line":1144,"method":"_resolveFilename","native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":985,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":13,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\comentarios\\comentarios.routes.js","function":null,"line":9,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false}]}

@@ -1,4 +1,3 @@
-// comentarios.controller.js
 const Comentario = require("./comentarios.model");
 const Producto = require("../productos/productos.model");
 

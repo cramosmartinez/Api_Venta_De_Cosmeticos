@@ -63,7 +63,7 @@ const realizarVenta = async (
   productoAVender.stock -= cantidadAVender;
   await productoAVender.save();
 
-  // Registrar la venta
+  // Registra la nueva venta
   const nuevaVenta = new Venta({
     producto: productoAVender._id,
     vendedor: usuarioVendedor,
