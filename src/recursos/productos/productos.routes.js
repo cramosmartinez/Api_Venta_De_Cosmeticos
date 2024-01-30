@@ -7,7 +7,7 @@ const productoController = require("./productos.controller");
 const jwtAuthhenticate = passport.authenticate("jwt", { session: false });
 const procesarErrores = require("../../libs/errorHandler").procesarErrores;
 const { ProductoNoExiste, UsuarioNoEsDueño } = require("./productos.error");
-const Venta = require("../ventasDeProducto/ventasDeProductos.model");
+const Venta = require("../ventasDeProducto/ventas.model");
 const validarId = require("../../libs/middleware").validarId;
 
 //Listar
@@ -154,13 +154,14 @@ productosRouter.post(
   })
 );
 
-// En productos.routes.js
 productosRouter.get(
   "/ventas",
   procesarErrores((req, res) => {
-    return productoController.obtenerTodasLasVentas(req.params.id).then((ventas) => {
-      res.json(ventas);
-    });
+    return productoController
+      .obtenerTodasLasVentas(req.params.id)
+      .then((ventas) => {
+        res.json(ventas);
+      });
   })
 );
 module.exports = productosRouter;

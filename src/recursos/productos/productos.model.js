@@ -3,26 +3,43 @@ const mongoose = require("mongoose");
 const productoSchema = new mongoose.Schema({
   nombre: {
     type: String,
-    required: [true, "Producto debe tener un nombre"],
+    required: true,
   },
   precio: {
     type: Number,
-    min: [0, "Precio no puede ser negativo"],
-    required: [true, "Producto debe tener un precio"],
+    required: true,
   },
   moneda: {
     type: String,
-    maxlength: 3,
-    minlength: 3,
-    required: [true, "Producto debe tener una moneda"],
+    required: true,
   },
   dueño: {
     type: String,
-    required: [true, "Producto debe tener un dueño"],
+    required: true,
   },
   stock: {
     type: Number,
-    default: 0, // Puedes establecer el stock inicial según tus necesidades
+    required: true,
+  },
+  comentarios: [
+    {
+      usuario: {
+        type: String,
+        required: true,
+      },
+      comentario: {
+        type: String,
+        required: true,
+      },
+      fecha: {
+        type: Date,
+        default: Date.now,
+      },
+    },
+  ],
+  __v: {
+    type: Number,
+    select: false,
   },
 });
 

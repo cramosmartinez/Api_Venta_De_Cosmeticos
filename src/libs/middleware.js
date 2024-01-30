@@ -1,11 +1,15 @@
 mongoose = require("mongoose");
+// middleware.js
 
 exports.validarId = (req, res, next) => {
-  const id = req.params.id;
+  const id = req.params.idProducto;
 
-  if (id.match(/^[a-fA-F0-9]{24}$/) === null) {
-    res.status(400).send("El id no es valido");
-    return;
+  try {
+    if (!id.match(/^[a-f\d]{24}$/i)) {
+      throw new Error("El id no es válido");
+    }
+    next();
+  } catch (error) {
+    res.status(400).json({ error: { message: error.message } });
   }
-  next();
 };
