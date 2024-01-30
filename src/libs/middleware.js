@@ -9,7 +9,3 @@ exports.validarId = (req, res, next) => {
   }
   next();
 };
-
-exports.noValidarId = (req, res, next) => {
-  next();
-};

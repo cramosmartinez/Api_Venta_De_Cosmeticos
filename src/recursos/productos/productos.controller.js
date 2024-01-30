@@ -78,10 +78,10 @@ const realizarVenta = async (
     nuevaVenta,
   };
 };
+const obtenerTodasLasVentas = async () => {
+  const ventas = await Venta.findOne({ _id: id })
 
-module.exports = {
-  // otras funciones del controlador,
-  realizarVenta,
+  return ventas;
 };
 
 module.exports = {
@@ -90,5 +90,6 @@ module.exports = {
   obtenerProducto,
   borrarProducto,
   remplazarProducto,
+  obtenerTodasLasVentas,
   realizarVenta, // Agregamos la función venderProducto al export
 };

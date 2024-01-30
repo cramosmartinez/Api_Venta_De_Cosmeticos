@@ -124,39 +124,43 @@ productosRouter.post(
     const nombreComprador = req.body.nombreComprador;
     const cantidadAVender = req.body.cantidad || 1;
 
-    const { productoAVender, nuevaVenta } =
-      await productoController.realizarVenta(
-        idProducto,
-        usuarioVendedor,
-        nombreComprador,
-        cantidadAVender
+    try {
+      const { productoAVender, nuevaVenta } =
+        await productoController.realizarVenta(
+          idProducto,
+          usuarioVendedor,
+          nombreComprador,
+          cantidadAVender
+        );
+      log.info(
+        `Venta realizada - Usuario: [${usuarioVendedor}], Producto: [${idProducto}], Comprador: [${nombreComprador}], Cantidad: [${cantidadAVender}]`
       );
-
-    // Responder con el resultado de la venta
-    res.json({
-      mensaje: "Venta realizada con éxito",
-      venta: {
-        producto: productoAVender,
-        fecha: nuevaVenta.fecha,
-        vendedor: usuarioVendedor,
-        comprador: nombreComprador,
-        cantidad: cantidadAVender,
-      },
-    });
+      res.json({
+        mensaje: "Venta realizada con éxito",
+        venta: {
+          producto: productoAVender,
+          fecha: nuevaVenta.fecha,
+          vendedor: usuarioVendedor,
+          comprador: nombreComprador,
+          cantidad: cantidadAVender,
+        },
+      });
+    } catch (error) {
+      log.error(
+        `Error al realizar la venta - Usuario: [${usuarioVendedor}], Producto: [${idProducto}], Comprador: [${nombreComprador}], Cantidad: [${cantidadAVender}] - Error: ${error.message}`
+      );
+      throw error;
+    }
   })
 );
 
 // En productos.routes.js
 productosRouter.get(
   "/ventas",
-  procesarErrores(async (req, res) => {
-    const usuario = req.user.username;
-
-    // Obtener todas las ventas del usuario
-    const ventas = await Venta.find({ vendedor: usuario });
-
-    res.json({ ventas });
+  procesarErrores((req, res) => {
+    return productoController.obtenerTodasLasVentas(req.params.id).then((ventas) => {
+      res.json(ventas);
+    });
   })
 );
-
 module.exports = productosRouter;
