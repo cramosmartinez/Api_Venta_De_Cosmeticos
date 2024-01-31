@@ -1151,3 +1151,30 @@ info: 2024-01-31T07:05:30.202Z Escuchando el puerto 3000.
 info: 2024-01-31T07:05:34.249Z Usuario carlos esta autenticado
 info: 2024-01-31T07:05:34.265Z Venta realizada - Usuario: [carlos], Producto: [65b9f0701ca502075ac3ca60], Comprador: [undefined], Cantidad: [1]
 info: 2024-01-31T07:05:34.270Z ::1 - POST /api/v1/ventas/vender/65b9f0701ca502075ac3ca60 HTTP/1.1 200 222 - 30.458 ms
+info: 2024-01-31T07:05:41.696Z Escuchando el puerto 3000.
+info: 2024-01-31T07:07:35.498Z Usuario carlos esta autenticado
+info: 2024-01-31T07:07:35.515Z Venta realizada - Usuario: [carlos], Producto: [65b9f0701ca502075ac3ca60], Comprador: [Felipe], Cantidad: [1]
+info: 2024-01-31T07:07:35.520Z ::1 - POST /api/v1/ventas/vender/65b9f0701ca502075ac3ca60 HTTP/1.1 200 243 - 30.775 ms
+info: 2024-01-31T07:07:43.013Z Usuario carlos esta autenticado
+info: 2024-01-31T07:07:43.020Z Venta realizada - Usuario: [carlos], Producto: [65b9f0701ca502075ac3ca60], Comprador: [Felipe], Cantidad: [2]
+info: 2024-01-31T07:07:43.022Z ::1 - POST /api/v1/ventas/vender/65b9f0701ca502075ac3ca60 HTTP/1.1 200 243 - 11.247 ms
+info: 2024-01-31T07:07:46.483Z Usuario carlos esta autenticado
+info: 2024-01-31T07:07:46.488Z Venta realizada - Usuario: [carlos], Producto: [65b9f0701ca502075ac3ca60], Comprador: [Felipe], Cantidad: [2]
+info: 2024-01-31T07:07:46.489Z ::1 - POST /api/v1/ventas/vender/65b9f0701ca502075ac3ca60 HTTP/1.1 200 243 - 8.401 ms
+info: 2024-01-31T07:07:48.412Z Usuario carlos esta autenticado
+error: 2024-01-31T07:07:48.413Z Error al realizar la venta - Usuario: [carlos], Producto: [65b9f0701ca502075ac3ca60], Comprador: [Felipe], Cantidad: [2] - Error: No hay suficiente stock disponible para vender 2 unidades.
+info: 2024-01-31T07:07:48.414Z ::1 - POST /api/v1/ventas/vender/65b9f0701ca502075ac3ca60 HTTP/1.1 500 481 - 5.093 ms
+info: 2024-01-31T07:15:01.830Z Escuchando el puerto 3000.
+error: 2024-01-31T07:15:03.208Z uncaughtException: Z is not defined
+ReferenceError: Z is not defined
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\src\libs\errorHandler.js:9:1)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\productos\productos.routes.js:8:25)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10) {"date":"Wed Jan 31 2024 01:15:03 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":24800.859},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"],"cwd":"D:\\Proyectos\\Api_Venta_De_Cosmeticos","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262455,"external":21062077,"heapTotal":29896704,"heapUsed":13844376,"rss":52301824},"pid":11332,"uid":null,"version":"v20.10.0"},"stack":"ReferenceError: Z is not defined\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\libs\\errorHandler.js:9:1)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js:8:25)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)","trace":[{"column":1,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\libs\\errorHandler.js","function":null,"line":9,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":25,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js","function":null,"line":8,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false}]}
+info: 2024-01-31T07:15:05.009Z Escuchando el puerto 3000.
