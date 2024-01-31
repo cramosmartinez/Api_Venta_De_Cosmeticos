@@ -2,6 +2,7 @@ const log = require("../../utils/logger");
 const mongoose = require("mongoose");
 
 exports.procesarErrores = (fn) => {
+  log.debug("error al procesar")
   return function (req, res, next) {
     return fn(req, res, next).catch(next);
   };

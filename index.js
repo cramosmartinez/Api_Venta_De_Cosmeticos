@@ -10,6 +10,7 @@ const config = require("./config");
 const mongoose = require("mongoose");
 const errorHandler = require("./src/libs/errorHandler");
 const comentariosRouter = require("./src/recursos/comentarios/comentarios.routes");
+const ventasRouter = require("./src/recursos/ventasDeProducto/ventas.routes");
 
 //autenticacion de constraseña y username
 passport.use(authJWT);
@@ -28,10 +29,11 @@ app.use(
 );
 
 app.use(passport.initialize());
-//usamos el enrutador de productos
-app.use("/productos", productosRouter);
-app.use("/usuarios", usuariosRouter);
-app.use("/comentarios", comentariosRouter);
+//Rutas
+app.use("/api/v1/productos", productosRouter);
+app.use("/api/v1/usuarios", usuariosRouter);
+app.use("/api/v1/comentarios", comentariosRouter);
+app.use("/api/v1/ventas", ventasRouter);
 
 
 app.use(errorHandler.procesarErroresDeDB);

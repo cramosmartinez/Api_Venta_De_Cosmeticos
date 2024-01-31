@@ -1,6 +1,5 @@
 const Venta = require("../ventasDeProducto/ventas.model");
-const Producto = require("../productos/productos.model");
-
+const productoController = require("../productos/productos.controller");
 //RealizarVenta
 
 const realizarVenta = async (
@@ -9,8 +8,8 @@ const realizarVenta = async (
   nombreComprador,
   cantidadAVender
 ) => {
-  // Obtener el producto que se va a vender
-  const productoAVender = await obtenerProducto(idProducto);
+  //Obetenemos el producto a vender
+  const productoAVender = await productoController.obtenerProducto(idProducto);
 
   if (!productoAVender) {
     throw new ProductoNoExiste(`El producto con id [${idProducto}] no existe.`);
@@ -23,7 +22,7 @@ const realizarVenta = async (
     );
   }
 
-  // Verificar si hay suficiente stock
+  // Verificamos si hay suficiente stock para vender
   if (productoAVender.stock < cantidadAVender) {
     throw new Error(
       `No hay suficiente stock disponible para vender ${cantidadAVender} unidades.`
@@ -34,12 +33,17 @@ const realizarVenta = async (
   productoAVender.stock -= cantidadAVender;
   await productoAVender.save();
 
-  // Registrar la venta
+  // Registra la nueva venta
   const nuevaVenta = new Venta({
     producto: productoAVender._id,
     vendedor: usuarioVendedor,
     comprador: nombreComprador,
     cantidad: cantidadAVender,
+    stock: 0,
+    dueño: usuarioVendedor,
+    moneda: "USD",
+    precio: 0,
+    nombre: "NombreDeLaVenta",
   });
 
   await nuevaVenta.save();
@@ -49,13 +53,12 @@ const realizarVenta = async (
     nuevaVenta,
   };
 };
-const obtenerTodasLasVentas = async () => {
-  const ventas = await Venta.findOne({ _id: id });
 
-  return ventas;
+const obtenerTodasLasVentas = async () => {
+  return Venta.find({});
 };
 
 module.exports = {
   obtenerTodasLasVentas,
-  realizarVenta, // Agregamos la función venderProducto al export
+  realizarVenta,
 };

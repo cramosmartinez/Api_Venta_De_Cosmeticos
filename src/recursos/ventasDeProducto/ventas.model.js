@@ -1,22 +1,48 @@
 const mongoose = require("mongoose");
 
 const ventaSchema = new mongoose.Schema({
-  fecha: {
-    type: Date,
-    default: Date.now,
-  },
-  vendedor: {
+  nombre: {
     type: String,
     required: true,
   },
-  comprador: {
-    type: String,
-  },
-  cantidad: {
+  precio: {
     type: Number,
     required: true,
   },
+  moneda: {
+    type: String,
+    required: true,
+  },
+  dueño: {
+    type: String,
+    required: true,
+  },
+  stock: {
+    type: Number,
+    required: true,
+  },
+  comentarios: [
+    {
+      usuario: {
+        type: String,
+        required: true,
+      },
+      comentario: {
+        type: String,
+        required: true,
+      },
+      fecha: {
+        type: Date,
+        default: Date.now,
+      },
+    },
+  ],
+  __v: {
+    type: Number,
+    select: false,
+  },
 });
+
 
 const Venta = mongoose.model("Venta", ventaSchema);
 
