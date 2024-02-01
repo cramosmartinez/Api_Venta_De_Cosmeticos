@@ -128,7 +128,7 @@ productosRouter.delete(
     res.json(productoBorrado);
   })
 );
-
+//lista productos por una categoria
 productosRouter.get(
   "/categoria/:categoria",
   procesarErrores((req, res) => {
@@ -140,5 +140,34 @@ productosRouter.get(
       });
   })
 );
+
+// Listar productos por usuario logeado
+productosRouter.get(
+  "/usuario",
+  jwtAuthhenticate, // Middleware de autenticación JWT
+  procesarErrores((req, res) => {
+    const usuarioLogeado = req.user.username;
+    return productoController
+      .obtenerProductosPorUsuario(usuarioLogeado)
+      .then((productos) => {
+        res.json(productos);
+      });
+  })
+);
+
+// Listar productos por usuario específico
+productosRouter.get(
+  "/usuario/:usuario",
+  procesarErrores((req, res) => {
+    const usuarioEspecifico = req.params.usuario;
+    return productoController
+      .obtenerProductosPorUsuario(usuarioEspecifico)
+      .then((productos) => {
+        res.json(productos);
+      });
+  })
+);
+
+
 
 module.exports = productosRouter;

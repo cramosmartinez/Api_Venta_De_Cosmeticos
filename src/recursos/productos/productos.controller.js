@@ -36,7 +36,9 @@ async function obtenerProductosPorCategoria(categoria) {
   return Producto.find({ categoria });
 }
 
-
+async function obtenerProductosPorUsuario(usuario) {
+  return Producto.find({ dueño: usuario });
+}
 
 module.exports = {
   crearProducto,
@@ -45,4 +47,5 @@ module.exports = {
   borrarProducto,
   remplazarProducto,
   obtenerProductosPorCategoria,
+  obtenerProductosPorUsuario,
 };

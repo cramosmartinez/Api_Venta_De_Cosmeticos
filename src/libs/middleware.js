@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 // middleware.js
 
 exports.validarId = (req, res, next) => {
-  const id = req.params.idProducto || req.params.id;
+  const id = req.params.idProducto || req.params.id || req.params.usuario;
 
   try {
     if (!id || !id.match(/^[a-f\d]{24}$/i)) {

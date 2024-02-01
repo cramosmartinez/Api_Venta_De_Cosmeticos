@@ -39,6 +39,7 @@ function usuarioExiste(usuario, email) {
   });
 }
 
+
 module.exports = {
   obtenerUsuarios,
   crearUsuario,
