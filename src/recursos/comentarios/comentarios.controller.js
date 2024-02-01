@@ -32,6 +32,7 @@ async function obtenerComentarios(idProducto) {
   return producto.comentarios;
 }
 
+
 module.exports = {
   obtenerComentarios,
   agregarComentario,

@@ -39,7 +39,7 @@ comentariosRouter.post(
 
 comentariosRouter.get(
   "/:idProducto",
-  validarId,
+  [validarId],
   procesarErrores(async (req, res) => {
     try {
       const idProducto = req.params.idProducto;

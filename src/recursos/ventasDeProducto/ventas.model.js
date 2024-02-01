@@ -21,22 +21,7 @@ const ventaSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  comentarios: [
-    {
-      usuario: {
-        type: String,
-        required: true,
-      },
-      comentario: {
-        type: String,
-        required: true,
-      },
-      fecha: {
-        type: Date,
-        default: Date.now,
-      },
-    },
-  ],
+
   __v: {
     type: Number,
     select: false,

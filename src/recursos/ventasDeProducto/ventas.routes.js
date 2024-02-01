@@ -8,7 +8,7 @@ const jwtAuthhenticate = require("passport").authenticate("jwt", {
 const procesarErrores = require("../../libs/errorHandler").procesarErrores;
 const validarId = require("../../libs/middleware").validarId;
 
-ventasRouter.get("/ventas", (req, res) => {
+ventasRouter.get("/", (req, res) => {
   return ventasController.obtenerTodasLasVentas().then((ventas) => {
     res.json(ventas);
   });
