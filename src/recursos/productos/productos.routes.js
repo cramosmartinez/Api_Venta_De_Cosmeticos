@@ -8,7 +8,7 @@ const jwtAuthhenticate = passport.authenticate("jwt", { session: false });
 const procesarErrores = require("../../libs/errorHandler").procesarErrores;
 const { ProductoNoExiste, UsuarioNoEsDueño } = require("./productos.error");
 const validarId = require("../../libs/middleware").validarId;
-
+const CategoriaProducto = require("../categorias/categorias.model");
 //Listar
 
 productosRouter.get(
@@ -24,16 +24,31 @@ productosRouter.get(
 productosRouter.post(
   "/",
   [jwtAuthhenticate, validarProducto],
-  procesarErrores((req, res) => {
-    return productoController
-      .crearProducto(req.body, req.user.username)
-      .then((producto) => {
-        log.info("Producto agregado a la colección productos", producto);
-        res.status(201).json(producto);
-      });
+  procesarErrores(async (req, res) => {
+    const { nombre, precio, moneda, stock, categoria } = req.body;
+
+    // Verificar si la categoría existe
+    const categoriaExistente = await CategoriaProducto.findOne({
+      nombre: categoria,
+    });
+
+    if (!categoriaExistente) {
+      return res
+        .status(400)
+        .json({ error: "La categoría especificada no existe." });
+    }
+
+    // Crear el producto solo si la categoría existe
+    const producto = await productoController.crearProducto(
+      { nombre, precio, moneda, stock },
+      req.user.username,
+      categoria
+    );
+
+    log.info("Producto agregado a la colección productos", producto);
+    res.status(201).json(producto);
   })
 );
-
 productosRouter.get(
   "/:id",
   validarId,
@@ -114,5 +129,16 @@ productosRouter.delete(
   })
 );
 
+productosRouter.get(
+  "/categoria/:categoria",
+  procesarErrores((req, res) => {
+    let categoria = req.params.categoria;
+    return productoController
+      .obtenerProductosPorCategoria(categoria)
+      .then((productos) => {
+        res.json(productos);
+      });
+  })
+);
 
 module.exports = productosRouter;

@@ -9,6 +9,10 @@ const productoSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
+  categoria: {
+    type: String,
+    required: true,
+  },
   moneda: {
     type: String,
     required: true,

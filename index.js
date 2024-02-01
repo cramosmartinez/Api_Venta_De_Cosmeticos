@@ -11,12 +11,13 @@ const mongoose = require("mongoose");
 const errorHandler = require("./src/libs/errorHandler");
 const comentariosRouter = require("./src/recursos/comentarios/comentarios.routes");
 const ventasRouter = require("./src/recursos/ventasDeProducto/ventas.routes");
+const categoriasRouter = require("./src/recursos/categorias/categorias.routes")
 
 //autenticacion de constraseña y username
 passport.use(authJWT);
 
 //MongoDB => NoSql = > no hay tablas, si no colecciones de documentos
-mongoose.connect("mongodb://127.0.0.1:27017/ApiVenta", {});
+mongoose.connect("mongodb://127.0.0.1:27017/cosmetics-management", {});
 
 const app = express();
 app.use(bodyParser.json());
@@ -30,11 +31,11 @@ app.use(
 
 app.use(passport.initialize());
 //Rutas
-app.use("/api/v1/productos", productosRouter);
-app.use("/api/v1/usuarios", usuariosRouter);
-app.use("/api/v1/comentarios", comentariosRouter);
-app.use("/api/v1/ventas", ventasRouter);
-
+app.use("/cosmetics-management/v1/productos", productosRouter);
+app.use("/cosmetics-management/v1/usuarios", usuariosRouter);
+app.use("/cosmetics-management/v1/comentarios", comentariosRouter);
+app.use("/cosmetics-management/v1/ventas", ventasRouter);
+app.use("/cosmetics-management/v1/categorias", categoriasRouter);
 
 app.use(errorHandler.procesarErroresDeDB);
 if (config.ambiente === "prod") {

@@ -14,6 +14,7 @@ ventasRouter.get("/", (req, res) => {
   });
 });
 
+
 //venta
 ventasRouter.post(
   "/vender/:id",

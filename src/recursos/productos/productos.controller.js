@@ -1,12 +1,14 @@
 // productos.controller.js
 const Producto = require("./productos.model");
 const Venta = require("../ventasDeProducto/ventas.model");
+const CategoriaProducto = require("../categorias/categorias.model");
 
-async function crearProducto(producto, dueño) {
+async function crearProducto(producto, dueño, categoria) {
   return new Producto({
     ...producto,
     dueño,
-    stock: producto.stock || 0, // Establecer un stock inicial si se proporciona
+    categoria,
+    stock: producto.stock || 0,
   }).save();
 }
 
@@ -30,6 +32,10 @@ async function remplazarProducto(id, producto, username) {
   );
 }
 
+async function obtenerProductosPorCategoria(categoria) {
+  return Producto.find({ categoria });
+}
+
 
 
 module.exports = {
@@ -38,4 +44,5 @@ module.exports = {
   obtenerProducto,
   borrarProducto,
   remplazarProducto,
+  obtenerProductosPorCategoria,
 };

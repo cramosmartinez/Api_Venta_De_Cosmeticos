@@ -5,13 +5,14 @@ const blueprintProducto = Joi.object({
   nombre: Joi.string().max(100).required(),
   precio: Joi.number().positive().precision(2).required(),
   moneda: Joi.string().length(3).uppercase(),
-  stock: Joi.number().integer().min(0).default(0), // Añadir la validación del campo stock
+  stock: Joi.number().integer().min(0).default(0),
+  categoria: Joi.string().required(),  // Nueva línea para validar la categoría
 });
 
 module.exports = (req, res, next) => {
   let resultado = blueprintProducto.validate(req.body, {
     abortEarly: false,
-    convert: true, // Cambiado a true para permitir la conversión de tipos
+    convert: true,
   });
 
   if (!resultado.error) {
