@@ -1,34 +1,43 @@
 const mongoose = require("mongoose");
 
-const ventaSchema = new mongoose.Schema({
-  nombre: {
-    type: String,
+const detalleVentaSchema = new mongoose.Schema({
+  producto: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Producto",
     required: true,
   },
-  precio: {
+  cantidad: {
     type: Number,
     required: true,
   },
-  moneda: {
-    type: String,
-    required: true,
-  },
-  dueño: {
-    type: String,
-    required: true,
-  },
-  stock: {
+  precioUnitario: {
     type: Number,
     required: true,
-  },
-
-  __v: {
-    type: Number,
-    select: false,
   },
 });
 
+const ordenVentaSchema = new mongoose.Schema({
+  vendedor: {
+    type: String,
+    required: true,
+  },
+  comprador: {
+    nombre: {
+      type: String,
+      required: true,
+    },
+    nit: {
+      type: String,
+      required: true,
+    },
+  },
+  detalles: [detalleVentaSchema],
+  fecha: {
+    type: Date,
+    default: Date.now,
+  },
+});
 
-const Venta = mongoose.model("Venta", ventaSchema);
+const OrdenVenta = mongoose.model("OrdenVenta", ordenVentaSchema);
 
-module.exports = Venta;
+module.exports = OrdenVenta;

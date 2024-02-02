@@ -1,6 +1,6 @@
-const Venta = require("../ventasDeProducto/ventas.model");
+const OrdenVenta = require("../ventasDeProducto/ventas.model");
 const productoController = require("../productos/productos.controller");
-//RealizarVenta
+const { ProductoNoExiste, UsuarioNoEsDueño } = require("../productos/productos.error");
 
 const realizarVenta = async (
   idProducto,
@@ -8,57 +8,158 @@ const realizarVenta = async (
   nombreComprador,
   cantidadAVender
 ) => {
-  //Obetenemos el producto a vender
   const productoAVender = await productoController.obtenerProducto(idProducto);
 
   if (!productoAVender) {
     throw new ProductoNoExiste(`El producto con id [${idProducto}] no existe.`);
   }
 
-  // Verificar que el usuario sea el dueño del producto
   if (productoAVender.dueño !== usuarioVendedor) {
     throw new UsuarioNoEsDueño(
       `No eres dueño del producto con id [${idProducto}]. Solo puedes vender productos creados por ti.`
     );
   }
 
-  // Verificamos si hay suficiente stock para vender
   if (productoAVender.stock < cantidadAVender) {
     throw new Error(
       `No hay suficiente stock disponible para vender ${cantidadAVender} unidades.`
     );
   }
 
-  // Actualizar el stock del producto
   productoAVender.stock -= cantidadAVender;
   await productoAVender.save();
 
-  // Registra la nueva venta
-  const nuevaVenta = new Venta({
+  const precioUnitario = productoAVender.precio;
+
+  const nuevaVentaDetalle = {
     producto: productoAVender._id,
+    cantidad: cantidadAVender,
+    precioUnitario: precioUnitario,
+  };
+
+  const nuevaOrdenVenta = new OrdenVenta({
     vendedor: usuarioVendedor,
     comprador: nombreComprador,
-    cantidad: cantidadAVender,
-    stock: 0,
-    dueño: usuarioVendedor,
-    moneda: "USD",
-    precio: 0,
-    nombre: "NombreDeLaVenta",
+    detalles: [nuevaVentaDetalle],
   });
 
-  await nuevaVenta.save();
+  await nuevaOrdenVenta.save();
 
   return {
     productoAVender,
-    nuevaVenta,
+    nuevaOrdenVenta,
   };
 };
 
-const obtenerTodasLasVentas = async () => {
-  return Venta.find({});
+const obtenerTodasLasOrdenesVenta = async () => {
+  return OrdenVenta.find({}).populate("detalles.producto");
 };
 
+
+const realizarVentaAutomatica = async (
+  productosAVender,
+  usuarioVendedor,
+  nombreComprador,
+  nitComprador
+) => {
+  try {
+    if (!productosAVender || productosAVender.length === 0) {
+      throw new Error("La lista de productos a vender está vacía.");
+    }
+
+    // Verifica si el comprador proporcionó el NIT
+    if (!nitComprador) {
+      throw new Error("El NIT del comprador es obligatorio.");
+    }
+
+    // Realiza una verificación del dueño al producto
+    const primerProducto = await productoController.obtenerProducto(
+      productosAVender[0].idProducto
+    );
+
+    if (!primerProducto || primerProducto.dueño !== usuarioVendedor) {
+      throw new UsuarioNoEsDueño(
+        "No eres dueño de todos los productos seleccionados."
+      );
+    }
+
+    // Verifica que haya suficiente stock
+    for (const producto of productosAVender) {
+      const productoAVender = await productoController.obtenerProducto(
+        producto.idProducto
+      );
+
+      if (!productoAVender) {
+        throw new ProductoNoExiste(
+          `El producto con id [${producto.idProducto}] no existe.`
+        );
+      }
+
+      if (productoAVender.stock < producto.cantidad) {
+        throw new Error(
+          `No hay suficiente stock disponible para vender ${producto.cantidad} unidades del producto con id [${producto.idProducto}].`
+        );
+      }
+    }
+
+    // Realiza la venta y reduce el stock
+    for (const producto of productosAVender) {
+      const productoAVender = await productoController.obtenerProducto(
+        producto.idProducto
+      );
+
+      productoAVender.stock -= producto.cantidad;
+      await productoAVender.save();
+    }
+
+    const detallesVenta = [];
+
+    for (const producto of productosAVender) {
+      const productoAVender = await productoController.obtenerProducto(
+        producto.idProducto
+      );
+
+      const precioUnitario = productoAVender.precio;
+      const detalleVenta = {
+        producto: producto.idProducto,
+        cantidad: producto.cantidad,
+        precioUnitario: precioUnitario,
+      };
+
+      detallesVenta.push(detalleVenta);
+    }
+
+    const precioTotal = detallesVenta.reduce((total, detalle) => {
+      return total + detalle.cantidad * detalle.precioUnitario;
+    }, 0);
+
+    // Registra la nueva venta
+    const nuevaOrdenVenta = new OrdenVenta({
+      vendedor: usuarioVendedor,
+      comprador: {
+        nombre: nombreComprador,
+        nit: nitComprador,
+      },
+      detalles: detallesVenta,
+      precioTotal: precioTotal,
+    });
+    
+
+    await nuevaOrdenVenta.save();
+
+    return {
+      productosAVender,
+      precioTotal,
+      nuevaOrdenVenta,
+    };
+  } catch (error) {
+    throw error;
+  }
+};
+
+
 module.exports = {
-  obtenerTodasLasVentas,
   realizarVenta,
+  obtenerTodasLasOrdenesVenta,
+  realizarVentaAutomatica,
 };

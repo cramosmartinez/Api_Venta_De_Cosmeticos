@@ -2638,3 +2638,583 @@ SyntaxError: Unexpected token ';'
     at require (node:internal/modules/helpers:176:18)
     at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\productos\productos.routes.js:10:19)
     at Module._compile (node:internal/modules/cjs/loader:1376:14) {"date":"Thu Feb 01 2024 11:34:36 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":2145.015},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"],"cwd":"D:\\Proyectos\\Api_Venta_De_Cosmeticos","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262455,"external":21062077,"heapTotal":29896704,"heapUsed":13894960,"rss":52645888},"pid":3648,"uid":null,"version":"v20.10.0"},"stack":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\libs\\middleware.js:5\n  const id = req.params.idProducto || req.params.id || req.;\n                                                           ^\n\nSyntaxError: Unexpected token ';'\n    at internalCompileFunction (node:internal/vm:77:18)\n    at wrapSafe (node:internal/modules/cjs/loader:1288:20)\n    at Module._compile (node:internal/modules/cjs/loader:1340:27)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js:10:19)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)","trace":[{"column":18,"file":"node:internal/vm","function":"internalCompileFunction","line":77,"method":null,"native":false},{"column":20,"file":"node:internal/modules/cjs/loader","function":"wrapSafe","line":1288,"method":null,"native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1340,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":19,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js","function":null,"line":10,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false}]}
+info: 2024-02-01T17:34:43.301Z Escuchando el puerto 3000.
+info: 2024-02-01T17:34:44.877Z ::1 - GET /cosmetics-management/v1/productos/usuario HTTP/1.1 400 43 - 2.897 ms
+info: 2024-02-01T17:34:57.290Z ::1 - GET /cosmetics-management/v1/productos/usuario/carlos2 HTTP/1.1 200 669 - 10.122 ms
+info: 2024-02-01T17:35:03.909Z ::1 - GET /cosmetics-management/v1/productos/usuario/carlos HTTP/1.1 200 654 - 4.662 ms
+info: 2024-02-01T17:45:56.881Z Escuchando el puerto 3000.
+info: 2024-02-01T17:46:01.305Z ::1 - GET /cosmetics-management/v1/productos/usuario/ HTTP/1.1 400 43 - 2.310 ms
+info: 2024-02-01T17:46:03.328Z ::1 - GET /cosmetics-management/v1/productos/usuario HTTP/1.1 400 43 - 0.510 ms
+info: 2024-02-01T17:46:05.208Z ::1 - GET /cosmetics-management/v1/productos/usuarios HTTP/1.1 400 43 - 0.415 ms
+info: 2024-02-01T17:46:07.612Z ::1 - GET /cosmetics-management/v1/productos/usuario HTTP/1.1 400 43 - 0.393 ms
+info: 2024-02-01T17:46:19.919Z ::1 - GET /cosmetics-management/v1/productos/usuario HTTP/1.1 400 43 - 0.347 ms
+info: 2024-02-01T17:46:34.152Z Escuchando el puerto 3000.
+info: 2024-02-01T17:46:46.390Z Escuchando el puerto 3000.
+info: 2024-02-01T17:46:49.178Z Escuchando el puerto 3000.
+info: 2024-02-01T17:46:50.584Z Escuchando el puerto 3000.
+info: 2024-02-01T17:46:56.487Z ::1 - GET /cosmetics-management/v1/productos/usuario HTTP/1.1 400 43 - 2.390 ms
+info: 2024-02-01T17:47:01.713Z ::1 - GET /cosmetics-management/v1/productos/usuario/carlos HTTP/1.1 200 654 - 11.481 ms
+info: 2024-02-01T17:47:19.100Z ::1 - GET /cosmetics-management/v1/productos/categoria/perfume HTTP/1.1 200 2 - 1.991 ms
+info: 2024-02-01T17:47:23.324Z ::1 - GET /cosmetics-management/v1/productos HTTP/1.1 200 1322 - 4.804 ms
+info: 2024-02-01T17:47:51.524Z Usuario carlos2 esta autenticado
+info: 2024-02-01T17:47:51.529Z Usuario [carlos2] no es dueño de producto con id [65bb05b364aa8947ef4cd58d]. Dueño real es [carlos]. Request no será procesado
+info: 2024-02-01T17:47:51.531Z ::1 - DELETE /cosmetics-management/v1/productos/65bb05b364aa8947ef4cd58d HTTP/1.1 401 452 - 16.174 ms
+info: 2024-02-01T17:51:07.005Z ::1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 61 - 10.130 ms
+info: 2024-02-01T17:51:15.505Z ::1 - GET /cosmetics-management/v1/categorias HTTP/1.1 200 63 - 2.592 ms
+info: 2024-02-01T17:51:24.952Z ::1 - GET /cosmetics-management/v1/categorias/65bb37804f94afb1b1b09191 HTTP/1.1 404 37 - 1.981 ms
+info: 2024-02-01T17:51:27.383Z ::1 - GET /cosmetics-management/v1/categorias/65bb37804f94afb1b1b09191 HTTP/1.1 404 37 - 1.458 ms
+info: 2024-02-01T17:51:33.613Z ::1 - GET /cosmetics-management/v1/categorias/65bbda0a0e0c28fb35ed5f01 HTTP/1.1 200 61 - 1.663 ms
+info: 2024-02-01T17:52:53.902Z ::1 - POST /cosmetics-management/v1/productos HTTP/1.1 401 - - 2.954 ms
+info: 2024-02-01T17:55:09.449Z Usuario carlos2 esta autenticado
+info: 2024-02-01T17:55:09.467Z Producto agregado a la colección productos {"$__":{"$versionError":null,"activePaths":{"paths":{"categoria":"require","dueño":"require","moneda":"require","nombre":"require","precio":"require","stock":"require"},"states":{"default":{},"modify":{},"require":{"categoria":true,"dueño":true,"moneda":true,"nombre":true,"precio":true,"stock":true}}},"backup":{"activePaths":{"default":{"_id":true,"comentarios":true},"modify":{"categoria":true,"dueño":true,"moneda":true,"nombre":true,"precio":true,"stock":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"65bbdafd0e0c28fb35ed5f09","categoria":"Shampoo","comentarios":[],"dueño":"carlos2","moneda":"USD","nombre":"Cola de caballo","precio":29.99,"stock":10}}
+info: 2024-02-01T17:55:09.469Z ::1 - POST /cosmetics-management/v1/productos HTTP/1.1 201 168 - 23.180 ms
+info: 2024-02-01T17:55:33.924Z Usuario carlos2 esta autenticado
+info: 2024-02-01T17:55:33.932Z Producto agregado a la colección productos {"$__":{"$versionError":null,"activePaths":{"paths":{"categoria":"require","dueño":"require","moneda":"require","nombre":"require","precio":"require","stock":"require"},"states":{"default":{},"modify":{},"require":{"categoria":true,"dueño":true,"moneda":true,"nombre":true,"precio":true,"stock":true}}},"backup":{"activePaths":{"default":{"_id":true,"comentarios":true},"modify":{"categoria":true,"dueño":true,"moneda":true,"nombre":true,"precio":true,"stock":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"65bbdb150e0c28fb35ed5f0d","categoria":"Shampoo","comentarios":[],"dueño":"carlos2","moneda":"USD","nombre":"De Linaza con manzanilla","precio":29.99,"stock":10}}
+info: 2024-02-01T17:55:33.933Z ::1 - POST /cosmetics-management/v1/productos HTTP/1.1 201 177 - 11.440 ms
+info: 2024-02-01T17:55:42.612Z ::1 - GET /cosmetics-management/v1/productos/65bbdb150e0c28fb35ed5f0d HTTP/1.1 200 169 - 3.950 ms
+info: 2024-02-01T17:59:59.461Z ::1 - GET /cosmetics-management/v1/productos/usuario/carlos HTTP/1.1 200 2 - 3.037 ms
+info: 2024-02-01T18:00:03.435Z ::1 - GET /cosmetics-management/v1/productos/usuario/carlos HTTP/1.1 200 2 - 2.397 ms
+info: 2024-02-01T18:00:14.374Z ::1 - GET /cosmetics-management/v1/productos/usuario/carlos HTTP/1.1 200 2 - 1.594 ms
+info: 2024-02-01T18:00:24.383Z ::1 - GET /cosmetics-management/v1/productos/usuario/carlos2 HTTP/1.1 200 332 - 4.235 ms
+info: 2024-02-01T19:23:55.021Z Escuchando el puerto 3000.
+info: 2024-02-01T19:23:56.002Z Escuchando el puerto 3000.
+info: 2024-02-01T19:23:59.395Z Buscando productos en la categoría: perfume
+info: 2024-02-01T19:23:59.401Z Productos encontrados en la categoría 'perfume':
+info: 2024-02-01T19:23:59.406Z ::1 - GET /cosmetics-management/v1/productos/categoria/perfume HTTP/1.1 200 2 - 9.389 ms
+info: 2024-02-01T19:24:03.008Z ::1 - GET /cosmetics-management/v1/productos HTTP/1.1 200 332 - 5.774 ms
+info: 2024-02-01T19:24:08.606Z Buscando productos en la categoría: Shampoo
+info: 2024-02-01T19:24:08.611Z Productos encontrados en la categoría 'Shampoo': {"0":{"_id":"65bbdafd0e0c28fb35ed5f09","categoria":"Shampoo","comentarios":[],"dueño":"carlos2","moneda":"USD","nombre":"Cola de caballo","precio":29.99,"stock":10},"1":{"_id":"65bbdb150e0c28fb35ed5f0d","categoria":"Shampoo","comentarios":[],"dueño":"carlos2","moneda":"USD","nombre":"De Linaza con manzanilla","precio":29.99,"stock":10}}
+info: 2024-02-01T19:24:08.613Z ::1 - GET /cosmetics-management/v1/productos/categoria/Shampoo HTTP/1.1 200 332 - 7.380 ms
+info: 2024-02-01T19:24:21.301Z Buscando productos del usuario: carlos2
+info: 2024-02-01T19:24:21.304Z Productos encontrados del usuario 'carlos2': {"0":{"_id":"65bbdafd0e0c28fb35ed5f09","categoria":"Shampoo","comentarios":[],"dueño":"carlos2","moneda":"USD","nombre":"Cola de caballo","precio":29.99,"stock":10},"1":{"_id":"65bbdb150e0c28fb35ed5f0d","categoria":"Shampoo","comentarios":[],"dueño":"carlos2","moneda":"USD","nombre":"De Linaza con manzanilla","precio":29.99,"stock":10}}
+info: 2024-02-01T19:24:21.305Z ::1 - GET /cosmetics-management/v1/productos/usuario/carlos2 HTTP/1.1 200 332 - 4.050 ms
+info: 2024-02-01T19:24:30.141Z Buscando productos del usuario: carlos2
+info: 2024-02-01T19:24:30.145Z Productos encontrados del usuario 'carlos2': {"0":{"_id":"65bbdafd0e0c28fb35ed5f09","categoria":"Shampoo","comentarios":[],"dueño":"carlos2","moneda":"USD","nombre":"Cola de caballo","precio":29.99,"stock":10},"1":{"_id":"65bbdb150e0c28fb35ed5f0d","categoria":"Shampoo","comentarios":[],"dueño":"carlos2","moneda":"USD","nombre":"De Linaza con manzanilla","precio":29.99,"stock":10}}
+info: 2024-02-01T19:24:30.146Z ::1 - GET /cosmetics-management/v1/productos/usuario/carlos2 HTTP/1.1 200 332 - 4.632 ms
+info: 2024-02-01T19:25:44.154Z Escuchando el puerto 3000.
+info: 2024-02-01T19:26:13.421Z Creando nueva categoría de producto: Perfumes de caballero
+info: 2024-02-01T19:26:13.438Z Categoría creada con éxito: {
+  nombre: 'Perfumes de caballero',
+  _id: new ObjectId('65bbf0559e40a21904c1730b'),
+  __v: 0
+}
+info: 2024-02-01T19:26:13.442Z ::1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 75 - 20.293 ms
+info: 2024-02-01T19:26:20.111Z Obteniendo todas las categorías de productos
+info: 2024-02-01T19:26:20.117Z Categorías obtenidas con éxito
+info: 2024-02-01T19:26:20.118Z ::1 - GET /cosmetics-management/v1/categorias HTTP/1.1 200 139 - 7.599 ms
+info: 2024-02-01T19:26:38.175Z Obteniendo categoría por ID: 65bbf0559e40a21904c1730b
+info: 2024-02-01T19:26:38.179Z Categoría obtenida con éxito: {
+  _id: new ObjectId('65bbf0559e40a21904c1730b'),
+  nombre: 'Perfumes de caballero',
+  __v: 0
+}
+info: 2024-02-01T19:26:38.180Z ::1 - GET /cosmetics-management/v1/categorias/65bbf0559e40a21904c1730b HTTP/1.1 200 75 - 4.644 ms
+info: 2024-02-01T19:38:00.258Z Obteniendo todas las categorías de productos
+info: 2024-02-01T19:38:00.261Z Categorías obtenidas con éxito
+info: 2024-02-01T19:38:00.261Z ::1 - GET /cosmetics-management/v1/categorias HTTP/1.1 200 139 - 3.146 ms
+info: 2024-02-01T19:38:10.748Z Buscando productos en la categoría: Shampoo
+info: 2024-02-01T19:38:10.752Z Productos encontrados en la categoría 'Shampoo': {"0":{"_id":"65bbdafd0e0c28fb35ed5f09","categoria":"Shampoo","comentarios":[],"dueño":"carlos2","moneda":"USD","nombre":"Cola de caballo","precio":29.99,"stock":10},"1":{"_id":"65bbdb150e0c28fb35ed5f0d","categoria":"Shampoo","comentarios":[],"dueño":"carlos2","moneda":"USD","nombre":"De Linaza con manzanilla","precio":29.99,"stock":10}}
+info: 2024-02-01T19:38:10.753Z ::1 - GET /cosmetics-management/v1/productos/categoria/Shampoo HTTP/1.1 200 332 - 4.911 ms
+info: 2024-02-01T19:38:22.917Z Buscando productos del usuario: carlos2
+info: 2024-02-01T19:38:22.919Z Productos encontrados del usuario 'carlos2': {"0":{"_id":"65bbdafd0e0c28fb35ed5f09","categoria":"Shampoo","comentarios":[],"dueño":"carlos2","moneda":"USD","nombre":"Cola de caballo","precio":29.99,"stock":10},"1":{"_id":"65bbdb150e0c28fb35ed5f0d","categoria":"Shampoo","comentarios":[],"dueño":"carlos2","moneda":"USD","nombre":"De Linaza con manzanilla","precio":29.99,"stock":10}}
+info: 2024-02-01T19:38:22.920Z ::1 - GET /cosmetics-management/v1/productos/usuario/carlos2 HTTP/1.1 200 332 - 3.463 ms
+info: 2024-02-01T19:38:44.193Z ::1 - GET /cosmetics-management/v1/ventas HTTP/1.1 200 2 - 1.581 ms
+info: 2024-02-01T19:38:52.833Z ::1 - GET /cosmetics-management/v1/productos HTTP/1.1 200 332 - 2.647 ms
+info: 2024-02-01T19:39:00.705Z ::1 - POST /cosmetics-management/v1/ventas/vender/65bbdb150e0c28fb35ed5f0d HTTP/1.1 401 - - 4.444 ms
+info: 2024-02-01T19:39:15.133Z ::1 - POST /cosmetics-management/v1/ventas/vender/65bbdb150e0c28fb35ed5f0d HTTP/1.1 401 - - 1.222 ms
+info: 2024-02-01T19:39:23.488Z ::1 - POST /cosmetics-management/v1/ventas/vender/65bbdb150e0c28fb35ed5f0d HTTP/1.1 401 - - 1.070 ms
+info: 2024-02-01T19:39:28.317Z ::1 - GET /cosmetics-management/v1/productos HTTP/1.1 200 332 - 2.270 ms
+info: 2024-02-01T19:39:35.357Z ::1 - POST /cosmetics-management/v1/ventas/vender/65bbdafd0e0c28fb35ed5f09 HTTP/1.1 401 - - 1.691 ms
+info: 2024-02-01T19:39:41.946Z ::1 - POST /cosmetics-management/v1/ventas/vender/65bbdafd0e0c28fb35ed5f09 HTTP/1.1 401 - - 1.293 ms
+info: 2024-02-01T19:39:45.151Z Usuario carlos2 completo autenticación exitosamente.
+info: 2024-02-01T19:39:45.152Z ::1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 102.779 ms
+info: 2024-02-01T19:39:54.537Z Usuario carlos2 esta autenticado
+info: 2024-02-01T19:39:54.553Z Venta realizada - Usuario: [carlos2], Producto: [65bbdafd0e0c28fb35ed5f09], Comprador: [Felipe], Cantidad: [1]
+info: 2024-02-01T19:39:54.554Z ::1 - POST /cosmetics-management/v1/ventas/vender/65bbdafd0e0c28fb35ed5f09 HTTP/1.1 200 276 - 21.908 ms
+info: 2024-02-01T20:40:17.582Z Escuchando el puerto 3000.
+info: 2024-02-01T20:40:25.610Z Escuchando el puerto 3000.
+info: 2024-02-01T20:40:44.511Z Escuchando el puerto 3000.
+error: 2024-02-01T20:40:46.651Z uncaughtException: Unexpected token 'const'
+D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\ventasDeProducto\ventas.routes.js:5
+const log = require("../../../utils/logger");
+^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\index.js:13:22)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14) {"date":"Thu Feb 01 2024 14:40:46 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":13315.296},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"],"cwd":"D:\\Proyectos\\Api_Venta_De_Cosmeticos","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262464,"external":20636094,"heapTotal":30568448,"heapUsed":17180976,"rss":55754752},"pid":4764,"uid":null,"version":"v20.10.0"},"stack":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventas.routes.js:5\nconst log = require(\"../../../utils/logger\");\n^^^^^\n\nSyntaxError: Unexpected token 'const'\n    at internalCompileFunction (node:internal/vm:77:18)\n    at wrapSafe (node:internal/modules/cjs/loader:1288:20)\n    at Module._compile (node:internal/modules/cjs/loader:1340:27)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js:13:22)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)","trace":[{"column":18,"file":"node:internal/vm","function":"internalCompileFunction","line":77,"method":null,"native":false},{"column":20,"file":"node:internal/modules/cjs/loader","function":"wrapSafe","line":1288,"method":null,"native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1340,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":22,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js","function":null,"line":13,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false}]}
+error: 2024-02-01T20:40:48.741Z uncaughtException: Missing initializer in const declaration
+D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\ventasDeProducto\ventas.routes.js:4
+const de
+      ^^
+
+SyntaxError: Missing initializer in const declaration
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\index.js:13:22)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14) {"date":"Thu Feb 01 2024 14:40:48 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":13317.39},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"],"cwd":"D:\\Proyectos\\Api_Venta_De_Cosmeticos","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262464,"external":20636094,"heapTotal":30568448,"heapUsed":17309292,"rss":55529472},"pid":11064,"uid":null,"version":"v20.10.0"},"stack":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventas.routes.js:4\nconst de\n      ^^\n\nSyntaxError: Missing initializer in const declaration\n    at internalCompileFunction (node:internal/vm:77:18)\n    at wrapSafe (node:internal/modules/cjs/loader:1288:20)\n    at Module._compile (node:internal/modules/cjs/loader:1340:27)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js:13:22)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)","trace":[{"column":18,"file":"node:internal/vm","function":"internalCompileFunction","line":77,"method":null,"native":false},{"column":20,"file":"node:internal/modules/cjs/loader","function":"wrapSafe","line":1288,"method":null,"native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1340,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":22,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js","function":null,"line":13,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false}]}
+error: 2024-02-01T20:40:53.478Z uncaughtException: Missing initializer in const declaration
+D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\ventasDeProducto\ventas.routes.js:4
+const DetalleVenta
+      ^^^^^^^^^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\index.js:13:22)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14) {"date":"Thu Feb 01 2024 14:40:53 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":13322.125},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"],"cwd":"D:\\Proyectos\\Api_Venta_De_Cosmeticos","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262464,"external":20636094,"heapTotal":30830592,"heapUsed":17330068,"rss":55226368},"pid":11000,"uid":null,"version":"v20.10.0"},"stack":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventas.routes.js:4\nconst DetalleVenta\n      ^^^^^^^^^^^^\n\nSyntaxError: Missing initializer in const declaration\n    at internalCompileFunction (node:internal/vm:77:18)\n    at wrapSafe (node:internal/modules/cjs/loader:1288:20)\n    at Module._compile (node:internal/modules/cjs/loader:1340:27)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js:13:22)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)","trace":[{"column":18,"file":"node:internal/vm","function":"internalCompileFunction","line":77,"method":null,"native":false},{"column":20,"file":"node:internal/modules/cjs/loader","function":"wrapSafe","line":1288,"method":null,"native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1340,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":22,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js","function":null,"line":13,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false}]}
+info: 2024-02-01T20:40:55.443Z Escuchando el puerto 3000.
+error: 2024-02-01T20:40:57.198Z uncaughtException: Cannot find module './dventas.model'
+Require stack:
+- D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\ventasDeProducto\ventas.routes.js
+- D:\Proyectos\Api_Venta_De_Cosmeticos\index.js
+Error: Cannot find module './dventas.model'
+Require stack:
+- D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\ventasDeProducto\ventas.routes.js
+- D:\Proyectos\Api_Venta_De_Cosmeticos\index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\ventasDeProducto\ventas.routes.js:4:22)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19) {"date":"Thu Feb 01 2024 14:40:57 GMT-0600 (hora estándar central)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventas.routes.js","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":13325.843},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"],"cwd":"D:\\Proyectos\\Api_Venta_De_Cosmeticos","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262464,"external":20636094,"heapTotal":30830592,"heapUsed":17263040,"rss":55590912},"pid":9840,"uid":null,"version":"v20.10.0"},"stack":"Error: Cannot find module './dventas.model'\nRequire stack:\n- D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventas.routes.js\n- D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)\n    at Module._load (node:internal/modules/cjs/loader:985:27)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventas.routes.js:4:22)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Module._resolveFilename","line":1144,"method":"_resolveFilename","native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":985,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":22,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventas.routes.js","function":null,"line":4,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false}]}
+error: 2024-02-01T20:41:01.463Z uncaughtException: Cannot find module './detalle.model'
+Require stack:
+- D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\ventasDeProducto\ventas.routes.js
+- D:\Proyectos\Api_Venta_De_Cosmeticos\index.js
+Error: Cannot find module './detalle.model'
+Require stack:
+- D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\ventasDeProducto\ventas.routes.js
+- D:\Proyectos\Api_Venta_De_Cosmeticos\index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\ventasDeProducto\ventas.routes.js:4:22)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19) {"date":"Thu Feb 01 2024 14:41:01 GMT-0600 (hora estándar central)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventas.routes.js","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":13330.109},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"],"cwd":"D:\\Proyectos\\Api_Venta_De_Cosmeticos","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262455,"external":20636170,"heapTotal":31354880,"heapUsed":16315028,"rss":55513088},"pid":8852,"uid":null,"version":"v20.10.0"},"stack":"Error: Cannot find module './detalle.model'\nRequire stack:\n- D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventas.routes.js\n- D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)\n    at Module._load (node:internal/modules/cjs/loader:985:27)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventas.routes.js:4:22)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Module._resolveFilename","line":1144,"method":"_resolveFilename","native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":985,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":22,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventas.routes.js","function":null,"line":4,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false}]}
+error: 2024-02-01T20:41:04.128Z uncaughtException: mongoose is not defined
+ReferenceError: mongoose is not defined
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\ventasDeProducto\detalleVenta.model.js:1:28)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\ventasDeProducto\ventas.routes.js:4:22)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10) {"date":"Thu Feb 01 2024 14:41:04 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":13332.781},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"],"cwd":"D:\\Proyectos\\Api_Venta_De_Cosmeticos","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262464,"external":20636094,"heapTotal":30568448,"heapUsed":17386824,"rss":55685120},"pid":2528,"uid":null,"version":"v20.10.0"},"stack":"ReferenceError: mongoose is not defined\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\detalleVenta.model.js:1:28)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventas.routes.js:4:22)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)","trace":[{"column":28,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\detalleVenta.model.js","function":null,"line":1,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":22,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventas.routes.js","function":null,"line":4,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false}]}
+info: 2024-02-01T20:42:47.971Z Escuchando el puerto 3000.
+info: 2024-02-01T20:42:52.217Z Escuchando el puerto 3000.
+info: 2024-02-01T21:02:49.616Z Escuchando el puerto 3000.
+info: 2024-02-01T21:03:09.911Z Escuchando el puerto 3000.
+info: 2024-02-01T21:03:27.354Z Escuchando el puerto 3000.
+info: 2024-02-01T21:03:49.941Z ::1 - POST /cosmetics-management/v1/ventas/vender/65bbdafd0e0c28fb35ed5f09 HTTP/1.1 401 - - 4.807 ms
+info: 2024-02-01T21:03:54.301Z Usuario carlos2 completo autenticación exitosamente.
+info: 2024-02-01T21:03:54.303Z ::1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 106.209 ms
+info: 2024-02-01T21:04:00.872Z Usuario carlos2 esta autenticado
+info: 2024-02-01T21:04:00.896Z Venta realizada - Usuario: [carlos2], Producto: [65bbdafd0e0c28fb35ed5f09], Comprador: [Felipe], Cantidad: [1]
+info: 2024-02-01T21:04:00.898Z ::1 - POST /cosmetics-management/v1/ventas/vender/65bbdafd0e0c28fb35ed5f09 HTTP/1.1 200 254 - 28.579 ms
+info: 2024-02-01T21:04:09.910Z ::1 - GET /cosmetics-management/v1/ventas HTTP/1.1 500 1309 - 0.943 ms
+info: 2024-02-01T21:04:23.793Z Escuchando el puerto 3000.
+info: 2024-02-01T21:04:25.475Z ::1 - GET /cosmetics-management/v1/ventas HTTP/1.1 200 376 - 28.363 ms
+info: 2024-02-01T21:42:42.923Z ::1 - GET /cosmetics-management/v1/ventas HTTP/1.1 200 376 - 5.522 ms
+info: 2024-02-02T00:52:00.187Z Escuchando el puerto 3000.
+info: 2024-02-02T00:56:26.266Z Escuchando el puerto 3000.
+info: 2024-02-02T00:56:43.339Z Escuchando el puerto 3000.
+info: 2024-02-02T00:58:06.649Z Usuario carlos2 completo autenticación exitosamente.
+info: 2024-02-02T00:58:06.652Z ::1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 114.582 ms
+info: 2024-02-02T00:58:11.998Z ::1 - GET /cosmetics-management/v1/productos HTTP/1.1 200 331 - 7.171 ms
+info: 2024-02-02T00:59:13.170Z ::1 - GET /cosmetics-management/v1/ventas/vender-automatico/65bbdb150e0c28fb35ed5f0d/2/carlos2/Peter HTTP/1.1 404 228 - 1.501 ms
+info: 2024-02-02T00:59:16.904Z Usuario carlos2 esta autenticado
+info: 2024-02-02T00:59:16.929Z Venta automática realizada - Producto: [65bbdb150e0c28fb35ed5f0d], Cantidad: [2], Vendedor: [carlos2], Comprador: [Peter]
+info: 2024-02-02T00:59:16.930Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico/65bbdb150e0c28fb35ed5f0d/2/carlos2/Peter HTTP/1.1 200 265 - 35.025 ms
+info: 2024-02-02T01:00:54.707Z Escuchando el puerto 3000.
+info: 2024-02-02T01:00:56.022Z Escuchando el puerto 3000.
+info: 2024-02-02T01:01:07.886Z Escuchando el puerto 3000.
+info: 2024-02-02T01:02:03.410Z ::1 - GET /cosmetics-management/v1/productos HTTP/1.1 200 330 - 11.790 ms
+info: 2024-02-02T01:02:15.057Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico/65bbdb150e0c28fb35ed5f0d/2/carlos2/Peter HTTP/1.1 404 229 - 1.016 ms
+info: 2024-02-02T01:02:32.018Z Usuario carlos2 esta autenticado
+error: 2024-02-02T01:02:32.019Z Error al realizar la venta automática - Vendedor: [carlos2], Comprador: [Felipe] - Error: Cannot access 'productosAVender' before initialization
+info: 2024-02-02T01:02:32.021Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 500 1294 - 9.101 ms
+error: 2024-02-02T01:02:58.556Z uncaughtException: Identifier 'nombreComprador' has already been declared
+D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\ventasDeProducto\ventas.routes.js:62
+    const nombreComprador = req.body.nombreComprador;
+          ^
+
+SyntaxError: Identifier 'nombreComprador' has already been declared
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\index.js:13:22)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14) {"date":"Thu Feb 01 2024 19:02:58 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":2621.203},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"],"cwd":"D:\\Proyectos\\Api_Venta_De_Cosmeticos","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262464,"external":20636094,"heapTotal":30830592,"heapUsed":17348244,"rss":56197120},"pid":3144,"uid":null,"version":"v20.10.0"},"stack":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventas.routes.js:62\n    const nombreComprador = req.body.nombreComprador;\n          ^\n\nSyntaxError: Identifier 'nombreComprador' has already been declared\n    at internalCompileFunction (node:internal/vm:77:18)\n    at wrapSafe (node:internal/modules/cjs/loader:1288:20)\n    at Module._compile (node:internal/modules/cjs/loader:1340:27)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js:13:22)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)","trace":[{"column":18,"file":"node:internal/vm","function":"internalCompileFunction","line":77,"method":null,"native":false},{"column":20,"file":"node:internal/modules/cjs/loader","function":"wrapSafe","line":1288,"method":null,"native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1340,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":22,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js","function":null,"line":13,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false}]}
+info: 2024-02-02T01:03:00.382Z Escuchando el puerto 3000.
+info: 2024-02-02T01:03:33.989Z Escuchando el puerto 3000.
+info: 2024-02-02T01:03:35.156Z Usuario carlos2 esta autenticado
+error: 2024-02-02T01:03:35.182Z Error al realizar la venta automática - Vendedor: [carlos2], Comprador: [Felipe] - Error: productoAVender is not defined
+info: 2024-02-02T01:03:35.188Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 500 589 - 47.831 ms
+info: 2024-02-02T01:04:26.916Z Escuchando el puerto 3000.
+info: 2024-02-02T01:04:33.104Z Usuario carlos2 esta autenticado
+info: 2024-02-02T01:04:33.135Z Venta automática realizada - Vendedor: [carlos2], Comprador: [Felipe]
+info: 2024-02-02T01:04:33.139Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 200 383 - 45.608 ms
+info: 2024-02-02T01:05:25.575Z Escuchando el puerto 3000.
+info: 2024-02-02T01:05:26.395Z Usuario carlos2 esta autenticado
+info: 2024-02-02T01:05:26.425Z Venta automática realizada - Vendedor: [carlos2], Comprador: [Felipe]
+info: 2024-02-02T01:05:26.430Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 200 383 - 44.116 ms
+info: 2024-02-02T01:05:47.163Z Escuchando el puerto 3000.
+info: 2024-02-02T01:05:47.990Z Usuario carlos2 esta autenticado
+info: 2024-02-02T01:05:48.020Z Venta automática realizada - Vendedor: [carlos2], Comprador: [Felipe]
+info: 2024-02-02T01:05:48.024Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 200 386 - 43.751 ms
+info: 2024-02-02T01:05:52.298Z Escuchando el puerto 3000.
+info: 2024-02-02T01:06:35.979Z Escuchando el puerto 3000.
+info: 2024-02-02T01:06:37.477Z Escuchando el puerto 3000.
+info: 2024-02-02T01:06:37.629Z Usuario carlos2 esta autenticado
+error: 2024-02-02T01:06:37.636Z Error al realizar la venta automática - Vendedor: [carlos2], Comprador: [Felipe] - Error: No hay suficiente stock disponible para vender 2 unidades del producto con id [65bbdafd0e0c28fb35ed5f09].
+info: 2024-02-02T01:06:37.643Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 500 585 - 22.005 ms
+info: 2024-02-02T01:06:44.215Z ::1 - GET /cosmetics-management/v1/productos HTTP/1.1 200 330 - 3.378 ms
+info: 2024-02-02T01:07:22.158Z ::1 - PUT /cosmetics-management/v1/productos/65bbdafd0e0c28fb35ed5f09 HTTP/1.1 401 - - 1.649 ms
+info: 2024-02-02T01:07:36.187Z Usuario carlos2 esta autenticado
+info: 2024-02-02T01:07:36.191Z ::1 - PUT /cosmetics-management/v1/productos/65bbdafd0e0c28fb35ed5f09 HTTP/1.1 500 1298 - 6.934 ms
+info: 2024-02-02T01:07:56.151Z Usuario carlos2 esta autenticado
+info: 2024-02-02T01:07:56.153Z ::1 - PUT /cosmetics-management/v1/productos/65bbdafd0e0c28fb35ed5f09 HTTP/1.1 500 1298 - 5.587 ms
+error: 2024-02-02T01:09:01.496Z uncaughtException: productoAReemplazar is not defined
+ReferenceError: productoAReemplazar is not defined
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\productos\productos.controller.js:27:1)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\productos\productos.routes.js:6:28)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10) {"date":"Thu Feb 01 2024 19:09:01 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":2984.14},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"],"cwd":"D:\\Proyectos\\Api_Venta_De_Cosmeticos","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262455,"external":21062077,"heapTotal":29896704,"heapUsed":13722876,"rss":53207040},"pid":5044,"uid":null,"version":"v20.10.0"},"stack":"ReferenceError: productoAReemplazar is not defined\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.controller.js:27:1)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js:6:28)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)","trace":[{"column":1,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.controller.js","function":null,"line":27,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":28,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js","function":null,"line":6,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false}]}
+info: 2024-02-02T01:09:02.713Z Escuchando el puerto 3000.
+info: 2024-02-02T01:10:50.756Z Usuario carlos2 esta autenticado
+info: 2024-02-02T01:10:50.763Z ::1 - PUT /cosmetics-management/v1/productos/65bbdafd0e0c28fb35ed5f09 HTTP/1.1 500 1298 - 17.580 ms
+info: 2024-02-02T01:10:56.967Z Usuario carlos2 esta autenticado
+info: 2024-02-02T01:10:56.969Z ::1 - PUT /cosmetics-management/v1/productos/65bbdafd0e0c28fb35ed5f09 HTTP/1.1 500 1298 - 4.598 ms
+info: 2024-02-02T01:11:56.702Z Escuchando el puerto 3000.
+info: 2024-02-02T01:11:57.932Z Escuchando el puerto 3000.
+info: 2024-02-02T01:11:58.291Z Usuario carlos2 esta autenticado
+info: 2024-02-02T01:11:58.298Z ::1 - PUT /cosmetics-management/v1/productos/65bbdafd0e0c28fb35ed5f09 HTTP/1.1 500 1298 - 24.319 ms
+info: 2024-02-02T01:12:02.744Z Escuchando el puerto 3000.
+info: 2024-02-02T01:12:53.139Z Usuario carlos2 esta autenticado
+info: 2024-02-02T01:12:53.148Z ::1 - PUT /cosmetics-management/v1/productos/65bbdafd0e0c28fb35ed5f09 HTTP/1.1 500 1298 - 18.467 ms
+info: 2024-02-02T01:13:39.326Z Escuchando el puerto 3000.
+info: 2024-02-02T01:13:41.156Z Escuchando el puerto 3000.
+info: 2024-02-02T01:13:42.644Z Usuario carlos2 esta autenticado
+warn: 2024-02-02T01:13:42.649Z El producto en el body no cumple con el formato requerido. Detalles: ["categoria" is required]
+info: 2024-02-02T01:13:42.656Z ::1 - PUT /cosmetics-management/v1/productos/65bbdafd0e0c28fb35ed5f09 HTTP/1.1 400 100 - 23.918 ms
+info: 2024-02-02T01:13:59.522Z ::1 - POST /cosmetics-management/v1/productos HTTP/1.1 401 - - 1.487 ms
+info: 2024-02-02T01:14:11.501Z Usuario carlos2 esta autenticado
+info: 2024-02-02T01:14:11.521Z Producto agregado a la colección productos {"$__":{"$versionError":null,"activePaths":{"paths":{"categoria":"require","dueño":"require","moneda":"require","nombre":"require","precio":"require","stock":"require"},"states":{"default":{},"modify":{},"require":{"categoria":true,"dueño":true,"moneda":true,"nombre":true,"precio":true,"stock":true}}},"backup":{"activePaths":{"default":{"_id":true,"comentarios":true},"modify":{"categoria":true,"dueño":true,"moneda":true,"nombre":true,"precio":true,"stock":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"65bc41e35c1d31fb97f30855","categoria":"Shampoo","comentarios":[],"dueño":"carlos2","moneda":"USD","nombre":"Zapote con sabila","precio":29.99,"stock":10}}
+info: 2024-02-02T01:14:11.522Z ::1 - POST /cosmetics-management/v1/productos HTTP/1.1 201 170 - 24.739 ms
+info: 2024-02-02T01:14:14.271Z ::1 - GET /cosmetics-management/v1/productos HTTP/1.1 200 493 - 5.346 ms
+info: 2024-02-02T01:14:39.385Z Usuario carlos2 esta autenticado
+info: 2024-02-02T01:14:39.392Z Producto con id [65bbdafd0e0c28fb35ed5f09] reemplazado con nuevo producto {"$__":{"activePaths":{"paths":{"_id":"init","categoria":"init","comentarios":"init","dueño":"init","moneda":"init","nombre":"init","precio":"init","stock":"init"},"states":{"init":{"_id":true,"categoria":true,"comentarios":true,"dueño":true,"moneda":true,"nombre":true,"precio":true,"stock":true},"require":{}}},"exclude":true,"selected":{"__v":0},"skipId":true},"$isNew":false,"_doc":{"_id":"65bbdafd0e0c28fb35ed5f09","categoria":"Shampoo","comentarios":[],"dueño":"carlos2","moneda":"USD","nombre":"Nuevo nombre del producto","precio":123.45,"stock":10}}
+info: 2024-02-02T01:14:39.393Z ::1 - PUT /cosmetics-management/v1/productos/65bbdafd0e0c28fb35ed5f09 HTTP/1.1 200 171 - 10.323 ms
+info: 2024-02-02T01:14:56.631Z Usuario carlos2 esta autenticado
+info: 2024-02-02T01:14:56.654Z Venta automática realizada - Vendedor: [carlos2], Comprador: [Felipe]
+info: 2024-02-02T01:14:56.655Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 200 383 - 26.780 ms
+info: 2024-02-02T01:16:31.600Z Escuchando el puerto 3000.
+info: 2024-02-02T01:16:32.151Z Usuario carlos2 esta autenticado
+info: 2024-02-02T01:16:32.184Z Venta automática realizada - Vendedor: [carlos2], Comprador: [Felipe]
+info: 2024-02-02T01:16:32.189Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 200 386 - 49.987 ms
+info: 2024-02-02T01:16:58.792Z Escuchando el puerto 3000.
+info: 2024-02-02T01:16:59.136Z Usuario carlos2 esta autenticado
+info: 2024-02-02T01:16:59.165Z Venta automática realizada - Vendedor: [carlos2], Comprador: [Felipe]
+info: 2024-02-02T01:16:59.170Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 200 367 - 43.401 ms
+info: 2024-02-02T01:17:08.751Z Escuchando el puerto 3000.
+info: 2024-02-02T01:17:58.940Z Escuchando el puerto 3000.
+info: 2024-02-02T01:17:59.964Z Usuario carlos2 esta autenticado
+info: 2024-02-02T01:17:59.996Z Venta automática realizada - Vendedor: [carlos2], Comprador: [Felipe]
+info: 2024-02-02T01:18:00.002Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 200 386 - 48.377 ms
+error: 2024-02-02T01:19:33.446Z uncaughtException: Identifier 'nuevaOrdenVenta' has already been declared
+D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\ventasDeProducto\ventas.controller.js:121
+    const nuevaOrdenVenta = new OrdenVenta({
+          ^
+
+SyntaxError: Identifier 'nuevaOrdenVenta' has already been declared
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\ventasDeProducto\ventas.routes.js:3:26)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14) {"date":"Thu Feb 01 2024 19:19:33 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":3616.093},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"],"cwd":"D:\\Proyectos\\Api_Venta_De_Cosmeticos","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262464,"external":20636094,"heapTotal":30830592,"heapUsed":17255248,"rss":55558144},"pid":9236,"uid":null,"version":"v20.10.0"},"stack":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventas.controller.js:121\n    const nuevaOrdenVenta = new OrdenVenta({\n          ^\n\nSyntaxError: Identifier 'nuevaOrdenVenta' has already been declared\n    at internalCompileFunction (node:internal/vm:77:18)\n    at wrapSafe (node:internal/modules/cjs/loader:1288:20)\n    at Module._compile (node:internal/modules/cjs/loader:1340:27)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventas.routes.js:3:26)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)","trace":[{"column":18,"file":"node:internal/vm","function":"internalCompileFunction","line":77,"method":null,"native":false},{"column":20,"file":"node:internal/modules/cjs/loader","function":"wrapSafe","line":1288,"method":null,"native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1340,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":26,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventas.routes.js","function":null,"line":3,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false}]}
+info: 2024-02-02T01:19:38.827Z Escuchando el puerto 3000.
+info: 2024-02-02T01:19:41.575Z Escuchando el puerto 3000.
+info: 2024-02-02T01:19:42.388Z Usuario carlos2 esta autenticado
+error: 2024-02-02T01:19:42.397Z Error al realizar la venta automática - Vendedor: [carlos2], Comprador: [Felipe] - Error: No hay suficiente stock disponible para vender 1 unidades del producto con id [65bbdb150e0c28fb35ed5f0d].
+info: 2024-02-02T01:19:42.403Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 500 585 - 31.289 ms
+info: 2024-02-02T01:19:48.725Z ::1 - GET /cosmetics-management/v1/productos HTTP/1.1 200 504 - 3.430 ms
+info: 2024-02-02T01:19:58.640Z Usuario carlos2 esta autenticado
+error: 2024-02-02T01:19:58.663Z Error al realizar la venta automática - Vendedor: [carlos2], Comprador: [Felipe] - Error: detalles is not defined
+info: 2024-02-02T01:19:58.665Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 500 431 - 28.684 ms
+info: 2024-02-02T01:21:31.123Z Escuchando el puerto 3000.
+info: 2024-02-02T01:21:32.961Z Usuario carlos2 esta autenticado
+info: 2024-02-02T01:21:32.997Z Venta automática realizada - Vendedor: [carlos2], Comprador: [Felipe]
+info: 2024-02-02T01:21:33.004Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 200 174 - 60.059 ms
+info: 2024-02-02T01:22:13.008Z Escuchando el puerto 3000.
+info: 2024-02-02T01:22:13.380Z Usuario carlos2 esta autenticado
+info: 2024-02-02T01:22:13.411Z Venta automática realizada - Vendedor: [carlos2], Comprador: [Felipe]
+info: 2024-02-02T01:22:13.416Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 200 174 - 47.072 ms
+info: 2024-02-02T01:22:23.371Z Escuchando el puerto 3000.
+info: 2024-02-02T01:22:24.938Z Usuario carlos2 esta autenticado
+error: 2024-02-02T01:22:24.962Z Error al realizar la venta automática - Vendedor: [carlos2], Comprador: [Felipe] - Error: detalles is not defined
+info: 2024-02-02T01:22:24.968Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 500 431 - 40.804 ms
+info: 2024-02-02T01:22:28.425Z Escuchando el puerto 3000.
+info: 2024-02-02T01:22:33.689Z Escuchando el puerto 3000.
+info: 2024-02-02T01:22:35.722Z Usuario carlos2 esta autenticado
+info: 2024-02-02T01:22:35.757Z Venta automática realizada - Vendedor: [carlos2], Comprador: [Felipe]
+info: 2024-02-02T01:22:35.761Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 200 386 - 49.123 ms
+info: 2024-02-02T01:25:50.312Z Escuchando el puerto 3000.
+error: 2024-02-02T01:25:54.077Z uncaughtException: Unexpected end of input
+D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\ventasDeProducto\ventas.controller.js:137
+  
+  
+
+SyntaxError: Unexpected end of input
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\ventasDeProducto\ventas.routes.js:3:26)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14) {"date":"Thu Feb 01 2024 19:25:54 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":3996.734},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"],"cwd":"D:\\Proyectos\\Api_Venta_De_Cosmeticos","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262464,"external":20636094,"heapTotal":30568448,"heapUsed":17274244,"rss":55828480},"pid":9536,"uid":null,"version":"v20.10.0"},"stack":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventas.controller.js:137\n  \n  \n\nSyntaxError: Unexpected end of input\n    at internalCompileFunction (node:internal/vm:77:18)\n    at wrapSafe (node:internal/modules/cjs/loader:1288:20)\n    at Module._compile (node:internal/modules/cjs/loader:1340:27)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventas.routes.js:3:26)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)","trace":[{"column":18,"file":"node:internal/vm","function":"internalCompileFunction","line":77,"method":null,"native":false},{"column":20,"file":"node:internal/modules/cjs/loader","function":"wrapSafe","line":1288,"method":null,"native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1340,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":26,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventas.routes.js","function":null,"line":3,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false}]}
+info: 2024-02-02T01:25:55.195Z Escuchando el puerto 3000.
+info: 2024-02-02T01:25:56.260Z Escuchando el puerto 3000.
+info: 2024-02-02T01:26:00.892Z Usuario carlos2 esta autenticado
+info: 2024-02-02T01:26:00.922Z Venta automática realizada - Vendedor: [carlos2], Comprador: [Felipe]
+info: 2024-02-02T01:26:00.926Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 200 383 - 44.724 ms
+info: 2024-02-02T01:26:45.193Z Escuchando el puerto 3000.
+info: 2024-02-02T01:26:46.023Z Usuario carlos2 esta autenticado
+error: 2024-02-02T01:26:46.029Z Error al realizar la venta automática - Vendedor: [carlos2], Comprador: [Felipe] - Error: No hay suficiente stock disponible para vender 1 unidades del producto con id [65bbdafd0e0c28fb35ed5f09].
+info: 2024-02-02T01:26:46.035Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 500 585 - 24.110 ms
+info: 2024-02-02T01:26:58.482Z ::1 - GET /cosmetics-management/v1/productos HTTP/1.1 200 503 - 4.170 ms
+info: 2024-02-02T01:27:16.159Z Usuario carlos2 esta autenticado
+info: 2024-02-02T01:27:16.163Z Producto con id [65bbdb150e0c28fb35ed5f0d] fue borrado
+info: 2024-02-02T01:27:16.164Z ::1 - DELETE /cosmetics-management/v1/productos/65bbdb150e0c28fb35ed5f0d HTTP/1.1 200 168 - 8.174 ms
+info: 2024-02-02T01:27:19.753Z ::1 - GET /cosmetics-management/v1/productos HTTP/1.1 200 334 - 3.130 ms
+info: 2024-02-02T01:27:25.757Z Usuario carlos2 esta autenticado
+info: 2024-02-02T01:27:25.761Z Producto con id [65bbdafd0e0c28fb35ed5f09] fue borrado
+info: 2024-02-02T01:27:25.761Z ::1 - DELETE /cosmetics-management/v1/productos/65bbdafd0e0c28fb35ed5f09 HTTP/1.1 200 170 - 6.403 ms
+info: 2024-02-02T01:27:29.278Z Usuario carlos2 esta autenticado
+info: 2024-02-02T01:27:29.294Z Producto agregado a la colección productos {"$__":{"$versionError":null,"activePaths":{"paths":{"categoria":"require","dueño":"require","moneda":"require","nombre":"require","precio":"require","stock":"require"},"states":{"default":{},"modify":{},"require":{"categoria":true,"dueño":true,"moneda":true,"nombre":true,"precio":true,"stock":true}}},"backup":{"activePaths":{"default":{"_id":true,"comentarios":true},"modify":{"categoria":true,"dueño":true,"moneda":true,"nombre":true,"precio":true,"stock":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"65bc4501d37ee743e5adf68d","categoria":"Shampoo","comentarios":[],"dueño":"carlos2","moneda":"USD","nombre":"Zapote con sabila","precio":29.99,"stock":10}}
+info: 2024-02-02T01:27:29.295Z ::1 - POST /cosmetics-management/v1/productos HTTP/1.1 201 170 - 21.052 ms
+info: 2024-02-02T01:27:38.303Z Usuario carlos2 esta autenticado
+info: 2024-02-02T01:27:38.329Z Venta automática realizada - Vendedor: [carlos2], Comprador: [Felipe]
+info: 2024-02-02T01:27:38.330Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 200 395 - 29.681 ms
+info: 2024-02-02T01:28:47.361Z Escuchando el puerto 3000.
+info: 2024-02-02T01:28:55.558Z Escuchando el puerto 3000.
+info: 2024-02-02T01:29:14.789Z Escuchando el puerto 3000.
+info: 2024-02-02T01:29:16.879Z Escuchando el puerto 3000.
+info: 2024-02-02T01:29:22.627Z Escuchando el puerto 3000.
+info: 2024-02-02T01:29:27.458Z Escuchando el puerto 3000.
+info: 2024-02-02T01:29:40.991Z Escuchando el puerto 3000.
+info: 2024-02-02T01:29:55.180Z Usuario carlos2 esta autenticado
+info: 2024-02-02T01:29:55.214Z Venta automática realizada - Vendedor: [carlos2], Comprador: [Felipe]
+info: 2024-02-02T01:29:55.219Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 200 396 - 49.755 ms
+info: 2024-02-02T01:31:49.949Z ::1 - GET /cosmetics-management/v1/ventas HTTP/1.1 200 4955 - 20.501 ms
+info: 2024-02-02T01:33:31.541Z ::1 - GET /cosmetics-management/v1/ventas HTTP/1.1 200 2 - 1.569 ms
+info: 2024-02-02T01:33:34.880Z Usuario carlos2 esta autenticado
+info: 2024-02-02T01:33:34.908Z Venta automática realizada - Vendedor: [carlos2], Comprador: [Felipe]
+info: 2024-02-02T01:33:34.909Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 200 396 - 31.258 ms
+info: 2024-02-02T02:03:59.430Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 401 - - 1.255 ms
+info: 2024-02-02T02:04:03.105Z Usuario carlos2 completo autenticación exitosamente.
+info: 2024-02-02T02:04:03.106Z ::1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 99.586 ms
+info: 2024-02-02T02:04:15.348Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 401 - - 0.264 ms
+info: 2024-02-02T02:04:23.012Z Usuario carlos2 esta autenticado
+info: 2024-02-02T02:04:23.032Z Venta automática realizada - Vendedor: [carlos2], Comprador: [Felipe]
+info: 2024-02-02T02:04:23.034Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 200 395 - 23.796 ms
+info: 2024-02-02T02:16:19.150Z Escuchando el puerto 3000.
+info: 2024-02-02T02:16:23.831Z Usuario carlos2 esta autenticado
+error: 2024-02-02T02:16:23.846Z Error al realizar la venta automática - Vendedor: [carlos2], Comprador: [Felipe] - Error: OrdenVenta validation failed: comprador: Cast to string failed for value "{ nombre: 'Felipe', nit: undefined }" (type Object) at path "comprador"
+error: 2024-02-02T02:16:23.849Z Ocurrio un error relacionado a mongoose. OrdenVenta validation failed: comprador: Cast to string failed for value "{ nombre: 'Felipe', nit: undefined }" (type Object) at path "comprador" {"_message":"OrdenVenta validation failed","errors":{"comprador":{"kind":"string","message":"Cast to string failed for value \"{ nombre: 'Felipe', nit: undefined }\" (type Object) at path \"comprador\"","name":"CastError","path":"comprador","reason":null,"stringValue":"\"{ nombre: 'Felipe', nit: undefined }\"","value":{"nombre":"Felipe"},"valueType":"Object"}},"stack":"ValidationError: OrdenVenta validation failed: comprador: Cast to string failed for value \"{ nombre: 'Felipe', nit: undefined }\" (type Object) at path \"comprador\"\n    at Document.invalidate (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\node_modules\\mongoose\\lib\\document.js:3201:32)\n    at model.$set (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\node_modules\\mongoose\\lib\\document.js:1460:12)\n    at model.$set (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\node_modules\\mongoose\\lib\\document.js:1115:16)\n    at model.Document (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\node_modules\\mongoose\\lib\\document.js:166:12)\n    at model.Model (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\node_modules\\mongoose\\lib\\model.js:125:12)\n    at new model (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\node_modules\\mongoose\\lib\\model.js:4604:15)\n    at Object.realizarVentaAutomatica (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventas.controller.js:88:29)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventas.routes.js:66:9"}
+info: 2024-02-02T02:16:23.856Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 500 1288 - 34.151 ms
+info: 2024-02-02T02:16:32.335Z Escuchando el puerto 3000.
+error: 2024-02-02T02:18:25.339Z uncaughtException: ventasRouter is not defined
+ReferenceError: ventasRouter is not defined
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\ventasDeProducto\ventas.controller.js:158:1)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\ventasDeProducto\ventas.routes.js:3:26)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10) {"date":"Thu Feb 01 2024 20:18:25 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":7147.984},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"],"cwd":"D:\\Proyectos\\Api_Venta_De_Cosmeticos","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262464,"external":20636094,"heapTotal":30568448,"heapUsed":17487476,"rss":56156160},"pid":2420,"uid":null,"version":"v20.10.0"},"stack":"ReferenceError: ventasRouter is not defined\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventas.controller.js:158:1)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventas.routes.js:3:26)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)","trace":[{"column":1,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventas.controller.js","function":null,"line":158,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":26,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventas.routes.js","function":null,"line":3,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false}]}
+info: 2024-02-02T02:18:42.418Z Escuchando el puerto 3000.
+info: 2024-02-02T02:18:50.590Z Escuchando el puerto 3000.
+info: 2024-02-02T02:18:56.887Z Usuario carlos2 esta autenticado
+error: 2024-02-02T02:18:56.889Z Error al realizar la venta automática - Vendedor: [carlos2], Comprador: [Felipe] - Error: El NIT del comprador es obligatorio.
+info: 2024-02-02T02:18:56.893Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 500 1268 - 17.309 ms
+info: 2024-02-02T02:19:34.562Z Usuario carlos2 esta autenticado
+error: 2024-02-02T02:19:34.565Z Error al realizar la venta automática - Vendedor: [carlos2], Comprador: [Felipe] - Error: UsuarioNoEsDueño is not defined
+info: 2024-02-02T02:19:34.566Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 500 447 - 6.815 ms
+info: 2024-02-02T02:19:54.742Z Usuario carlos2 esta autenticado
+error: 2024-02-02T02:19:54.743Z Error al realizar la venta automática - Vendedor: [carlos2], Comprador: [Felipe] - Error: UsuarioNoEsDueño is not defined
+info: 2024-02-02T02:19:54.744Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 500 447 - 5.127 ms
+info: 2024-02-02T02:21:09.673Z Usuario carlos2 esta autenticado
+error: 2024-02-02T02:21:09.674Z Error al realizar la venta automática - Vendedor: [carlos2], Comprador: [Felipe] - Error: UsuarioNoEsDueño is not defined
+info: 2024-02-02T02:21:09.675Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 500 447 - 4.993 ms
+error: 2024-02-02T02:21:41.095Z uncaughtException: procesarErrores is not a function
+TypeError: procesarErrores is not a function
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\productos\productos.routes.js:16:3)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\index.js:3:25)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10) {"date":"Thu Feb 01 2024 20:21:41 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":7343.75},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"],"cwd":"D:\\Proyectos\\Api_Venta_De_Cosmeticos","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18278847,"external":21062077,"heapTotal":29896704,"heapUsed":13675300,"rss":53211136},"pid":3608,"uid":null,"version":"v20.10.0"},"stack":"TypeError: procesarErrores is not a function\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js:16:3)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js:3:25)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)","trace":[{"column":3,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.routes.js","function":null,"line":16,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":25,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js","function":null,"line":3,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false}]}
+info: 2024-02-02T02:21:45.035Z Escuchando el puerto 3000.
+info: 2024-02-02T02:22:07.605Z Escuchando el puerto 3000.
+info: 2024-02-02T02:22:09.631Z Usuario carlos2 esta autenticado
+error: 2024-02-02T02:22:09.635Z Error al realizar la venta automática - Vendedor: [carlos2], Comprador: [Felipe] - Error: No eres dueño de todos los productos seleccionados.
+info: 2024-02-02T02:22:09.639Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 500 491 - 20.068 ms
+info: 2024-02-02T02:23:08.206Z Escuchando el puerto 3000.
+info: 2024-02-02T02:23:08.740Z Usuario carlos2 esta autenticado
+error: 2024-02-02T02:23:08.743Z Error al realizar la venta automática - Vendedor: [carlos2], Comprador: [Felipe] - Error: No eres dueño de todos los productos seleccionados.
+info: 2024-02-02T02:23:08.747Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 500 491 - 17.127 ms
+info: 2024-02-02T02:23:13.807Z ::1 - GET /cosmetics-management/v1/productos HTTP/1.1 200 325 - 4.054 ms
+info: 2024-02-02T02:23:36.118Z ::1 - DELETE /cosmetics-management/v1/productos/65bc41e35c1d31fb97f30855 HTTP/1.1 401 - - 2.601 ms
+info: 2024-02-02T02:23:39.843Z Usuario carlos2 completo autenticación exitosamente.
+info: 2024-02-02T02:23:39.844Z ::1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 105.035 ms
+info: 2024-02-02T02:23:49.007Z ::1 - DELETE /cosmetics-management/v1/productos/65bc41e35c1d31fb97f30855 HTTP/1.1 401 - - 0.247 ms
+info: 2024-02-02T02:23:50.524Z ::1 - DELETE /cosmetics-management/v1/productos/65bc41e35c1d31fb97f30855 HTTP/1.1 401 - - 0.264 ms
+info: 2024-02-02T02:23:56.424Z ::1 - DELETE /cosmetics-management/v1/productos/65bc41e35c1d31fb97f30855 HTTP/1.1 401 - - 0.251 ms
+info: 2024-02-02T02:24:15.819Z ::1 - POST /cosmetics-management/v1/productos HTTP/1.1 401 - - 0.457 ms
+info: 2024-02-02T02:24:25.266Z Escuchando el puerto 3000.
+error: 2024-02-02T02:24:27.204Z uncaughtException: ventasRouter is not defined
+ReferenceError: ventasRouter is not defined
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\ventasDeProducto\ventas.controller.js:158:1)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\ventasDeProducto\ventas.routes.js:3:26)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10) {"date":"Thu Feb 01 2024 20:24:27 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":7509.859},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"],"cwd":"D:\\Proyectos\\Api_Venta_De_Cosmeticos","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262464,"external":20636094,"heapTotal":30830592,"heapUsed":17527440,"rss":55681024},"pid":3744,"uid":null,"version":"v20.10.0"},"stack":"ReferenceError: ventasRouter is not defined\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventas.controller.js:158:1)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventas.routes.js:3:26)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)","trace":[{"column":1,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventas.controller.js","function":null,"line":158,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":26,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventas.routes.js","function":null,"line":3,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false}]}
+info: 2024-02-02T02:24:29.144Z Escuchando el puerto 3000.
+info: 2024-02-02T02:24:33.759Z Escuchando el puerto 3000.
+info: 2024-02-02T02:24:37.353Z ::1 - POST /cosmetics-management/v1/productos HTTP/1.1 401 - - 1.815 ms
+info: 2024-02-02T02:24:42.267Z Usuario carlos2 completo autenticación exitosamente.
+info: 2024-02-02T02:24:42.269Z ::1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 106.894 ms
+info: 2024-02-02T02:24:50.520Z Usuario carlos2 esta autenticado
+info: 2024-02-02T02:24:50.536Z Producto agregado a la colección productos {"$__":{"$versionError":null,"activePaths":{"paths":{"categoria":"require","dueño":"require","moneda":"require","nombre":"require","precio":"require","stock":"require"},"states":{"default":{},"modify":{},"require":{"categoria":true,"dueño":true,"moneda":true,"nombre":true,"precio":true,"stock":true}}},"backup":{"activePaths":{"default":{"_id":true,"comentarios":true},"modify":{"categoria":true,"dueño":true,"moneda":true,"nombre":true,"precio":true,"stock":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"65bc52725d6e1f4cc3099deb","categoria":"Shampoo","comentarios":[],"dueño":"carlos2","moneda":"USD","nombre":"Zapote","precio":29.99,"stock":10}}
+info: 2024-02-02T02:24:50.537Z ::1 - POST /cosmetics-management/v1/productos HTTP/1.1 201 159 - 24.078 ms
+info: 2024-02-02T02:26:07.179Z Usuario carlos2 esta autenticado
+info: 2024-02-02T02:26:07.185Z Producto con id [65bc41e35c1d31fb97f30855] fue borrado
+info: 2024-02-02T02:26:07.188Z ::1 - DELETE /cosmetics-management/v1/productos/65bc41e35c1d31fb97f30855 HTTP/1.1 200 161 - 10.545 ms
+info: 2024-02-02T02:26:11.444Z Escuchando el puerto 3000.
+info: 2024-02-02T02:26:14.767Z Escuchando el puerto 3000.
+info: 2024-02-02T02:26:16.057Z Escuchando el puerto 3000.
+info: 2024-02-02T02:26:19.596Z Escuchando el puerto 3000.
+info: 2024-02-02T02:26:23.175Z Escuchando el puerto 3000.
+info: 2024-02-02T02:26:32.691Z Usuario carlos2 esta autenticado
+error: 2024-02-02T02:26:32.694Z Error al realizar la venta automática - Vendedor: [carlos2], Comprador: [Felipe] - Error: No eres dueño de todos los productos seleccionados.
+info: 2024-02-02T02:26:32.699Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 500 491 - 19.255 ms
+info: 2024-02-02T02:26:35.750Z Usuario carlos2 esta autenticado
+error: 2024-02-02T02:26:35.753Z Error al realizar la venta automática - Vendedor: [carlos2], Comprador: [Felipe] - Error: No eres dueño de todos los productos seleccionados.
+info: 2024-02-02T02:26:35.755Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 500 491 - 8.306 ms
+info: 2024-02-02T02:26:42.217Z ::1 - GET /cosmetics-management/v1/productos HTTP/1.1 200 315 - 5.246 ms
+info: 2024-02-02T02:26:54.237Z Usuario carlos2 esta autenticado
+error: 2024-02-02T02:26:54.241Z Error al realizar la venta automática - Vendedor: [carlos2], Comprador: [Felipe] - Error: ProductoNoExiste is not defined
+info: 2024-02-02T02:26:54.242Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 500 445 - 9.092 ms
+info: 2024-02-02T02:27:20.224Z Escuchando el puerto 3000.
+info: 2024-02-02T02:27:20.860Z Usuario carlos2 esta autenticado
+error: 2024-02-02T02:27:20.867Z Error al realizar la venta automática - Vendedor: [carlos2], Comprador: [Felipe] - Error: El producto con id [65bc41e35c1d31fb97f30855] no existe.
+info: 2024-02-02T02:27:20.872Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 500 499 - 23.087 ms
+info: 2024-02-02T02:27:28.351Z ::1 - GET /cosmetics-management/v1/productos HTTP/1.1 200 315 - 4.424 ms
+info: 2024-02-02T02:27:33.866Z Usuario carlos2 esta autenticado
+error: 2024-02-02T02:27:33.900Z Error al realizar la venta automática - Vendedor: [carlos2], Comprador: [Felipe] - Error: OrdenVenta validation failed: comprador: Cast to string failed for value "{ nombre: 'Felipe', nit: '123456789' }" (type Object) at path "comprador"
+error: 2024-02-02T02:27:33.903Z Ocurrio un error relacionado a mongoose. OrdenVenta validation failed: comprador: Cast to string failed for value "{ nombre: 'Felipe', nit: '123456789' }" (type Object) at path "comprador" {"_message":"OrdenVenta validation failed","errors":{"comprador":{"kind":"string","message":"Cast to string failed for value \"{ nombre: 'Felipe', nit: '123456789' }\" (type Object) at path \"comprador\"","name":"CastError","path":"comprador","reason":null,"stringValue":"\"{ nombre: 'Felipe', nit: '123456789' }\"","value":{"nit":"123456789","nombre":"Felipe"},"valueType":"Object"}},"stack":"ValidationError: OrdenVenta validation failed: comprador: Cast to string failed for value \"{ nombre: 'Felipe', nit: '123456789' }\" (type Object) at path \"comprador\"\n    at Document.invalidate (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\node_modules\\mongoose\\lib\\document.js:3201:32)\n    at model.$set (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\node_modules\\mongoose\\lib\\document.js:1460:12)\n    at model.$set (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\node_modules\\mongoose\\lib\\document.js:1115:16)\n    at model.Document (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\node_modules\\mongoose\\lib\\document.js:166:12)\n    at model.Model (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\node_modules\\mongoose\\lib\\model.js:125:12)\n    at new model (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\node_modules\\mongoose\\lib\\model.js:4604:15)\n    at Object.realizarVentaAutomatica (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventas.controller.js:149:29)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventas.routes.js:68:9"}
+info: 2024-02-02T02:27:33.904Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 500 1291 - 42.882 ms
+info: 2024-02-02T02:28:34.775Z Escuchando el puerto 3000.
+info: 2024-02-02T02:28:35.814Z Usuario carlos2 esta autenticado
+error: 2024-02-02T02:28:35.822Z Error al realizar la venta automática - Vendedor: [carlos2], Comprador: [Felipe] - Error: No hay suficiente stock disponible para vender 1 unidades del producto con id [65bc4501d37ee743e5adf68d].
+info: 2024-02-02T02:28:35.827Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 500 586 - 22.646 ms
+info: 2024-02-02T02:28:44.705Z ::1 - GET /cosmetics-management/v1/productos HTTP/1.1 200 314 - 3.965 ms
+info: 2024-02-02T02:28:51.310Z ::1 - PUT /cosmetics-management/v1/productos/65bc4501d37ee743e5adf68d HTTP/1.1 401 - - 1.613 ms
+info: 2024-02-02T02:29:04.098Z Usuario carlos2 esta autenticado
+info: 2024-02-02T02:29:04.108Z Producto con id [65bc4501d37ee743e5adf68d] reemplazado con nuevo producto {"$__":{"activePaths":{"paths":{"_id":"init","categoria":"init","comentarios":"init","dueño":"init","moneda":"init","nombre":"init","precio":"init","stock":"init"},"states":{"init":{"_id":true,"categoria":true,"comentarios":true,"dueño":true,"moneda":true,"nombre":true,"precio":true,"stock":true},"require":{}}},"exclude":true,"selected":{"__v":0},"skipId":true},"$isNew":false,"_doc":{"_id":"65bc4501d37ee743e5adf68d","categoria":"Shampoo","comentarios":[],"dueño":"carlos2","moneda":"USD","nombre":"Nuevo nombre del producto","precio":123.45,"stock":10}}
+info: 2024-02-02T02:29:04.109Z ::1 - PUT /cosmetics-management/v1/productos/65bc4501d37ee743e5adf68d HTTP/1.1 200 171 - 12.351 ms
+info: 2024-02-02T02:29:07.665Z Usuario carlos2 esta autenticado
+error: 2024-02-02T02:29:07.699Z Error al realizar la venta automática - Vendedor: [carlos2], Comprador: [Felipe] - Error: OrdenVenta validation failed: comprador: Cast to string failed for value "{ nombre: 'Felipe', nit: '123456789' }" (type Object) at path "comprador"
+error: 2024-02-02T02:29:07.702Z Ocurrio un error relacionado a mongoose. OrdenVenta validation failed: comprador: Cast to string failed for value "{ nombre: 'Felipe', nit: '123456789' }" (type Object) at path "comprador" {"_message":"OrdenVenta validation failed","errors":{"comprador":{"kind":"string","message":"Cast to string failed for value \"{ nombre: 'Felipe', nit: '123456789' }\" (type Object) at path \"comprador\"","name":"CastError","path":"comprador","reason":null,"stringValue":"\"{ nombre: 'Felipe', nit: '123456789' }\"","value":{"nit":"123456789","nombre":"Felipe"},"valueType":"Object"}},"stack":"ValidationError: OrdenVenta validation failed: comprador: Cast to string failed for value \"{ nombre: 'Felipe', nit: '123456789' }\" (type Object) at path \"comprador\"\n    at Document.invalidate (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\node_modules\\mongoose\\lib\\document.js:3201:32)\n    at model.$set (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\node_modules\\mongoose\\lib\\document.js:1460:12)\n    at model.$set (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\node_modules\\mongoose\\lib\\document.js:1115:16)\n    at model.Document (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\node_modules\\mongoose\\lib\\document.js:166:12)\n    at model.Model (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\node_modules\\mongoose\\lib\\model.js:125:12)\n    at new model (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\node_modules\\mongoose\\lib\\model.js:4604:15)\n    at Object.realizarVentaAutomatica (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventas.controller.js:149:29)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventas.routes.js:68:9"}
+info: 2024-02-02T02:29:07.703Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 500 1291 - 41.322 ms
+error: 2024-02-02T02:30:27.512Z uncaughtException: Identifier 'OrdenVenta' has already been declared
+D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\ventasDeProducto\ventas.model.js:46
+const OrdenVenta = mongoose.model("OrdenVenta", ordenVentaSchema);
+      ^
+
+SyntaxError: Identifier 'OrdenVenta' has already been declared
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\Api_Venta_De_Cosmeticos\src\recursos\productos\productos.controller.js:3:15)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14) {"date":"Thu Feb 01 2024 20:30:27 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":7870.156},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\Api_Venta_De_Cosmeticos\\index.js"],"cwd":"D:\\Proyectos\\Api_Venta_De_Cosmeticos","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18688447,"external":21062077,"heapTotal":29896704,"heapUsed":19773048,"rss":53288960},"pid":5192,"uid":null,"version":"v20.10.0"},"stack":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\ventasDeProducto\\ventas.model.js:46\nconst OrdenVenta = mongoose.model(\"OrdenVenta\", ordenVentaSchema);\n      ^\n\nSyntaxError: Identifier 'OrdenVenta' has already been declared\n    at internalCompileFunction (node:internal/vm:77:18)\n    at wrapSafe (node:internal/modules/cjs/loader:1288:20)\n    at Module._compile (node:internal/modules/cjs/loader:1340:27)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.controller.js:3:15)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)","trace":[{"column":18,"file":"node:internal/vm","function":"internalCompileFunction","line":77,"method":null,"native":false},{"column":20,"file":"node:internal/modules/cjs/loader","function":"wrapSafe","line":1288,"method":null,"native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1340,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":15,"file":"D:\\Proyectos\\Api_Venta_De_Cosmeticos\\src\\recursos\\productos\\productos.controller.js","function":null,"line":3,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false}]}
+info: 2024-02-02T02:30:31.092Z Escuchando el puerto 3000.
+info: 2024-02-02T02:30:32.612Z Escuchando el puerto 3000.
+info: 2024-02-02T02:30:32.788Z Usuario carlos2 esta autenticado
+info: 2024-02-02T02:30:32.825Z Venta automática realizada - Vendedor: [carlos2], Comprador: [Felipe]
+info: 2024-02-02T02:30:32.830Z ::1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 200 426 - 53.628 ms
+info: 2024-02-02T02:35:52.393Z Escuchando el puerto 3000.
+info: 2024-02-02T02:35:59.968Z Escuchando el puerto 3000.
+info: 2024-02-02T02:36:12.796Z Escuchando el puerto 3000.
+info: 2024-02-02T02:36:20.290Z Escuchando el puerto 3000.
+info: 2024-02-02T02:36:22.712Z Escuchando el puerto 3000.
+info: 2024-02-02T02:36:24.709Z Escuchando el puerto 3000.
+info: 2024-02-02T02:36:27.960Z Escuchando el puerto 3000.
+info: 2024-02-02T02:36:29.955Z Escuchando el puerto 3000.
+info: 2024-02-02T02:36:34.228Z Escuchando el puerto 3000.

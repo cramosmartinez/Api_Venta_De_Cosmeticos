@@ -1,5 +1,5 @@
 const Joi = require("joi");
-const { log } = require("../../../utils/logger");
+const log = require("../../../utils/logger");
 
 const blueprintProducto = Joi.object({
   nombre: Joi.string().max(100).required(),

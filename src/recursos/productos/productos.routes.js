@@ -128,29 +128,27 @@ productosRouter.delete(
     res.json(productoBorrado);
   })
 );
-//lista productos por una categoria
+// Lista productos por una categoría
 productosRouter.get(
   "/categoria/:categoria",
   procesarErrores((req, res) => {
     let categoria = req.params.categoria;
+    log.info(`Buscando productos en la categoría: ${categoria}`);
     return productoController
       .obtenerProductosPorCategoria(categoria)
       .then((productos) => {
+        log.info(
+          `Productos encontrados en la categoría '${categoria}':`,
+          productos
+        );
         res.json(productos);
-      });
-  })
-);
-
-// Listar productos por usuario logeado
-productosRouter.get(
-  "/usuario",
-  jwtAuthhenticate, // Middleware de autenticación JWT
-  procesarErrores((req, res) => {
-    const usuarioLogeado = req.user.username;
-    return productoController
-      .obtenerProductosPorUsuario(usuarioLogeado)
-      .then((productos) => {
-        res.json(productos);
+      })
+      .catch((error) => {
+        log.error(
+          `Error al buscar productos en la categoría '${categoria}':`,
+          error
+        );
+        throw error;
       });
   })
 );
@@ -160,14 +158,24 @@ productosRouter.get(
   "/usuario/:usuario",
   procesarErrores((req, res) => {
     const usuarioEspecifico = req.params.usuario;
+    log.info(`Buscando productos del usuario: ${usuarioEspecifico}`);
     return productoController
       .obtenerProductosPorUsuario(usuarioEspecifico)
       .then((productos) => {
+        log.info(
+          `Productos encontrados del usuario '${usuarioEspecifico}':`,
+          productos
+        );
         res.json(productos);
+      })
+      .catch((error) => {
+        log.error(
+          `Error al buscar productos del usuario '${usuarioEspecifico}':`,
+          error
+        );
+        throw error;
       });
   })
 );
-
-
 
 module.exports = productosRouter;
