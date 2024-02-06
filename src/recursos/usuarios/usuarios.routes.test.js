@@ -66,10 +66,10 @@ describe("Usuarios", () => {
     await mongoose.disconnect();
   });
 
-  describe("GET /usuarios", () => {
+  describe("GET /cosmetics-management/v1/usuarios", () => {
     test("Si no hay usuarios, debería retornar un array vació", (done) => {
       request(app)
-        .get("/usuarios")
+        .get("/cosmetics-management/v1/usuarios")
         .end((err, res) => {
           expect(res.status).toBe(200);
           expect(res.body).toBeInstanceOf(Array);
@@ -83,7 +83,7 @@ describe("Usuarios", () => {
         dummyUsuarios.map((usuario) => new Usuario(usuario).save())
       ).then((usuarios) => {
         request(app)
-          .get("/usuarios")
+          .get("/cosmetics-management/v1/usuarios")
           .end((err, res) => {
             expect(res.status).toBe(200);
             expect(res.body).toBeInstanceOf(Array);
@@ -94,10 +94,10 @@ describe("Usuarios", () => {
     });
   });
 
-  describe("POST /usuarios", () => {
+  describe("POST /cosmetics-management/v1/usuarios", () => {
     test("Un usuario que cumple las condiciones debería ser creado", (done) => {
       request(app)
-        .post("/usuarios")
+        .post("/cosmetics-management/v1/usuarios")
         .send(dummyUsuarios[0])
         .end((err, res) => {
           expect(res.status).toBe(201);
@@ -112,7 +112,7 @@ describe("Usuarios", () => {
         dummyUsuarios.map((usuario) => new Usuario(usuario).save())
       ).then((usuarios) => {
         request(app)
-          .post("/usuarios")
+          .post("/cosmetics-management/v1/usuarios")
           .send({
             username: "daniel",
             email: "danielnuevoemail@gmail.com",
@@ -131,7 +131,7 @@ describe("Usuarios", () => {
         dummyUsuarios.map((usuario) => new Usuario(usuario).save())
       ).then((usuarios) => {
         request(app)
-          .post("/usuarios")
+          .post("/cosmetics-management/v1/usuarios")
           .send({
             username: "nuevodaniel",
             email: "daniel@gmail.com",
@@ -147,7 +147,7 @@ describe("Usuarios", () => {
 
     test("Un usuario sin username no debería ser creado", (done) => {
       request(app)
-        .post("/usuarios")
+        .post("/cosmetics-management/v1/usuarios")
         .send({
           email: "daniel@gmail.com",
           password: "contraseña",
@@ -161,7 +161,7 @@ describe("Usuarios", () => {
 
     test("Un usuario sin contraseña no debería ser creado", (done) => {
       request(app)
-        .post("/usuarios")
+        .post("/cosmetics-management/v1/usuarios")
         .send({
           username: "daniel",
           email: "daniel@gmail.com",
@@ -175,7 +175,7 @@ describe("Usuarios", () => {
 
     test("Un usuario sin email no debería ser creado", (done) => {
       request(app)
-        .post("/usuarios")
+        .post("/cosmetics-management/v1/usuarios")
         .send({
           username: "daniel",
           password: "contraseña",
@@ -194,7 +194,7 @@ describe("Usuarios", () => {
         password: "contraseña",
       };
       request(app)
-        .post("/usuarios")
+        .post("/cosmetics-management/v1/usuarios")
         .send(usuario)
         .end((err, res) => {
           expect(res.status).toBe(400);
@@ -210,7 +210,7 @@ describe("Usuarios", () => {
         password: "contraseña",
       };
       request(app)
-        .post("/usuarios")
+        .post("/cosmetics-management/v1/usuarios")
         .send(usuario)
         .end((err, res) => {
           expect(res.status).toBe(400);
@@ -242,7 +242,7 @@ describe("Usuarios", () => {
         password: "abc",
       };
       request(app)
-        .post("/usuarios")
+        .post("/cosmetics-management/v1/usuarios")
         .send(usuario)
         .end((err, res) => {
           expect(res.status).toBe(400);
@@ -274,7 +274,7 @@ describe("Usuarios", () => {
         password: "pruebapruebaprueba",
       };
       request(app)
-        .post("/usuarios")
+        .post("/cosmetics-management/v1/usuarios")
         .send(usuario)
         .end((err, res) => {
           expect(res.status).toBe(201);
@@ -298,7 +298,7 @@ describe("Usuarios", () => {
         password: "holaholahola",
       };
       request(app)
-        .post("/usuarios/login")
+        .post("/cosmetics-management/v1/usuarios/login")
         .send(bodyLogin)
         .end((err, res) => {
           expect(res.status).toBe(400);
@@ -312,7 +312,7 @@ describe("Usuarios", () => {
         username: "noexisto",
       };
       request(app)
-        .post("/usuarios/login")
+        .post("/cosmetics-management/v1/usuarios/login")
         .send(bodyLogin)
         .end((err, res) => {
           expect(res.status).toBe(400);
@@ -327,7 +327,7 @@ describe("Usuarios", () => {
         password: "holaholahola",
       };
       request(app)
-        .post("/usuarios/login")
+        .post("/cosmetics-management/v1/usuarios/login")
         .send(bodyLogin)
         .end((err, res) => {
           expect(res.status).toBe(400);
@@ -351,7 +351,7 @@ describe("Usuarios", () => {
         .save()
         .then((nuevoUsuario) => {
           request(app)
-            .post("/usuarios/login")
+            .post("/cosmetics-management/v1/usuarios/login")
             .send({
               username: usuario.username,
               password: "arrozverde",
@@ -382,7 +382,7 @@ describe("Usuarios", () => {
         .save()
         .then((nuevoUsuario) => {
           request(app)
-            .post("/usuarios/login")
+            .post("/cosmetics-management/v1/usuarios/login")
             .send({
               username: usuario.username,
               password: usuario.password,
@@ -417,7 +417,7 @@ describe("Usuarios", () => {
         .save()
         .then((nuevoUsuario) => {
           request(app)
-            .post("/usuarios/login")
+            .post("/cosmetics-management/v1/usuarios/login")
             .send({
               username: "DaNIEL",
               password: usuario.password,

@@ -80,11 +80,15 @@ describe("Productos", () => {
   });
 
   describe("POST /productos", () => {
-    it("Si el usuario provee un token válido y el producto también es válido, debería ser creado", async () => {
+    // Test para la función crearProducto
+    it("Si el usuario provee un token válido, el producto es válido y la categoría existe, debería ser creado", async () => {
       const response = await request(app)
         .post("/productos")
         .set("Authorization", `Bearer ${authToken}`)
-        .send(nuevoProducto);
+        .send({
+          ...nuevoProducto,
+          categoria: "Electrónicos", // Pasar la nueva categoría
+        });
       expect(response.status).toBe(201);
       expect(response.body.nombre).toEqual(nuevoProducto.nombre);
       expect(response.body.moneda).toEqual(nuevoProducto.moneda);
