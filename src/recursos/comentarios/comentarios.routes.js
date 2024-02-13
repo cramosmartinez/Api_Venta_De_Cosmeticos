@@ -8,6 +8,7 @@ const jwtAuthhenticate = require("passport").authenticate("jwt", {
 const comentariosController = require("./comentarios.controller");
 const log = require("../../../utils/logger");
 
+
 comentariosRouter.post(
   "/:idProducto",
   [jwtAuthhenticate, validarId],
