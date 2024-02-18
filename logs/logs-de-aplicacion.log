@@ -5650,3 +5650,1721 @@ info: 2024-02-07T01:44:28.149Z Categoría obtenida con éxito: {
   __v: 0
 }
 info: 2024-02-07T01:44:28.149Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias/65c2e07c18a8485751d071d6 HTTP/1.1 200 58 - 3.932 ms
+info: 2024-02-18T05:32:50.244Z Escuchando el puerto 3000.
+info: 2024-02-18T05:38:32.913Z Escuchando el puerto 3000.
+info: 2024-02-18T05:38:48.589Z Escuchando el puerto 3000.
+info: 2024-02-18T05:39:01.523Z Escuchando el puerto 3000.
+info: 2024-02-18T05:39:22.112Z Escuchando el puerto 3000.
+info: 2024-02-18T05:42:36.474Z Escuchando el puerto 3000.
+info: 2024-02-18T05:42:48.064Z Escuchando el puerto 3000.
+info: 2024-02-18T05:42:49.569Z Escuchando el puerto 3000.
+info: 2024-02-18T05:42:52.285Z Escuchando el puerto 3000.
+info: 2024-02-18T05:42:55.912Z Escuchando el puerto 3000.
+info: 2024-02-18T05:43:01.813Z Escuchando el puerto 3000.
+info: 2024-02-18T05:43:30.745Z Escuchando el puerto 3000.
+info: 2024-02-18T05:43:30.795Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 2 - 5.012 ms
+info: 2024-02-18T05:43:30.821Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 339 - 3.846 ms
+info: 2024-02-18T05:43:31.114Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 94.938 ms
+warn: 2024-02-18T05:43:31.206Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-02-18T05:43:31.211Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 6.032 ms
+warn: 2024-02-18T05:43:31.222Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-02-18T05:43:31.223Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 2.766 ms
+info: 2024-02-18T05:43:31.229Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-02-18T05:43:31.230Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 1.633 ms
+info: 2024-02-18T05:43:31.235Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-02-18T05:43:31.236Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.706 ms
+info: 2024-02-18T05:43:31.241Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-02-18T05:43:31.242Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.643 ms
+info: 2024-02-18T05:43:31.247Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-02-18T05:43:31.248Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.631 ms
+info: 2024-02-18T05:43:31.256Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-02-18T05:43:31.257Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.886 ms
+info: 2024-02-18T05:43:31.263Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-02-18T05:43:31.264Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.629 ms
+info: 2024-02-18T05:43:31.352Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 82.407 ms
+info: 2024-02-18T05:43:31.437Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.570 ms
+info: 2024-02-18T05:43:31.442Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.533 ms
+info: 2024-02-18T05:43:31.450Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-02-18T05:43:31.451Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 397 - 2.991 ms
+info: 2024-02-18T05:43:31.615Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-02-18T05:43:31.616Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 322 - 80.102 ms
+info: 2024-02-18T05:43:31.783Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:43:31.784Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 83.541 ms
+info: 2024-02-18T05:43:31.948Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:43:31.949Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 79.996 ms
+info: 2024-02-18T05:43:32.215Z Escuchando el puerto 3000.
+info: 2024-02-18T05:43:32.336Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 99.580 ms
+info: 2024-02-18T05:43:32.425Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:43:32.425Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 85.404 ms
+info: 2024-02-18T05:43:32.433Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 0.601 ms
+info: 2024-02-18T05:43:32.448Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 334 - 9.817 ms
+info: 2024-02-18T05:43:32.458Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/65d199048ff24c2f82c5b08e HTTP/1.1 200 161 - 2.177 ms
+info: 2024-02-18T05:43:32.465Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 401 - - 2.309 ms
+info: 2024-02-18T05:43:32.472Z Usuario daniel esta autenticado
+warn: 2024-02-18T05:43:32.473Z El producto en el body no cumple con el formato requerido. Detalles: ["nombre" is required]
+info: 2024-02-18T05:43:32.473Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 3.571 ms
+info: 2024-02-18T05:43:32.480Z Usuario daniel esta autenticado
+warn: 2024-02-18T05:43:32.480Z El producto en el body no cumple con el formato requerido. Detalles: ["precio" is required]
+info: 2024-02-18T05:43:32.481Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 2.892 ms
+info: 2024-02-18T05:43:32.487Z Usuario daniel esta autenticado
+info: 2024-02-18T05:43:32.491Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 49 - 5.743 ms
+info: 2024-02-18T05:43:32.500Z Usuario daniel esta autenticado
+info: 2024-02-18T05:43:32.500Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 2.659 ms
+info: 2024-02-18T05:43:32.509Z Usuario daniel esta autenticado
+info: 2024-02-18T05:43:32.511Z Producto con id [5ab8dbcc6539f91c2288b0c1] no existe. Nada que borrar
+info: 2024-02-18T05:43:32.512Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 369 - 4.864 ms
+info: 2024-02-18T05:43:32.520Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d199048ff24c2f82c5b0a6 HTTP/1.1 401 - - 1.090 ms
+info: 2024-02-18T05:43:32.530Z Usuario daniel esta autenticado
+info: 2024-02-18T05:43:32.532Z Usuario [daniel] no es dueño de producto con id [65d199048ff24c2f82c5b0ac]. Dueño real es [ricardo98]. Request no será procesado
+info: 2024-02-18T05:43:32.533Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d199048ff24c2f82c5b0ac HTTP/1.1 401 444 - 4.654 ms
+info: 2024-02-18T05:43:32.542Z Usuario daniel esta autenticado
+info: 2024-02-18T05:43:32.546Z Producto con id [65d199048ff24c2f82c5b0b2] fue borrado
+info: 2024-02-18T05:43:32.547Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d199048ff24c2f82c5b0b2 HTTP/1.1 200 161 - 6.789 ms
+info: 2024-02-18T05:43:32.811Z Escuchando el puerto 3000.
+info: 2024-02-18T05:43:32.838Z Creando nueva categoría de producto: Electrónicos
+info: 2024-02-18T05:43:32.843Z Categoría creada con éxito: {
+  nombre: 'Electrónicos',
+  _id: new ObjectId('65d19904ccb2a48ac6fc8381'),
+  __v: 0
+}
+info: 2024-02-18T05:43:32.844Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 67 - 5.980 ms
+info: 2024-02-18T05:43:32.851Z Obteniendo todas las categorías de productos
+info: 2024-02-18T05:43:32.853Z Categorías obtenidas con éxito
+info: 2024-02-18T05:43:32.854Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias HTTP/1.1 200 202 - 2.614 ms
+info: 2024-02-18T05:43:32.859Z Creando nueva categoría de producto: Ropa
+info: 2024-02-18T05:43:32.861Z Categoría creada con éxito: {
+  nombre: 'Ropa',
+  _id: new ObjectId('65d19904ccb2a48ac6fc838c'),
+  __v: 0
+}
+info: 2024-02-18T05:43:32.861Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 58 - 2.383 ms
+info: 2024-02-18T05:43:32.864Z Obteniendo categoría por ID: 65d19904ccb2a48ac6fc838c
+info: 2024-02-18T05:43:32.866Z Categoría obtenida con éxito: {
+  _id: new ObjectId('65d19904ccb2a48ac6fc838c'),
+  nombre: 'Ropa',
+  __v: 0
+}
+info: 2024-02-18T05:43:32.866Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias/65d19904ccb2a48ac6fc838c HTTP/1.1 200 58 - 2.376 ms
+info: 2024-02-18T05:43:51.721Z Escuchando el puerto 3000.
+info: 2024-02-18T05:43:51.765Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 2 - 4.803 ms
+info: 2024-02-18T05:43:51.791Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 339 - 3.657 ms
+info: 2024-02-18T05:43:51.905Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 98.082 ms
+warn: 2024-02-18T05:43:51.997Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-02-18T05:43:52.004Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 8.593 ms
+warn: 2024-02-18T05:43:52.015Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-02-18T05:43:52.016Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 2.302 ms
+info: 2024-02-18T05:43:52.022Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-02-18T05:43:52.023Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 1.736 ms
+info: 2024-02-18T05:43:52.028Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-02-18T05:43:52.029Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.582 ms
+info: 2024-02-18T05:43:52.034Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-02-18T05:43:52.034Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.613 ms
+info: 2024-02-18T05:43:52.040Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-02-18T05:43:52.041Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.731 ms
+info: 2024-02-18T05:43:52.048Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-02-18T05:43:52.049Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.682 ms
+info: 2024-02-18T05:43:52.056Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-02-18T05:43:52.056Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.765 ms
+info: 2024-02-18T05:43:52.153Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 90.444 ms
+info: 2024-02-18T05:43:52.239Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.586 ms
+info: 2024-02-18T05:43:52.244Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.512 ms
+info: 2024-02-18T05:43:52.250Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-02-18T05:43:52.251Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 397 - 2.409 ms
+info: 2024-02-18T05:43:52.418Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-02-18T05:43:52.420Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 322 - 83.470 ms
+info: 2024-02-18T05:43:52.589Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:43:52.589Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 82.853 ms
+info: 2024-02-18T05:43:52.758Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:43:52.758Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 82.430 ms
+info: 2024-02-18T05:43:53.016Z Escuchando el puerto 3000.
+info: 2024-02-18T05:43:53.126Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 93.344 ms
+info: 2024-02-18T05:43:53.210Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:43:53.210Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 81.086 ms
+info: 2024-02-18T05:43:53.215Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 0.539 ms
+info: 2024-02-18T05:43:53.225Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 334 - 5.701 ms
+info: 2024-02-18T05:43:53.235Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/65d199190bb25b6db458e63d HTTP/1.1 200 161 - 2.023 ms
+info: 2024-02-18T05:43:53.242Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 401 - - 2.612 ms
+info: 2024-02-18T05:43:53.249Z Usuario daniel esta autenticado
+warn: 2024-02-18T05:43:53.250Z El producto en el body no cumple con el formato requerido. Detalles: ["nombre" is required]
+info: 2024-02-18T05:43:53.251Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 3.430 ms
+info: 2024-02-18T05:43:53.257Z Usuario daniel esta autenticado
+warn: 2024-02-18T05:43:53.257Z El producto en el body no cumple con el formato requerido. Detalles: ["precio" is required]
+info: 2024-02-18T05:43:53.258Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 2.702 ms
+info: 2024-02-18T05:43:53.264Z Usuario daniel esta autenticado
+info: 2024-02-18T05:43:53.266Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 49 - 3.757 ms
+info: 2024-02-18T05:43:53.275Z Usuario daniel esta autenticado
+info: 2024-02-18T05:43:53.275Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 2.641 ms
+info: 2024-02-18T05:43:53.284Z Usuario daniel esta autenticado
+info: 2024-02-18T05:43:53.285Z Producto con id [5ab8dbcc6539f91c2288b0c1] no existe. Nada que borrar
+info: 2024-02-18T05:43:53.286Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 369 - 3.652 ms
+info: 2024-02-18T05:43:53.293Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d199190bb25b6db458e655 HTTP/1.1 401 - - 1.332 ms
+info: 2024-02-18T05:43:53.303Z Usuario daniel esta autenticado
+info: 2024-02-18T05:43:53.304Z Usuario [daniel] no es dueño de producto con id [65d199190bb25b6db458e65b]. Dueño real es [ricardo98]. Request no será procesado
+info: 2024-02-18T05:43:53.304Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d199190bb25b6db458e65b HTTP/1.1 401 444 - 3.993 ms
+info: 2024-02-18T05:43:53.313Z Usuario daniel esta autenticado
+info: 2024-02-18T05:43:53.316Z Producto con id [65d199190bb25b6db458e661] fue borrado
+info: 2024-02-18T05:43:53.317Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d199190bb25b6db458e661 HTTP/1.1 200 161 - 5.738 ms
+info: 2024-02-18T05:43:53.586Z Escuchando el puerto 3000.
+info: 2024-02-18T05:43:53.605Z Creando nueva categoría de producto: Electrónicos
+info: 2024-02-18T05:43:53.610Z Categoría creada con éxito: {
+  nombre: 'Electrónicos',
+  _id: new ObjectId('65d199199c9cc5db67673f15'),
+  __v: 0
+}
+info: 2024-02-18T05:43:53.611Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 67 - 5.866 ms
+info: 2024-02-18T05:43:53.620Z Obteniendo todas las categorías de productos
+info: 2024-02-18T05:43:53.621Z Categorías obtenidas con éxito
+info: 2024-02-18T05:43:53.622Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias HTTP/1.1 200 202 - 2.520 ms
+info: 2024-02-18T05:43:53.627Z Creando nueva categoría de producto: Ropa
+info: 2024-02-18T05:43:53.629Z Categoría creada con éxito: {
+  nombre: 'Ropa',
+  _id: new ObjectId('65d199199c9cc5db67673f20'),
+  __v: 0
+}
+info: 2024-02-18T05:43:53.629Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 58 - 2.143 ms
+info: 2024-02-18T05:43:53.632Z Obteniendo categoría por ID: 65d199199c9cc5db67673f20
+info: 2024-02-18T05:43:53.634Z Categoría obtenida con éxito: {
+  _id: new ObjectId('65d199199c9cc5db67673f20'),
+  nombre: 'Ropa',
+  __v: 0
+}
+info: 2024-02-18T05:43:53.634Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias/65d199199c9cc5db67673f20 HTTP/1.1 200 58 - 2.405 ms
+info: 2024-02-18T05:44:32.773Z Escuchando el puerto 3000.
+info: 2024-02-18T05:44:32.818Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 2 - 5.269 ms
+info: 2024-02-18T05:44:32.844Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 339 - 3.736 ms
+info: 2024-02-18T05:44:32.956Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 96.569 ms
+warn: 2024-02-18T05:44:33.050Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-02-18T05:44:33.056Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 7.541 ms
+warn: 2024-02-18T05:44:33.066Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-02-18T05:44:33.067Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 2.439 ms
+info: 2024-02-18T05:44:33.074Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-02-18T05:44:33.074Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 1.591 ms
+info: 2024-02-18T05:44:33.081Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-02-18T05:44:33.081Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.638 ms
+info: 2024-02-18T05:44:33.086Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-02-18T05:44:33.087Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.620 ms
+info: 2024-02-18T05:44:33.092Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-02-18T05:44:33.093Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.822 ms
+info: 2024-02-18T05:44:33.101Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-02-18T05:44:33.102Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.687 ms
+info: 2024-02-18T05:44:33.108Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-02-18T05:44:33.108Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.711 ms
+info: 2024-02-18T05:44:33.197Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 82.465 ms
+info: 2024-02-18T05:44:33.283Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.567 ms
+info: 2024-02-18T05:44:33.288Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.513 ms
+info: 2024-02-18T05:44:33.295Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-02-18T05:44:33.296Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 397 - 2.315 ms
+info: 2024-02-18T05:44:33.461Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-02-18T05:44:33.462Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 322 - 81.079 ms
+info: 2024-02-18T05:44:33.630Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:44:33.631Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 82.937 ms
+info: 2024-02-18T05:44:33.796Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:44:33.796Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 80.285 ms
+info: 2024-02-18T05:44:34.074Z Escuchando el puerto 3000.
+info: 2024-02-18T05:44:34.185Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 94.254 ms
+info: 2024-02-18T05:44:34.269Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:44:34.269Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 80.774 ms
+info: 2024-02-18T05:44:34.274Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 0.549 ms
+info: 2024-02-18T05:44:34.284Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 334 - 5.714 ms
+info: 2024-02-18T05:44:34.293Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/65d199424b97e8526675f89e HTTP/1.1 200 161 - 2.438 ms
+info: 2024-02-18T05:44:34.301Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 401 - - 2.253 ms
+info: 2024-02-18T05:44:34.307Z Usuario daniel esta autenticado
+warn: 2024-02-18T05:44:34.308Z El producto en el body no cumple con el formato requerido. Detalles: ["nombre" is required]
+info: 2024-02-18T05:44:34.309Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 3.623 ms
+info: 2024-02-18T05:44:34.315Z Usuario daniel esta autenticado
+warn: 2024-02-18T05:44:34.316Z El producto en el body no cumple con el formato requerido. Detalles: ["precio" is required]
+info: 2024-02-18T05:44:34.316Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 2.695 ms
+info: 2024-02-18T05:44:34.322Z Usuario daniel esta autenticado
+info: 2024-02-18T05:44:34.324Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 49 - 3.931 ms
+info: 2024-02-18T05:44:34.333Z Usuario daniel esta autenticado
+info: 2024-02-18T05:44:34.333Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 2.318 ms
+info: 2024-02-18T05:44:34.341Z Usuario daniel esta autenticado
+info: 2024-02-18T05:44:34.342Z Producto con id [5ab8dbcc6539f91c2288b0c1] no existe. Nada que borrar
+info: 2024-02-18T05:44:34.343Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 369 - 3.456 ms
+info: 2024-02-18T05:44:34.350Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d199424b97e8526675f8b6 HTTP/1.1 401 - - 1.079 ms
+info: 2024-02-18T05:44:34.359Z Usuario daniel esta autenticado
+info: 2024-02-18T05:44:34.360Z Usuario [daniel] no es dueño de producto con id [65d199424b97e8526675f8bc]. Dueño real es [ricardo98]. Request no será procesado
+info: 2024-02-18T05:44:34.361Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d199424b97e8526675f8bc HTTP/1.1 401 444 - 3.764 ms
+info: 2024-02-18T05:44:34.370Z Usuario daniel esta autenticado
+info: 2024-02-18T05:44:34.373Z Producto con id [65d199424b97e8526675f8c2] fue borrado
+info: 2024-02-18T05:44:34.373Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d199424b97e8526675f8c2 HTTP/1.1 200 161 - 5.859 ms
+info: 2024-02-18T05:44:34.629Z Escuchando el puerto 3000.
+info: 2024-02-18T05:44:34.650Z Creando nueva categoría de producto: Electrónicos
+info: 2024-02-18T05:44:34.655Z Categoría creada con éxito: {
+  nombre: 'Electrónicos',
+  _id: new ObjectId('65d19942c205a19c8af4ba60'),
+  __v: 0
+}
+info: 2024-02-18T05:44:34.656Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 67 - 6.292 ms
+info: 2024-02-18T05:44:34.664Z Obteniendo todas las categorías de productos
+info: 2024-02-18T05:44:34.666Z Categorías obtenidas con éxito
+info: 2024-02-18T05:44:34.666Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias HTTP/1.1 200 202 - 2.772 ms
+info: 2024-02-18T05:44:34.671Z Creando nueva categoría de producto: Ropa
+info: 2024-02-18T05:44:34.673Z Categoría creada con éxito: {
+  nombre: 'Ropa',
+  _id: new ObjectId('65d19942c205a19c8af4ba6b'),
+  __v: 0
+}
+info: 2024-02-18T05:44:34.673Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 58 - 2.159 ms
+info: 2024-02-18T05:44:34.676Z Obteniendo categoría por ID: 65d19942c205a19c8af4ba6b
+info: 2024-02-18T05:44:34.677Z Categoría obtenida con éxito: {
+  _id: new ObjectId('65d19942c205a19c8af4ba6b'),
+  nombre: 'Ropa',
+  __v: 0
+}
+info: 2024-02-18T05:44:34.678Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias/65d19942c205a19c8af4ba6b HTTP/1.1 200 58 - 2.093 ms
+info: 2024-02-18T05:45:38.257Z Escuchando el puerto 3000.
+info: 2024-02-18T05:45:38.301Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 2 - 4.997 ms
+info: 2024-02-18T05:45:38.326Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 339 - 3.210 ms
+info: 2024-02-18T05:45:38.438Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 96.556 ms
+warn: 2024-02-18T05:45:38.530Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-02-18T05:45:38.534Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 5.530 ms
+warn: 2024-02-18T05:45:38.545Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-02-18T05:45:38.546Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 2.505 ms
+info: 2024-02-18T05:45:38.553Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-02-18T05:45:38.553Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 1.674 ms
+info: 2024-02-18T05:45:38.558Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-02-18T05:45:38.559Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.577 ms
+info: 2024-02-18T05:45:38.564Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-02-18T05:45:38.565Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.592 ms
+info: 2024-02-18T05:45:38.571Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-02-18T05:45:38.572Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.743 ms
+info: 2024-02-18T05:45:38.579Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-02-18T05:45:38.580Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.852 ms
+info: 2024-02-18T05:45:38.588Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-02-18T05:45:38.588Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.746 ms
+info: 2024-02-18T05:45:38.678Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 83.152 ms
+info: 2024-02-18T05:45:38.764Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.743 ms
+info: 2024-02-18T05:45:38.769Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.520 ms
+info: 2024-02-18T05:45:38.775Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-02-18T05:45:38.776Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 397 - 2.281 ms
+info: 2024-02-18T05:45:38.945Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-02-18T05:45:38.945Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 322 - 83.552 ms
+info: 2024-02-18T05:45:39.117Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:45:39.118Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 83.974 ms
+info: 2024-02-18T05:45:39.288Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:45:39.288Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 80.971 ms
+info: 2024-02-18T05:45:39.542Z Escuchando el puerto 3000.
+info: 2024-02-18T05:45:39.652Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 95.317 ms
+info: 2024-02-18T05:45:39.737Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:45:39.737Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 81.320 ms
+info: 2024-02-18T05:45:39.742Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 0.546 ms
+info: 2024-02-18T05:45:39.752Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 334 - 5.761 ms
+info: 2024-02-18T05:45:39.761Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/65d19983edff81cef20826e2 HTTP/1.1 200 161 - 2.520 ms
+info: 2024-02-18T05:45:39.769Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 401 - - 2.279 ms
+info: 2024-02-18T05:45:39.775Z Usuario daniel esta autenticado
+warn: 2024-02-18T05:45:39.776Z El producto en el body no cumple con el formato requerido. Detalles: ["nombre" is required]
+info: 2024-02-18T05:45:39.777Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 3.490 ms
+info: 2024-02-18T05:45:39.783Z Usuario daniel esta autenticado
+warn: 2024-02-18T05:45:39.783Z El producto en el body no cumple con el formato requerido. Detalles: ["precio" is required]
+info: 2024-02-18T05:45:39.783Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 2.667 ms
+info: 2024-02-18T05:45:39.790Z Usuario daniel esta autenticado
+info: 2024-02-18T05:45:39.792Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 49 - 3.565 ms
+info: 2024-02-18T05:45:39.800Z Usuario daniel esta autenticado
+info: 2024-02-18T05:45:39.801Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 2.820 ms
+info: 2024-02-18T05:45:39.809Z Usuario daniel esta autenticado
+info: 2024-02-18T05:45:39.810Z Producto con id [5ab8dbcc6539f91c2288b0c1] no existe. Nada que borrar
+info: 2024-02-18T05:45:39.811Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 369 - 3.683 ms
+info: 2024-02-18T05:45:39.818Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19983edff81cef20826fa HTTP/1.1 401 - - 1.287 ms
+info: 2024-02-18T05:45:39.827Z Usuario daniel esta autenticado
+info: 2024-02-18T05:45:39.828Z Usuario [daniel] no es dueño de producto con id [65d19983edff81cef2082700]. Dueño real es [ricardo98]. Request no será procesado
+info: 2024-02-18T05:45:39.828Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19983edff81cef2082700 HTTP/1.1 401 444 - 3.844 ms
+info: 2024-02-18T05:45:39.837Z Usuario daniel esta autenticado
+info: 2024-02-18T05:45:39.840Z Producto con id [65d19983edff81cef2082706] fue borrado
+info: 2024-02-18T05:45:39.840Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19983edff81cef2082706 HTTP/1.1 200 161 - 5.991 ms
+info: 2024-02-18T05:45:40.079Z Escuchando el puerto 3000.
+info: 2024-02-18T05:45:40.096Z Creando nueva categoría de producto: Electrónicos
+info: 2024-02-18T05:45:40.100Z Categoría creada con éxito: {
+  nombre: 'Electrónicos',
+  _id: new ObjectId('65d19984f39b244925ac4676'),
+  __v: 0
+}
+info: 2024-02-18T05:45:40.101Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 67 - 5.198 ms
+info: 2024-02-18T05:45:40.108Z Obteniendo todas las categorías de productos
+info: 2024-02-18T05:45:40.110Z Categorías obtenidas con éxito
+info: 2024-02-18T05:45:40.110Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias HTTP/1.1 200 202 - 2.259 ms
+info: 2024-02-18T05:45:40.114Z Creando nueva categoría de producto: Ropa
+info: 2024-02-18T05:45:40.116Z Categoría creada con éxito: {
+  nombre: 'Ropa',
+  _id: new ObjectId('65d19984f39b244925ac4681'),
+  __v: 0
+}
+info: 2024-02-18T05:45:40.116Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 58 - 1.755 ms
+info: 2024-02-18T05:45:40.118Z Obteniendo categoría por ID: 65d19984f39b244925ac4681
+info: 2024-02-18T05:45:40.120Z Categoría obtenida con éxito: {
+  _id: new ObjectId('65d19984f39b244925ac4681'),
+  nombre: 'Ropa',
+  __v: 0
+}
+info: 2024-02-18T05:45:40.121Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias/65d19984f39b244925ac4681 HTTP/1.1 200 58 - 2.133 ms
+info: 2024-02-18T05:47:35.125Z Escuchando el puerto 3000.
+info: 2024-02-18T05:47:35.171Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 2 - 4.962 ms
+info: 2024-02-18T05:47:35.196Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 339 - 3.393 ms
+info: 2024-02-18T05:47:35.309Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 96.748 ms
+warn: 2024-02-18T05:47:35.401Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-02-18T05:47:35.405Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 5.431 ms
+warn: 2024-02-18T05:47:35.416Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-02-18T05:47:35.417Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 2.362 ms
+info: 2024-02-18T05:47:35.424Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-02-18T05:47:35.425Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 1.803 ms
+info: 2024-02-18T05:47:35.430Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-02-18T05:47:35.430Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.608 ms
+info: 2024-02-18T05:47:35.435Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-02-18T05:47:35.436Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.574 ms
+info: 2024-02-18T05:47:35.442Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-02-18T05:47:35.443Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.774 ms
+info: 2024-02-18T05:47:35.450Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-02-18T05:47:35.451Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.747 ms
+info: 2024-02-18T05:47:35.458Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-02-18T05:47:35.458Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.648 ms
+info: 2024-02-18T05:47:35.547Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 82.523 ms
+info: 2024-02-18T05:47:35.632Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.568 ms
+info: 2024-02-18T05:47:35.637Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.527 ms
+info: 2024-02-18T05:47:35.643Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-02-18T05:47:35.644Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 397 - 2.346 ms
+info: 2024-02-18T05:47:35.809Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-02-18T05:47:35.810Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 322 - 80.707 ms
+info: 2024-02-18T05:47:35.977Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:47:35.978Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 82.415 ms
+info: 2024-02-18T05:47:36.143Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:47:36.143Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 80.042 ms
+info: 2024-02-18T05:47:36.396Z Escuchando el puerto 3000.
+info: 2024-02-18T05:47:36.506Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 93.959 ms
+info: 2024-02-18T05:47:36.608Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:47:36.609Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 99.041 ms
+info: 2024-02-18T05:47:36.613Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 0.547 ms
+info: 2024-02-18T05:47:36.623Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 334 - 5.766 ms
+info: 2024-02-18T05:47:36.633Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/65d199f8895276e0d78761fa HTTP/1.1 200 161 - 2.090 ms
+info: 2024-02-18T05:47:36.640Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 401 - - 2.296 ms
+info: 2024-02-18T05:47:36.647Z Usuario daniel esta autenticado
+warn: 2024-02-18T05:47:36.648Z El producto en el body no cumple con el formato requerido. Detalles: ["nombre" is required]
+info: 2024-02-18T05:47:36.648Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 3.590 ms
+info: 2024-02-18T05:47:36.654Z Usuario daniel esta autenticado
+warn: 2024-02-18T05:47:36.655Z El producto en el body no cumple con el formato requerido. Detalles: ["precio" is required]
+info: 2024-02-18T05:47:36.655Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 2.488 ms
+info: 2024-02-18T05:47:36.662Z Usuario daniel esta autenticado
+info: 2024-02-18T05:47:36.664Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 49 - 4.521 ms
+info: 2024-02-18T05:47:36.672Z Usuario daniel esta autenticado
+info: 2024-02-18T05:47:36.673Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 2.597 ms
+info: 2024-02-18T05:47:36.681Z Usuario daniel esta autenticado
+info: 2024-02-18T05:47:36.682Z Producto con id [5ab8dbcc6539f91c2288b0c1] no existe. Nada que borrar
+info: 2024-02-18T05:47:36.683Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 369 - 3.681 ms
+info: 2024-02-18T05:47:36.690Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d199f8895276e0d7876212 HTTP/1.1 401 - - 1.090 ms
+info: 2024-02-18T05:47:36.700Z Usuario daniel esta autenticado
+info: 2024-02-18T05:47:36.701Z Usuario [daniel] no es dueño de producto con id [65d199f8895276e0d7876218]. Dueño real es [ricardo98]. Request no será procesado
+info: 2024-02-18T05:47:36.702Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d199f8895276e0d7876218 HTTP/1.1 401 444 - 3.581 ms
+info: 2024-02-18T05:47:36.710Z Usuario daniel esta autenticado
+info: 2024-02-18T05:47:36.713Z Producto con id [65d199f8895276e0d787621e] fue borrado
+info: 2024-02-18T05:47:36.714Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d199f8895276e0d787621e HTTP/1.1 200 161 - 6.160 ms
+info: 2024-02-18T05:47:36.967Z Escuchando el puerto 3000.
+info: 2024-02-18T05:47:36.983Z Creando nueva categoría de producto: Electrónicos
+info: 2024-02-18T05:47:36.988Z Categoría creada con éxito: {
+  nombre: 'Electrónicos',
+  _id: new ObjectId('65d199f81597d898544e0b91'),
+  __v: 0
+}
+info: 2024-02-18T05:47:36.988Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 67 - 5.265 ms
+info: 2024-02-18T05:47:36.996Z Obteniendo todas las categorías de productos
+info: 2024-02-18T05:47:36.998Z Categorías obtenidas con éxito
+info: 2024-02-18T05:47:36.999Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias HTTP/1.1 200 202 - 2.379 ms
+info: 2024-02-18T05:47:37.003Z Creando nueva categoría de producto: Ropa
+info: 2024-02-18T05:47:37.005Z Categoría creada con éxito: {
+  nombre: 'Ropa',
+  _id: new ObjectId('65d199f91597d898544e0b9c'),
+  __v: 0
+}
+info: 2024-02-18T05:47:37.005Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 58 - 1.836 ms
+info: 2024-02-18T05:47:37.007Z Obteniendo categoría por ID: 65d199f91597d898544e0b9c
+info: 2024-02-18T05:47:37.009Z Categoría obtenida con éxito: {
+  _id: new ObjectId('65d199f91597d898544e0b9c'),
+  nombre: 'Ropa',
+  __v: 0
+}
+info: 2024-02-18T05:47:37.009Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias/65d199f91597d898544e0b9c HTTP/1.1 200 58 - 2.166 ms
+info: 2024-02-18T05:50:08.813Z Escuchando el puerto 3000.
+info: 2024-02-18T05:50:08.893Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 339 - 7.073 ms
+info: 2024-02-18T05:50:09.012Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 99.417 ms
+warn: 2024-02-18T05:50:09.104Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-02-18T05:50:09.110Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 7.135 ms
+warn: 2024-02-18T05:50:09.120Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-02-18T05:50:09.122Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 2.504 ms
+info: 2024-02-18T05:50:09.128Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-02-18T05:50:09.129Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 1.788 ms
+info: 2024-02-18T05:50:09.134Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-02-18T05:50:09.135Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.758 ms
+info: 2024-02-18T05:50:09.141Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-02-18T05:50:09.141Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.654 ms
+info: 2024-02-18T05:50:09.146Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-02-18T05:50:09.147Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.610 ms
+info: 2024-02-18T05:50:09.154Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-02-18T05:50:09.155Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.656 ms
+info: 2024-02-18T05:50:09.162Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-02-18T05:50:09.163Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.627 ms
+info: 2024-02-18T05:50:09.251Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 82.564 ms
+info: 2024-02-18T05:50:09.337Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.583 ms
+info: 2024-02-18T05:50:09.342Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.506 ms
+info: 2024-02-18T05:50:09.349Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-02-18T05:50:09.350Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 397 - 2.555 ms
+info: 2024-02-18T05:50:09.515Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-02-18T05:50:09.516Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 322 - 80.608 ms
+info: 2024-02-18T05:50:09.686Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:50:09.687Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 83.333 ms
+info: 2024-02-18T05:50:09.855Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:50:09.855Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 82.019 ms
+info: 2024-02-18T05:50:10.262Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 96.371 ms
+info: 2024-02-18T05:50:10.349Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:50:10.349Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 83.349 ms
+info: 2024-02-18T05:50:10.354Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 0.546 ms
+info: 2024-02-18T05:50:10.365Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 334 - 6.131 ms
+info: 2024-02-18T05:50:10.374Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/65d19a9267279e803173906a HTTP/1.1 200 161 - 2.320 ms
+info: 2024-02-18T05:50:10.382Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 401 - - 2.443 ms
+info: 2024-02-18T05:50:10.388Z Usuario daniel esta autenticado
+warn: 2024-02-18T05:50:10.389Z El producto en el body no cumple con el formato requerido. Detalles: ["nombre" is required]
+info: 2024-02-18T05:50:10.389Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 3.675 ms
+info: 2024-02-18T05:50:10.396Z Usuario daniel esta autenticado
+warn: 2024-02-18T05:50:10.397Z El producto en el body no cumple con el formato requerido. Detalles: ["precio" is required]
+info: 2024-02-18T05:50:10.397Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 2.830 ms
+info: 2024-02-18T05:50:10.403Z Usuario daniel esta autenticado
+info: 2024-02-18T05:50:10.405Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 49 - 3.815 ms
+info: 2024-02-18T05:50:10.414Z Usuario daniel esta autenticado
+info: 2024-02-18T05:50:10.414Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 2.501 ms
+info: 2024-02-18T05:50:10.424Z Usuario daniel esta autenticado
+info: 2024-02-18T05:50:10.426Z Producto con id [5ab8dbcc6539f91c2288b0c1] no existe. Nada que borrar
+info: 2024-02-18T05:50:10.427Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 369 - 4.769 ms
+info: 2024-02-18T05:50:10.434Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19a9267279e8031739082 HTTP/1.1 401 - - 1.153 ms
+info: 2024-02-18T05:50:10.445Z Usuario daniel esta autenticado
+info: 2024-02-18T05:50:10.446Z Usuario [daniel] no es dueño de producto con id [65d19a9267279e8031739088]. Dueño real es [ricardo98]. Request no será procesado
+info: 2024-02-18T05:50:10.447Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19a9267279e8031739088 HTTP/1.1 401 444 - 4.253 ms
+info: 2024-02-18T05:50:10.455Z Usuario daniel esta autenticado
+info: 2024-02-18T05:50:10.461Z Producto con id [65d19a9267279e803173908e] fue borrado
+info: 2024-02-18T05:50:10.461Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19a9267279e803173908e HTTP/1.1 200 161 - 7.953 ms
+info: 2024-02-18T05:50:10.749Z Obteniendo todas las categorías de productos
+info: 2024-02-18T05:50:10.751Z Categorías obtenidas con éxito
+info: 2024-02-18T05:50:10.752Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias HTTP/1.1 200 202 - 2.909 ms
+info: 2024-02-18T05:50:10.759Z Creando nueva categoría de producto: Ropa
+info: 2024-02-18T05:50:10.763Z Categoría creada con éxito: {
+  nombre: 'Ropa',
+  _id: new ObjectId('65d19a9225190b31cf3cc52b'),
+  __v: 0
+}
+info: 2024-02-18T05:50:10.763Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 58 - 4.031 ms
+info: 2024-02-18T05:50:10.766Z Obteniendo categoría por ID: 65d19a9225190b31cf3cc52b
+info: 2024-02-18T05:50:10.767Z Categoría obtenida con éxito: {
+  _id: new ObjectId('65d19a9225190b31cf3cc52b'),
+  nombre: 'Ropa',
+  __v: 0
+}
+info: 2024-02-18T05:50:10.768Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias/65d19a9225190b31cf3cc52b HTTP/1.1 200 58 - 2.022 ms
+info: 2024-02-18T05:51:18.858Z Escuchando el puerto 3000.
+info: 2024-02-18T05:51:18.902Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 2 - 5.356 ms
+info: 2024-02-18T05:51:18.927Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 339 - 3.210 ms
+info: 2024-02-18T05:51:19.039Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 95.905 ms
+warn: 2024-02-18T05:51:19.131Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-02-18T05:51:19.138Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 8.010 ms
+warn: 2024-02-18T05:51:19.148Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-02-18T05:51:19.149Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 2.356 ms
+info: 2024-02-18T05:51:19.157Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-02-18T05:51:19.158Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 1.800 ms
+info: 2024-02-18T05:51:19.163Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-02-18T05:51:19.163Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.578 ms
+info: 2024-02-18T05:51:19.168Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-02-18T05:51:19.169Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.615 ms
+info: 2024-02-18T05:51:19.174Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-02-18T05:51:19.175Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.707 ms
+info: 2024-02-18T05:51:19.182Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-02-18T05:51:19.183Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.714 ms
+info: 2024-02-18T05:51:19.190Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-02-18T05:51:19.190Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.618 ms
+info: 2024-02-18T05:51:19.278Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 82.334 ms
+info: 2024-02-18T05:51:19.364Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.557 ms
+info: 2024-02-18T05:51:19.369Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.521 ms
+info: 2024-02-18T05:51:19.377Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-02-18T05:51:19.378Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 397 - 2.890 ms
+info: 2024-02-18T05:51:19.546Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-02-18T05:51:19.547Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 322 - 80.586 ms
+info: 2024-02-18T05:51:19.714Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:51:19.714Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 82.439 ms
+info: 2024-02-18T05:51:19.883Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:51:19.883Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 82.645 ms
+info: 2024-02-18T05:51:20.181Z Escuchando el puerto 3000.
+info: 2024-02-18T05:51:20.201Z Creando nueva categoría de producto: Electrónicos
+info: 2024-02-18T05:51:20.206Z Categoría creada con éxito: {
+  nombre: 'Electrónicos',
+  _id: new ObjectId('65d19ad85c5dd53de72d9b61'),
+  __v: 0
+}
+info: 2024-02-18T05:51:20.207Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 67 - 5.287 ms
+info: 2024-02-18T05:51:20.216Z Obteniendo todas las categorías de productos
+info: 2024-02-18T05:51:20.218Z Categorías obtenidas con éxito
+info: 2024-02-18T05:51:20.219Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias HTTP/1.1 200 202 - 2.573 ms
+info: 2024-02-18T05:51:20.224Z Creando nueva categoría de producto: Ropa
+info: 2024-02-18T05:51:20.226Z Categoría creada con éxito: {
+  nombre: 'Ropa',
+  _id: new ObjectId('65d19ad85c5dd53de72d9b6c'),
+  __v: 0
+}
+info: 2024-02-18T05:51:20.226Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 58 - 2.161 ms
+info: 2024-02-18T05:51:20.230Z Obteniendo categoría por ID: 65d19ad85c5dd53de72d9b6c
+info: 2024-02-18T05:51:20.232Z Categoría obtenida con éxito: {
+  _id: new ObjectId('65d19ad85c5dd53de72d9b6c'),
+  nombre: 'Ropa',
+  __v: 0
+}
+info: 2024-02-18T05:51:20.232Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias/65d19ad85c5dd53de72d9b6c HTTP/1.1 200 58 - 2.384 ms
+info: 2024-02-18T05:51:20.486Z Escuchando el puerto 3000.
+info: 2024-02-18T05:51:20.600Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 95.231 ms
+info: 2024-02-18T05:51:20.689Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:51:20.689Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 85.623 ms
+info: 2024-02-18T05:51:20.695Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 0.701 ms
+info: 2024-02-18T05:51:20.708Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 334 - 8.079 ms
+info: 2024-02-18T05:51:20.719Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/65d19ad818b77584515598c8 HTTP/1.1 200 161 - 2.084 ms
+info: 2024-02-18T05:51:20.728Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 401 - - 3.303 ms
+info: 2024-02-18T05:51:20.734Z Usuario daniel esta autenticado
+warn: 2024-02-18T05:51:20.735Z El producto en el body no cumple con el formato requerido. Detalles: ["nombre" is required]
+info: 2024-02-18T05:51:20.736Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 3.728 ms
+info: 2024-02-18T05:51:20.743Z Usuario daniel esta autenticado
+warn: 2024-02-18T05:51:20.743Z El producto en el body no cumple con el formato requerido. Detalles: ["precio" is required]
+info: 2024-02-18T05:51:20.744Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 3.439 ms
+info: 2024-02-18T05:51:20.752Z Usuario daniel esta autenticado
+info: 2024-02-18T05:51:20.755Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 49 - 4.939 ms
+info: 2024-02-18T05:51:20.767Z Usuario daniel esta autenticado
+info: 2024-02-18T05:51:20.768Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 3.551 ms
+info: 2024-02-18T05:51:20.777Z Usuario daniel esta autenticado
+info: 2024-02-18T05:51:20.779Z Producto con id [5ab8dbcc6539f91c2288b0c1] no existe. Nada que borrar
+info: 2024-02-18T05:51:20.780Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 369 - 5.293 ms
+info: 2024-02-18T05:51:20.789Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19ad818b77584515598e0 HTTP/1.1 401 - - 1.738 ms
+info: 2024-02-18T05:51:20.800Z Usuario daniel esta autenticado
+info: 2024-02-18T05:51:20.801Z Usuario [daniel] no es dueño de producto con id [65d19ad818b77584515598e6]. Dueño real es [ricardo98]. Request no será procesado
+info: 2024-02-18T05:51:20.802Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19ad818b77584515598e6 HTTP/1.1 401 444 - 4.097 ms
+info: 2024-02-18T05:51:20.810Z Usuario daniel esta autenticado
+info: 2024-02-18T05:51:20.813Z Producto con id [65d19ad818b77584515598ec] fue borrado
+info: 2024-02-18T05:51:20.814Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19ad818b77584515598ec HTTP/1.1 200 161 - 6.020 ms
+info: 2024-02-18T05:53:37.486Z Escuchando el puerto 3000.
+info: 2024-02-18T05:53:37.532Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 2 - 5.140 ms
+info: 2024-02-18T05:53:37.558Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 339 - 3.577 ms
+info: 2024-02-18T05:53:37.670Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 95.023 ms
+warn: 2024-02-18T05:53:37.762Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-02-18T05:53:37.769Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 7.872 ms
+warn: 2024-02-18T05:53:37.779Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-02-18T05:53:37.780Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 2.323 ms
+info: 2024-02-18T05:53:37.786Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-02-18T05:53:37.787Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 1.774 ms
+info: 2024-02-18T05:53:37.792Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-02-18T05:53:37.793Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.577 ms
+info: 2024-02-18T05:53:37.798Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-02-18T05:53:37.798Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.614 ms
+info: 2024-02-18T05:53:37.804Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-02-18T05:53:37.805Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.742 ms
+info: 2024-02-18T05:53:37.812Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-02-18T05:53:37.813Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.685 ms
+info: 2024-02-18T05:53:37.820Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-02-18T05:53:37.821Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.671 ms
+info: 2024-02-18T05:53:37.911Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 84.134 ms
+info: 2024-02-18T05:53:37.997Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.595 ms
+info: 2024-02-18T05:53:38.003Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.518 ms
+info: 2024-02-18T05:53:38.010Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-02-18T05:53:38.011Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 397 - 3.017 ms
+info: 2024-02-18T05:53:38.175Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-02-18T05:53:38.177Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 322 - 80.898 ms
+info: 2024-02-18T05:53:38.344Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:53:38.344Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 82.454 ms
+info: 2024-02-18T05:53:38.511Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:53:38.512Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 80.571 ms
+info: 2024-02-18T05:53:38.770Z Escuchando el puerto 3000.
+info: 2024-02-18T05:53:38.882Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 93.182 ms
+info: 2024-02-18T05:53:38.968Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:53:38.968Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 82.619 ms
+info: 2024-02-18T05:53:38.973Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 0.589 ms
+info: 2024-02-18T05:53:38.983Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 334 - 5.758 ms
+info: 2024-02-18T05:53:38.993Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/65d19b627bf8b8f21ff7c6ee HTTP/1.1 200 161 - 2.383 ms
+info: 2024-02-18T05:53:39.000Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 401 - - 2.221 ms
+info: 2024-02-18T05:53:39.007Z Usuario daniel esta autenticado
+warn: 2024-02-18T05:53:39.008Z El producto en el body no cumple con el formato requerido. Detalles: ["nombre" is required]
+info: 2024-02-18T05:53:39.008Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 3.905 ms
+info: 2024-02-18T05:53:39.014Z Usuario daniel esta autenticado
+warn: 2024-02-18T05:53:39.015Z El producto en el body no cumple con el formato requerido. Detalles: ["precio" is required]
+info: 2024-02-18T05:53:39.015Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 2.450 ms
+info: 2024-02-18T05:53:39.021Z Usuario daniel esta autenticado
+info: 2024-02-18T05:53:39.024Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 49 - 4.670 ms
+info: 2024-02-18T05:53:39.032Z Usuario daniel esta autenticado
+info: 2024-02-18T05:53:39.032Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 2.311 ms
+info: 2024-02-18T05:53:39.041Z Usuario daniel esta autenticado
+info: 2024-02-18T05:53:39.042Z Producto con id [5ab8dbcc6539f91c2288b0c1] no existe. Nada que borrar
+info: 2024-02-18T05:53:39.043Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 369 - 3.928 ms
+info: 2024-02-18T05:53:39.050Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19b637bf8b8f21ff7c706 HTTP/1.1 401 - - 1.111 ms
+info: 2024-02-18T05:53:39.060Z Usuario daniel esta autenticado
+info: 2024-02-18T05:53:39.061Z Usuario [daniel] no es dueño de producto con id [65d19b637bf8b8f21ff7c70c]. Dueño real es [ricardo98]. Request no será procesado
+info: 2024-02-18T05:53:39.061Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19b637bf8b8f21ff7c70c HTTP/1.1 401 444 - 3.609 ms
+info: 2024-02-18T05:53:39.069Z Usuario daniel esta autenticado
+info: 2024-02-18T05:53:39.074Z Producto con id [65d19b637bf8b8f21ff7c712] fue borrado
+info: 2024-02-18T05:53:39.074Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19b637bf8b8f21ff7c712 HTTP/1.1 200 161 - 6.766 ms
+info: 2024-02-18T05:53:39.324Z Escuchando el puerto 3000.
+info: 2024-02-18T05:53:39.350Z Creando nueva categoría de producto: Electrónicos
+info: 2024-02-18T05:53:39.361Z Categoría creada con éxito: {
+  nombre: 'Electrónicos',
+  _id: new ObjectId('65d19b633096f0863aaf16f0'),
+  __v: 0
+}
+info: 2024-02-18T05:53:39.362Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 67 - 11.361 ms
+info: 2024-02-18T05:53:39.372Z Obteniendo todas las categorías de productos
+info: 2024-02-18T05:53:39.374Z Categorías obtenidas con éxito
+info: 2024-02-18T05:53:39.374Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias HTTP/1.1 200 202 - 2.727 ms
+info: 2024-02-18T05:53:39.379Z Creando nueva categoría de producto: Ropa
+info: 2024-02-18T05:53:39.381Z Categoría creada con éxito: {
+  nombre: 'Ropa',
+  _id: new ObjectId('65d19b633096f0863aaf16fb'),
+  __v: 0
+}
+info: 2024-02-18T05:53:39.381Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 58 - 1.984 ms
+info: 2024-02-18T05:53:39.383Z Obteniendo categoría por ID: 65d19b633096f0863aaf16fb
+info: 2024-02-18T05:53:39.385Z Categoría obtenida con éxito: {
+  _id: new ObjectId('65d19b633096f0863aaf16fb'),
+  nombre: 'Ropa',
+  __v: 0
+}
+info: 2024-02-18T05:53:39.385Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias/65d19b633096f0863aaf16fb HTTP/1.1 200 58 - 2.009 ms
+info: 2024-02-18T05:53:39.771Z Escuchando el puerto 3000.
+info: 2024-02-18T05:53:39.790Z ::ffff:127.0.0.1 - GET /ventas HTTP/1.1 404 145 - 1.194 ms
+info: 2024-02-18T05:53:39.803Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/ventas/vender/123 HTTP/1.1 401 - - 0.520 ms
+info: 2024-02-18T05:53:39.809Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 401 - - 0.413 ms
+info: 2024-02-18T05:55:01.317Z Escuchando el puerto 3000.
+info: 2024-02-18T05:55:01.358Z ::ffff:127.0.0.1 - GET /ventas HTTP/1.1 404 145 - 2.358 ms
+info: 2024-02-18T05:55:01.387Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/ventas/vender/123 HTTP/1.1 401 - - 1.103 ms
+info: 2024-02-18T05:55:01.396Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 401 - - 0.451 ms
+info: 2024-02-18T05:55:01.686Z Escuchando el puerto 3000.
+info: 2024-02-18T05:55:01.705Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 2 - 4.531 ms
+info: 2024-02-18T05:55:01.724Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 339 - 2.978 ms
+info: 2024-02-18T05:55:01.830Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 97.061 ms
+warn: 2024-02-18T05:55:01.921Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-02-18T05:55:01.925Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 5.281 ms
+warn: 2024-02-18T05:55:01.935Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-02-18T05:55:01.936Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 2.443 ms
+info: 2024-02-18T05:55:01.943Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-02-18T05:55:01.944Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 1.585 ms
+info: 2024-02-18T05:55:01.948Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-02-18T05:55:01.949Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.722 ms
+info: 2024-02-18T05:55:01.955Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-02-18T05:55:01.955Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.624 ms
+info: 2024-02-18T05:55:01.961Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-02-18T05:55:01.961Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.741 ms
+info: 2024-02-18T05:55:01.969Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-02-18T05:55:01.969Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.749 ms
+info: 2024-02-18T05:55:01.976Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-02-18T05:55:01.976Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.645 ms
+info: 2024-02-18T05:55:02.067Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 83.300 ms
+info: 2024-02-18T05:55:02.154Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.563 ms
+info: 2024-02-18T05:55:02.159Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.516 ms
+info: 2024-02-18T05:55:02.165Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-02-18T05:55:02.166Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 397 - 2.536 ms
+info: 2024-02-18T05:55:02.334Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-02-18T05:55:02.335Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 322 - 81.205 ms
+info: 2024-02-18T05:55:02.503Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:55:02.503Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 82.693 ms
+info: 2024-02-18T05:55:02.670Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:55:02.671Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 80.249 ms
+info: 2024-02-18T05:55:02.935Z Escuchando el puerto 3000.
+info: 2024-02-18T05:55:03.048Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 95.343 ms
+info: 2024-02-18T05:55:03.134Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:55:03.135Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 82.697 ms
+info: 2024-02-18T05:55:03.140Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 0.505 ms
+info: 2024-02-18T05:55:03.150Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 334 - 5.962 ms
+info: 2024-02-18T05:55:03.160Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/65d19bb7981f59facc5ff6eb HTTP/1.1 200 161 - 2.115 ms
+info: 2024-02-18T05:55:03.167Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 401 - - 1.914 ms
+info: 2024-02-18T05:55:03.173Z Usuario daniel esta autenticado
+warn: 2024-02-18T05:55:03.175Z El producto en el body no cumple con el formato requerido. Detalles: ["nombre" is required]
+info: 2024-02-18T05:55:03.175Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 4.158 ms
+info: 2024-02-18T05:55:03.181Z Usuario daniel esta autenticado
+warn: 2024-02-18T05:55:03.181Z El producto en el body no cumple con el formato requerido. Detalles: ["precio" is required]
+info: 2024-02-18T05:55:03.182Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 2.441 ms
+info: 2024-02-18T05:55:03.188Z Usuario daniel esta autenticado
+info: 2024-02-18T05:55:03.190Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 49 - 4.275 ms
+info: 2024-02-18T05:55:03.199Z Usuario daniel esta autenticado
+info: 2024-02-18T05:55:03.199Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 2.363 ms
+info: 2024-02-18T05:55:03.208Z Usuario daniel esta autenticado
+info: 2024-02-18T05:55:03.211Z Producto con id [5ab8dbcc6539f91c2288b0c1] no existe. Nada que borrar
+info: 2024-02-18T05:55:03.211Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 369 - 5.424 ms
+info: 2024-02-18T05:55:03.219Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19bb7981f59facc5ff703 HTTP/1.1 401 - - 1.079 ms
+info: 2024-02-18T05:55:03.229Z Usuario daniel esta autenticado
+info: 2024-02-18T05:55:03.230Z Usuario [daniel] no es dueño de producto con id [65d19bb7981f59facc5ff709]. Dueño real es [ricardo98]. Request no será procesado
+info: 2024-02-18T05:55:03.231Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19bb7981f59facc5ff709 HTTP/1.1 401 444 - 3.949 ms
+info: 2024-02-18T05:55:03.240Z Usuario daniel esta autenticado
+info: 2024-02-18T05:55:03.243Z Producto con id [65d19bb7981f59facc5ff70f] fue borrado
+info: 2024-02-18T05:55:03.243Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19bb7981f59facc5ff70f HTTP/1.1 200 161 - 5.946 ms
+info: 2024-02-18T05:55:03.509Z Escuchando el puerto 3000.
+info: 2024-02-18T05:55:03.526Z Creando nueva categoría de producto: Electrónicos
+info: 2024-02-18T05:55:03.530Z Categoría creada con éxito: {
+  nombre: 'Electrónicos',
+  _id: new ObjectId('65d19bb72c6e47313a1963dd'),
+  __v: 0
+}
+info: 2024-02-18T05:55:03.531Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 67 - 5.179 ms
+info: 2024-02-18T05:55:03.538Z Obteniendo todas las categorías de productos
+info: 2024-02-18T05:55:03.540Z Categorías obtenidas con éxito
+info: 2024-02-18T05:55:03.541Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias HTTP/1.1 200 202 - 2.603 ms
+info: 2024-02-18T05:55:03.545Z Creando nueva categoría de producto: Ropa
+info: 2024-02-18T05:55:03.546Z Categoría creada con éxito: {
+  nombre: 'Ropa',
+  _id: new ObjectId('65d19bb72c6e47313a1963e8'),
+  __v: 0
+}
+info: 2024-02-18T05:55:03.547Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 58 - 1.805 ms
+info: 2024-02-18T05:55:03.549Z Obteniendo categoría por ID: 65d19bb72c6e47313a1963e8
+info: 2024-02-18T05:55:03.551Z Categoría obtenida con éxito: {
+  _id: new ObjectId('65d19bb72c6e47313a1963e8'),
+  nombre: 'Ropa',
+  __v: 0
+}
+info: 2024-02-18T05:55:03.551Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias/65d19bb72c6e47313a1963e8 HTTP/1.1 200 58 - 2.023 ms
+info: 2024-02-18T05:57:56.581Z Escuchando el puerto 3000.
+info: 2024-02-18T05:57:56.625Z ::ffff:127.0.0.1 - GET /ventas HTTP/1.1 404 145 - 2.318 ms
+info: 2024-02-18T05:57:56.654Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/ventas/vender/123 HTTP/1.1 401 - - 1.087 ms
+info: 2024-02-18T05:57:56.662Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/ventas/vender-automatico HTTP/1.1 401 - - 0.440 ms
+info: 2024-02-18T05:57:56.948Z Escuchando el puerto 3000.
+info: 2024-02-18T05:57:56.968Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 2 - 3.965 ms
+info: 2024-02-18T05:57:56.989Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 339 - 3.379 ms
+info: 2024-02-18T05:57:57.093Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 95.510 ms
+warn: 2024-02-18T05:57:57.183Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-02-18T05:57:57.187Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 5.478 ms
+warn: 2024-02-18T05:57:57.197Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-02-18T05:57:57.198Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 2.232 ms
+info: 2024-02-18T05:57:57.204Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-02-18T05:57:57.205Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 1.683 ms
+info: 2024-02-18T05:57:57.210Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-02-18T05:57:57.210Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.561 ms
+info: 2024-02-18T05:57:57.215Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-02-18T05:57:57.216Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.618 ms
+info: 2024-02-18T05:57:57.222Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-02-18T05:57:57.222Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.741 ms
+info: 2024-02-18T05:57:57.229Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-02-18T05:57:57.230Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.757 ms
+info: 2024-02-18T05:57:57.236Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-02-18T05:57:57.237Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.989 ms
+info: 2024-02-18T05:57:57.325Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 82.360 ms
+info: 2024-02-18T05:57:57.410Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.594 ms
+info: 2024-02-18T05:57:57.415Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.553 ms
+info: 2024-02-18T05:57:57.423Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-02-18T05:57:57.423Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 397 - 2.586 ms
+info: 2024-02-18T05:57:57.594Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-02-18T05:57:57.594Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 322 - 81.770 ms
+info: 2024-02-18T05:57:57.762Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:57:57.763Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 82.424 ms
+info: 2024-02-18T05:57:57.930Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:57:57.931Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 80.517 ms
+info: 2024-02-18T05:57:58.197Z Escuchando el puerto 3000.
+info: 2024-02-18T05:57:58.311Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 94.307 ms
+info: 2024-02-18T05:57:58.396Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:57:58.397Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 81.509 ms
+info: 2024-02-18T05:57:58.401Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 0.453 ms
+info: 2024-02-18T05:57:58.412Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 334 - 6.358 ms
+info: 2024-02-18T05:57:58.420Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/65d19c6659919007e36f895a HTTP/1.1 200 161 - 1.975 ms
+info: 2024-02-18T05:57:58.428Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 401 - - 2.163 ms
+info: 2024-02-18T05:57:58.434Z Usuario daniel esta autenticado
+warn: 2024-02-18T05:57:58.435Z El producto en el body no cumple con el formato requerido. Detalles: ["nombre" is required]
+info: 2024-02-18T05:57:58.435Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 3.340 ms
+info: 2024-02-18T05:57:58.442Z Usuario daniel esta autenticado
+warn: 2024-02-18T05:57:58.442Z El producto en el body no cumple con el formato requerido. Detalles: ["precio" is required]
+info: 2024-02-18T05:57:58.442Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 2.720 ms
+info: 2024-02-18T05:57:58.449Z Usuario daniel esta autenticado
+info: 2024-02-18T05:57:58.450Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 49 - 3.446 ms
+info: 2024-02-18T05:57:58.458Z Usuario daniel esta autenticado
+info: 2024-02-18T05:57:58.459Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 2.833 ms
+info: 2024-02-18T05:57:58.466Z Usuario daniel esta autenticado
+info: 2024-02-18T05:57:58.468Z Producto con id [5ab8dbcc6539f91c2288b0c1] no existe. Nada que borrar
+info: 2024-02-18T05:57:58.468Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 369 - 3.824 ms
+info: 2024-02-18T05:57:58.476Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19c6659919007e36f8972 HTTP/1.1 401 - - 1.145 ms
+info: 2024-02-18T05:57:58.485Z Usuario daniel esta autenticado
+info: 2024-02-18T05:57:58.486Z Usuario [daniel] no es dueño de producto con id [65d19c6659919007e36f8978]. Dueño real es [ricardo98]. Request no será procesado
+info: 2024-02-18T05:57:58.487Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19c6659919007e36f8978 HTTP/1.1 401 444 - 3.610 ms
+info: 2024-02-18T05:57:58.495Z Usuario daniel esta autenticado
+info: 2024-02-18T05:57:58.498Z Producto con id [65d19c6659919007e36f897e] fue borrado
+info: 2024-02-18T05:57:58.499Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19c6659919007e36f897e HTTP/1.1 200 161 - 5.509 ms
+info: 2024-02-18T05:57:58.747Z Escuchando el puerto 3000.
+info: 2024-02-18T05:57:58.766Z Creando nueva categoría de producto: Electrónicos
+info: 2024-02-18T05:57:58.770Z Categoría creada con éxito: {
+  nombre: 'Electrónicos',
+  _id: new ObjectId('65d19c6667e456e0672bb9e1'),
+  __v: 0
+}
+info: 2024-02-18T05:57:58.771Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 67 - 5.081 ms
+info: 2024-02-18T05:57:58.778Z Obteniendo todas las categorías de productos
+info: 2024-02-18T05:57:58.779Z Categorías obtenidas con éxito
+info: 2024-02-18T05:57:58.780Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias HTTP/1.1 200 202 - 2.206 ms
+info: 2024-02-18T05:57:58.784Z Creando nueva categoría de producto: Ropa
+info: 2024-02-18T05:57:58.786Z Categoría creada con éxito: {
+  nombre: 'Ropa',
+  _id: new ObjectId('65d19c6667e456e0672bb9ec'),
+  __v: 0
+}
+info: 2024-02-18T05:57:58.786Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 58 - 1.900 ms
+info: 2024-02-18T05:57:58.788Z Obteniendo categoría por ID: 65d19c6667e456e0672bb9ec
+info: 2024-02-18T05:57:58.790Z Categoría obtenida con éxito: {
+  _id: new ObjectId('65d19c6667e456e0672bb9ec'),
+  nombre: 'Ropa',
+  __v: 0
+}
+info: 2024-02-18T05:57:58.790Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias/65d19c6667e456e0672bb9ec HTTP/1.1 200 58 - 2.015 ms
+info: 2024-02-18T05:59:12.400Z Escuchando el puerto 3000.
+info: 2024-02-18T05:59:12.710Z Escuchando el puerto 3000.
+info: 2024-02-18T05:59:12.741Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 2 - 5.025 ms
+info: 2024-02-18T05:59:12.766Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 339 - 3.348 ms
+info: 2024-02-18T05:59:12.877Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 96.125 ms
+warn: 2024-02-18T05:59:12.968Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-02-18T05:59:12.972Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 5.417 ms
+warn: 2024-02-18T05:59:12.983Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-02-18T05:59:12.984Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 2.276 ms
+info: 2024-02-18T05:59:12.990Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-02-18T05:59:12.991Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 1.748 ms
+info: 2024-02-18T05:59:12.997Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-02-18T05:59:12.997Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.588 ms
+info: 2024-02-18T05:59:13.002Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-02-18T05:59:13.003Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.639 ms
+info: 2024-02-18T05:59:13.009Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-02-18T05:59:13.010Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.860 ms
+info: 2024-02-18T05:59:13.016Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-02-18T05:59:13.017Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.680 ms
+info: 2024-02-18T05:59:13.024Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-02-18T05:59:13.024Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.779 ms
+info: 2024-02-18T05:59:13.112Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 82.007 ms
+info: 2024-02-18T05:59:13.198Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.583 ms
+info: 2024-02-18T05:59:13.203Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.570 ms
+info: 2024-02-18T05:59:13.211Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-02-18T05:59:13.212Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 397 - 3.197 ms
+info: 2024-02-18T05:59:13.383Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-02-18T05:59:13.383Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 322 - 80.965 ms
+info: 2024-02-18T05:59:13.551Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:59:13.552Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 82.889 ms
+info: 2024-02-18T05:59:13.723Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:59:13.723Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 83.026 ms
+info: 2024-02-18T05:59:13.996Z Escuchando el puerto 3000.
+info: 2024-02-18T05:59:14.109Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 95.542 ms
+info: 2024-02-18T05:59:14.194Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:59:14.195Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 81.726 ms
+info: 2024-02-18T05:59:14.200Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 0.559 ms
+info: 2024-02-18T05:59:14.210Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 334 - 6.089 ms
+info: 2024-02-18T05:59:14.219Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/65d19cb20b1ec1dc7ad2ea0d HTTP/1.1 200 161 - 2.014 ms
+info: 2024-02-18T05:59:14.226Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 401 - - 2.315 ms
+info: 2024-02-18T05:59:14.234Z Usuario daniel esta autenticado
+warn: 2024-02-18T05:59:14.236Z El producto en el body no cumple con el formato requerido. Detalles: ["nombre" is required]
+info: 2024-02-18T05:59:14.237Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 5.887 ms
+info: 2024-02-18T05:59:14.266Z Usuario daniel esta autenticado
+warn: 2024-02-18T05:59:14.266Z El producto en el body no cumple con el formato requerido. Detalles: ["precio" is required]
+info: 2024-02-18T05:59:14.267Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 3.216 ms
+info: 2024-02-18T05:59:14.277Z Usuario daniel esta autenticado
+info: 2024-02-18T05:59:14.279Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 49 - 4.554 ms
+info: 2024-02-18T05:59:14.289Z Usuario daniel esta autenticado
+info: 2024-02-18T05:59:14.289Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 3.270 ms
+info: 2024-02-18T05:59:14.297Z Usuario daniel esta autenticado
+info: 2024-02-18T05:59:14.299Z Producto con id [5ab8dbcc6539f91c2288b0c1] no existe. Nada que borrar
+info: 2024-02-18T05:59:14.299Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 369 - 4.124 ms
+info: 2024-02-18T05:59:14.306Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19cb20b1ec1dc7ad2ea25 HTTP/1.1 401 - - 1.098 ms
+info: 2024-02-18T05:59:14.317Z Usuario daniel esta autenticado
+info: 2024-02-18T05:59:14.319Z Usuario [daniel] no es dueño de producto con id [65d19cb20b1ec1dc7ad2ea2b]. Dueño real es [ricardo98]. Request no será procesado
+info: 2024-02-18T05:59:14.319Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19cb20b1ec1dc7ad2ea2b HTTP/1.1 401 444 - 5.257 ms
+info: 2024-02-18T05:59:14.328Z Usuario daniel esta autenticado
+info: 2024-02-18T05:59:14.331Z Producto con id [65d19cb20b1ec1dc7ad2ea31] fue borrado
+info: 2024-02-18T05:59:14.332Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19cb20b1ec1dc7ad2ea31 HTTP/1.1 200 161 - 6.269 ms
+info: 2024-02-18T05:59:14.577Z Escuchando el puerto 3000.
+info: 2024-02-18T05:59:14.593Z Creando nueva categoría de producto: Electrónicos
+info: 2024-02-18T05:59:14.597Z Categoría creada con éxito: {
+  nombre: 'Electrónicos',
+  _id: new ObjectId('65d19cb24d6430e10acd15f5'),
+  __v: 0
+}
+info: 2024-02-18T05:59:14.598Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 67 - 5.385 ms
+info: 2024-02-18T05:59:14.605Z Obteniendo todas las categorías de productos
+info: 2024-02-18T05:59:14.607Z Categorías obtenidas con éxito
+info: 2024-02-18T05:59:14.608Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias HTTP/1.1 200 202 - 2.268 ms
+info: 2024-02-18T05:59:14.612Z Creando nueva categoría de producto: Ropa
+info: 2024-02-18T05:59:14.614Z Categoría creada con éxito: {
+  nombre: 'Ropa',
+  _id: new ObjectId('65d19cb24d6430e10acd1600'),
+  __v: 0
+}
+info: 2024-02-18T05:59:14.614Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 58 - 2.486 ms
+info: 2024-02-18T05:59:14.617Z Obteniendo categoría por ID: 65d19cb24d6430e10acd1600
+info: 2024-02-18T05:59:14.619Z Categoría obtenida con éxito: {
+  _id: new ObjectId('65d19cb24d6430e10acd1600'),
+  nombre: 'Ropa',
+  __v: 0
+}
+info: 2024-02-18T05:59:14.619Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias/65d19cb24d6430e10acd1600 HTTP/1.1 200 58 - 2.751 ms
+info: 2024-02-18T05:59:43.133Z Escuchando el puerto 3000.
+info: 2024-02-18T05:59:43.178Z ::ffff:127.0.0.1 - GET /ventas HTTP/1.1 404 145 - 2.399 ms
+info: 2024-02-18T05:59:43.470Z Escuchando el puerto 3000.
+info: 2024-02-18T05:59:43.486Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 2 - 2.901 ms
+info: 2024-02-18T05:59:43.507Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 339 - 3.303 ms
+info: 2024-02-18T05:59:43.618Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 95.788 ms
+warn: 2024-02-18T05:59:43.709Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-02-18T05:59:43.713Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 5.331 ms
+warn: 2024-02-18T05:59:43.724Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-02-18T05:59:43.725Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 2.189 ms
+info: 2024-02-18T05:59:43.732Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-02-18T05:59:43.733Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 2.128 ms
+info: 2024-02-18T05:59:43.737Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-02-18T05:59:43.738Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.592 ms
+info: 2024-02-18T05:59:43.743Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-02-18T05:59:43.743Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.614 ms
+info: 2024-02-18T05:59:43.749Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-02-18T05:59:43.750Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.749 ms
+info: 2024-02-18T05:59:43.756Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-02-18T05:59:43.757Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.803 ms
+info: 2024-02-18T05:59:43.764Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-02-18T05:59:43.765Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.659 ms
+info: 2024-02-18T05:59:43.853Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 82.604 ms
+info: 2024-02-18T05:59:43.938Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.579 ms
+info: 2024-02-18T05:59:43.943Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.520 ms
+info: 2024-02-18T05:59:43.949Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-02-18T05:59:43.950Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 397 - 2.577 ms
+info: 2024-02-18T05:59:44.115Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-02-18T05:59:44.116Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 322 - 81.010 ms
+info: 2024-02-18T05:59:44.310Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:59:44.311Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 82.185 ms
+info: 2024-02-18T05:59:44.479Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:59:44.479Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 80.751 ms
+info: 2024-02-18T05:59:44.750Z Escuchando el puerto 3000.
+info: 2024-02-18T05:59:44.867Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 98.965 ms
+info: 2024-02-18T05:59:44.952Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T05:59:44.953Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 81.652 ms
+info: 2024-02-18T05:59:44.957Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 0.572 ms
+info: 2024-02-18T05:59:44.968Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 334 - 5.915 ms
+info: 2024-02-18T05:59:44.976Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/65d19cd00ff195b8f009a055 HTTP/1.1 200 161 - 1.879 ms
+info: 2024-02-18T05:59:44.984Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 401 - - 3.048 ms
+info: 2024-02-18T05:59:44.990Z Usuario daniel esta autenticado
+warn: 2024-02-18T05:59:44.991Z El producto en el body no cumple con el formato requerido. Detalles: ["nombre" is required]
+info: 2024-02-18T05:59:44.992Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 3.551 ms
+info: 2024-02-18T05:59:44.998Z Usuario daniel esta autenticado
+warn: 2024-02-18T05:59:44.999Z El producto en el body no cumple con el formato requerido. Detalles: ["precio" is required]
+info: 2024-02-18T05:59:44.999Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 3.164 ms
+info: 2024-02-18T05:59:45.005Z Usuario daniel esta autenticado
+info: 2024-02-18T05:59:45.007Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 49 - 3.584 ms
+info: 2024-02-18T05:59:45.015Z Usuario daniel esta autenticado
+info: 2024-02-18T05:59:45.016Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 2.741 ms
+info: 2024-02-18T05:59:45.024Z Usuario daniel esta autenticado
+info: 2024-02-18T05:59:45.025Z Producto con id [5ab8dbcc6539f91c2288b0c1] no existe. Nada que borrar
+info: 2024-02-18T05:59:45.026Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 369 - 3.826 ms
+info: 2024-02-18T05:59:45.034Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19cd10ff195b8f009a06d HTTP/1.1 401 - - 1.517 ms
+info: 2024-02-18T05:59:45.043Z Usuario daniel esta autenticado
+info: 2024-02-18T05:59:45.044Z Usuario [daniel] no es dueño de producto con id [65d19cd10ff195b8f009a073]. Dueño real es [ricardo98]. Request no será procesado
+info: 2024-02-18T05:59:45.044Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19cd10ff195b8f009a073 HTTP/1.1 401 444 - 3.594 ms
+info: 2024-02-18T05:59:45.054Z Usuario daniel esta autenticado
+info: 2024-02-18T05:59:45.058Z Producto con id [65d19cd10ff195b8f009a079] fue borrado
+info: 2024-02-18T05:59:45.058Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19cd10ff195b8f009a079 HTTP/1.1 200 161 - 5.781 ms
+info: 2024-02-18T05:59:45.315Z Escuchando el puerto 3000.
+info: 2024-02-18T05:59:45.331Z Creando nueva categoría de producto: Electrónicos
+info: 2024-02-18T05:59:45.336Z Categoría creada con éxito: {
+  nombre: 'Electrónicos',
+  _id: new ObjectId('65d19cd1457dbbe341e9a961'),
+  __v: 0
+}
+info: 2024-02-18T05:59:45.337Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 67 - 5.884 ms
+info: 2024-02-18T05:59:45.345Z Obteniendo todas las categorías de productos
+info: 2024-02-18T05:59:45.346Z Categorías obtenidas con éxito
+info: 2024-02-18T05:59:45.347Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias HTTP/1.1 200 202 - 2.308 ms
+info: 2024-02-18T05:59:45.352Z Creando nueva categoría de producto: Ropa
+info: 2024-02-18T05:59:45.354Z Categoría creada con éxito: {
+  nombre: 'Ropa',
+  _id: new ObjectId('65d19cd1457dbbe341e9a96c'),
+  __v: 0
+}
+info: 2024-02-18T05:59:45.354Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 58 - 2.443 ms
+info: 2024-02-18T05:59:45.357Z Obteniendo categoría por ID: 65d19cd1457dbbe341e9a96c
+info: 2024-02-18T05:59:45.358Z Categoría obtenida con éxito: {
+  _id: new ObjectId('65d19cd1457dbbe341e9a96c'),
+  nombre: 'Ropa',
+  __v: 0
+}
+info: 2024-02-18T05:59:45.359Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias/65d19cd1457dbbe341e9a96c HTTP/1.1 200 58 - 2.166 ms
+info: 2024-02-18T06:00:02.109Z Escuchando el puerto 3000.
+info: 2024-02-18T06:00:02.155Z ::ffff:127.0.0.1 - GET /ventas HTTP/1.1 404 145 - 2.457 ms
+info: 2024-02-18T06:00:02.414Z Escuchando el puerto 3000.
+info: 2024-02-18T06:00:02.433Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 2 - 2.732 ms
+info: 2024-02-18T06:00:02.454Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 339 - 3.138 ms
+info: 2024-02-18T06:00:02.567Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 98.385 ms
+warn: 2024-02-18T06:00:02.659Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-02-18T06:00:02.665Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 7.507 ms
+warn: 2024-02-18T06:00:02.676Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-02-18T06:00:02.678Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 2.513 ms
+info: 2024-02-18T06:00:02.684Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-02-18T06:00:02.685Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 1.638 ms
+info: 2024-02-18T06:00:02.690Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-02-18T06:00:02.691Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.664 ms
+info: 2024-02-18T06:00:02.697Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-02-18T06:00:02.697Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.591 ms
+info: 2024-02-18T06:00:02.703Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-02-18T06:00:02.703Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.799 ms
+info: 2024-02-18T06:00:02.710Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-02-18T06:00:02.711Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.714 ms
+info: 2024-02-18T06:00:02.717Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-02-18T06:00:02.718Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.678 ms
+info: 2024-02-18T06:00:02.807Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 82.978 ms
+info: 2024-02-18T06:00:02.893Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.590 ms
+info: 2024-02-18T06:00:02.898Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.514 ms
+info: 2024-02-18T06:00:02.904Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-02-18T06:00:02.905Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 397 - 2.440 ms
+info: 2024-02-18T06:00:03.069Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-02-18T06:00:03.070Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 322 - 80.757 ms
+info: 2024-02-18T06:00:03.238Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T06:00:03.238Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 82.534 ms
+info: 2024-02-18T06:00:03.405Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T06:00:03.406Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 81.480 ms
+info: 2024-02-18T06:00:03.666Z Escuchando el puerto 3000.
+info: 2024-02-18T06:00:03.780Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 95.916 ms
+info: 2024-02-18T06:00:03.866Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T06:00:03.867Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 81.969 ms
+info: 2024-02-18T06:00:03.872Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 0.581 ms
+info: 2024-02-18T06:00:03.883Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 334 - 6.445 ms
+info: 2024-02-18T06:00:03.891Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/65d19ce32475f5973e26ba79 HTTP/1.1 200 161 - 2.003 ms
+info: 2024-02-18T06:00:03.899Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 401 - - 2.605 ms
+info: 2024-02-18T06:00:03.905Z Usuario daniel esta autenticado
+warn: 2024-02-18T06:00:03.906Z El producto en el body no cumple con el formato requerido. Detalles: ["nombre" is required]
+info: 2024-02-18T06:00:03.906Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 3.377 ms
+info: 2024-02-18T06:00:03.913Z Usuario daniel esta autenticado
+warn: 2024-02-18T06:00:03.913Z El producto en el body no cumple con el formato requerido. Detalles: ["precio" is required]
+info: 2024-02-18T06:00:03.913Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 2.915 ms
+info: 2024-02-18T06:00:03.919Z Usuario daniel esta autenticado
+info: 2024-02-18T06:00:03.921Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 49 - 3.685 ms
+info: 2024-02-18T06:00:03.929Z Usuario daniel esta autenticado
+info: 2024-02-18T06:00:03.929Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 2.964 ms
+info: 2024-02-18T06:00:03.938Z Usuario daniel esta autenticado
+info: 2024-02-18T06:00:03.939Z Producto con id [5ab8dbcc6539f91c2288b0c1] no existe. Nada que borrar
+info: 2024-02-18T06:00:03.940Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 369 - 3.831 ms
+info: 2024-02-18T06:00:03.948Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19ce32475f5973e26ba91 HTTP/1.1 401 - - 1.114 ms
+info: 2024-02-18T06:00:03.957Z Usuario daniel esta autenticado
+info: 2024-02-18T06:00:03.958Z Usuario [daniel] no es dueño de producto con id [65d19ce32475f5973e26ba97]. Dueño real es [ricardo98]. Request no será procesado
+info: 2024-02-18T06:00:03.958Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19ce32475f5973e26ba97 HTTP/1.1 401 444 - 3.689 ms
+info: 2024-02-18T06:00:03.967Z Usuario daniel esta autenticado
+info: 2024-02-18T06:00:03.971Z Producto con id [65d19ce32475f5973e26ba9d] fue borrado
+info: 2024-02-18T06:00:03.971Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19ce32475f5973e26ba9d HTTP/1.1 200 161 - 5.763 ms
+info: 2024-02-18T06:00:04.236Z Escuchando el puerto 3000.
+info: 2024-02-18T06:00:04.253Z Creando nueva categoría de producto: Electrónicos
+info: 2024-02-18T06:00:04.257Z Categoría creada con éxito: {
+  nombre: 'Electrónicos',
+  _id: new ObjectId('65d19ce4673bd9e58eee57e0'),
+  __v: 0
+}
+info: 2024-02-18T06:00:04.258Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 67 - 5.131 ms
+info: 2024-02-18T06:00:04.266Z Obteniendo todas las categorías de productos
+info: 2024-02-18T06:00:04.268Z Categorías obtenidas con éxito
+info: 2024-02-18T06:00:04.268Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias HTTP/1.1 200 202 - 2.839 ms
+info: 2024-02-18T06:00:04.273Z Creando nueva categoría de producto: Ropa
+info: 2024-02-18T06:00:04.274Z Categoría creada con éxito: {
+  nombre: 'Ropa',
+  _id: new ObjectId('65d19ce4673bd9e58eee57eb'),
+  __v: 0
+}
+info: 2024-02-18T06:00:04.275Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 58 - 1.849 ms
+info: 2024-02-18T06:00:04.277Z Obteniendo categoría por ID: 65d19ce4673bd9e58eee57eb
+info: 2024-02-18T06:00:04.279Z Categoría obtenida con éxito: {
+  _id: new ObjectId('65d19ce4673bd9e58eee57eb'),
+  nombre: 'Ropa',
+  __v: 0
+}
+info: 2024-02-18T06:00:04.279Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias/65d19ce4673bd9e58eee57eb HTTP/1.1 200 58 - 2.342 ms
+info: 2024-02-18T06:01:18.933Z Escuchando el puerto 3000.
+info: 2024-02-18T06:01:18.978Z ::ffff:127.0.0.1 - GET /ventas HTTP/1.1 404 145 - 2.274 ms
+info: 2024-02-18T06:01:19.000Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/ventas/vender/123 HTTP/1.1 401 - - 1.075 ms
+info: 2024-02-18T06:01:19.279Z Escuchando el puerto 3000.
+info: 2024-02-18T06:01:19.295Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 2 - 2.557 ms
+info: 2024-02-18T06:01:19.316Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 339 - 3.339 ms
+info: 2024-02-18T06:01:19.419Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 95.558 ms
+warn: 2024-02-18T06:01:19.512Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-02-18T06:01:19.516Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 5.187 ms
+warn: 2024-02-18T06:01:19.528Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-02-18T06:01:19.529Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 3.089 ms
+info: 2024-02-18T06:01:19.536Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-02-18T06:01:19.537Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 1.763 ms
+info: 2024-02-18T06:01:19.542Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-02-18T06:01:19.543Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.611 ms
+info: 2024-02-18T06:01:19.548Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-02-18T06:01:19.548Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.770 ms
+info: 2024-02-18T06:01:19.555Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-02-18T06:01:19.556Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.722 ms
+info: 2024-02-18T06:01:19.562Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-02-18T06:01:19.563Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.740 ms
+info: 2024-02-18T06:01:19.570Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-02-18T06:01:19.570Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.622 ms
+info: 2024-02-18T06:01:19.658Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 82.132 ms
+info: 2024-02-18T06:01:19.744Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.610 ms
+info: 2024-02-18T06:01:19.748Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.531 ms
+info: 2024-02-18T06:01:19.754Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-02-18T06:01:19.755Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 397 - 2.309 ms
+info: 2024-02-18T06:01:19.922Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-02-18T06:01:19.923Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 322 - 82.574 ms
+info: 2024-02-18T06:01:20.090Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T06:01:20.091Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 82.906 ms
+info: 2024-02-18T06:01:20.258Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T06:01:20.259Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 81.282 ms
+info: 2024-02-18T06:01:20.530Z Escuchando el puerto 3000.
+info: 2024-02-18T06:01:20.644Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 94.346 ms
+info: 2024-02-18T06:01:20.729Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T06:01:20.730Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 81.870 ms
+info: 2024-02-18T06:01:20.736Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 0.508 ms
+info: 2024-02-18T06:01:20.746Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 334 - 6.142 ms
+info: 2024-02-18T06:01:20.756Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/65d19d30a92a4afb4ba224d3 HTTP/1.1 200 161 - 1.996 ms
+info: 2024-02-18T06:01:20.763Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 401 - - 1.862 ms
+info: 2024-02-18T06:01:20.769Z Usuario daniel esta autenticado
+warn: 2024-02-18T06:01:20.770Z El producto en el body no cumple con el formato requerido. Detalles: ["nombre" is required]
+info: 2024-02-18T06:01:20.770Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 3.551 ms
+info: 2024-02-18T06:01:20.777Z Usuario daniel esta autenticado
+warn: 2024-02-18T06:01:20.777Z El producto en el body no cumple con el formato requerido. Detalles: ["precio" is required]
+info: 2024-02-18T06:01:20.777Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 2.779 ms
+info: 2024-02-18T06:01:20.784Z Usuario daniel esta autenticado
+info: 2024-02-18T06:01:20.786Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 49 - 4.047 ms
+info: 2024-02-18T06:01:20.794Z Usuario daniel esta autenticado
+info: 2024-02-18T06:01:20.794Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 2.391 ms
+info: 2024-02-18T06:01:20.803Z Usuario daniel esta autenticado
+info: 2024-02-18T06:01:20.804Z Producto con id [5ab8dbcc6539f91c2288b0c1] no existe. Nada que borrar
+info: 2024-02-18T06:01:20.805Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 369 - 4.463 ms
+info: 2024-02-18T06:01:20.812Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19d30a92a4afb4ba224eb HTTP/1.1 401 - - 1.117 ms
+info: 2024-02-18T06:01:20.823Z Usuario daniel esta autenticado
+info: 2024-02-18T06:01:20.824Z Usuario [daniel] no es dueño de producto con id [65d19d30a92a4afb4ba224f1]. Dueño real es [ricardo98]. Request no será procesado
+info: 2024-02-18T06:01:20.825Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19d30a92a4afb4ba224f1 HTTP/1.1 401 444 - 4.276 ms
+info: 2024-02-18T06:01:20.833Z Usuario daniel esta autenticado
+info: 2024-02-18T06:01:20.836Z Producto con id [65d19d30a92a4afb4ba224f7] fue borrado
+info: 2024-02-18T06:01:20.837Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19d30a92a4afb4ba224f7 HTTP/1.1 200 161 - 5.967 ms
+info: 2024-02-18T06:01:21.082Z Escuchando el puerto 3000.
+info: 2024-02-18T06:01:21.103Z Creando nueva categoría de producto: Electrónicos
+info: 2024-02-18T06:01:21.108Z Categoría creada con éxito: {
+  nombre: 'Electrónicos',
+  _id: new ObjectId('65d19d31a2ce031c1b2cff8a'),
+  __v: 0
+}
+info: 2024-02-18T06:01:21.108Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 67 - 5.560 ms
+info: 2024-02-18T06:01:21.115Z Obteniendo todas las categorías de productos
+info: 2024-02-18T06:01:21.117Z Categorías obtenidas con éxito
+info: 2024-02-18T06:01:21.118Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias HTTP/1.1 200 202 - 2.320 ms
+info: 2024-02-18T06:01:21.122Z Creando nueva categoría de producto: Ropa
+info: 2024-02-18T06:01:21.124Z Categoría creada con éxito: {
+  nombre: 'Ropa',
+  _id: new ObjectId('65d19d31a2ce031c1b2cff95'),
+  __v: 0
+}
+info: 2024-02-18T06:01:21.124Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 58 - 2.232 ms
+info: 2024-02-18T06:01:21.127Z Obteniendo categoría por ID: 65d19d31a2ce031c1b2cff95
+info: 2024-02-18T06:01:21.129Z Categoría obtenida con éxito: {
+  _id: new ObjectId('65d19d31a2ce031c1b2cff95'),
+  nombre: 'Ropa',
+  __v: 0
+}
+info: 2024-02-18T06:01:21.130Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias/65d19d31a2ce031c1b2cff95 HTTP/1.1 200 58 - 2.757 ms
+info: 2024-02-18T06:01:31.167Z Escuchando el puerto 3000.
+info: 2024-02-18T06:01:31.211Z ::ffff:127.0.0.1 - GET /ventas HTTP/1.1 404 145 - 2.578 ms
+info: 2024-02-18T06:01:31.233Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/ventas/vender/123 HTTP/1.1 401 - - 1.167 ms
+info: 2024-02-18T06:01:31.526Z Escuchando el puerto 3000.
+info: 2024-02-18T06:01:31.543Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 2 - 2.850 ms
+info: 2024-02-18T06:01:31.564Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 339 - 3.038 ms
+info: 2024-02-18T06:01:31.672Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 99.662 ms
+warn: 2024-02-18T06:01:31.764Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-02-18T06:01:31.767Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 4.945 ms
+warn: 2024-02-18T06:01:31.778Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-02-18T06:01:31.779Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 2.294 ms
+info: 2024-02-18T06:01:31.785Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-02-18T06:01:31.785Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 1.621 ms
+info: 2024-02-18T06:01:31.791Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-02-18T06:01:31.792Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.608 ms
+info: 2024-02-18T06:01:31.797Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-02-18T06:01:31.798Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.603 ms
+info: 2024-02-18T06:01:31.803Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-02-18T06:01:31.804Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.694 ms
+info: 2024-02-18T06:01:31.811Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-02-18T06:01:31.812Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.701 ms
+info: 2024-02-18T06:01:31.818Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-02-18T06:01:31.818Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.731 ms
+info: 2024-02-18T06:01:31.909Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 83.511 ms
+info: 2024-02-18T06:01:31.996Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.641 ms
+info: 2024-02-18T06:01:32.001Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.560 ms
+info: 2024-02-18T06:01:32.008Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-02-18T06:01:32.008Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 397 - 2.966 ms
+info: 2024-02-18T06:01:32.177Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-02-18T06:01:32.178Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 322 - 81.535 ms
+info: 2024-02-18T06:01:32.346Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T06:01:32.346Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 82.958 ms
+info: 2024-02-18T06:01:32.514Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T06:01:32.514Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 81.488 ms
+info: 2024-02-18T06:01:32.783Z Escuchando el puerto 3000.
+info: 2024-02-18T06:01:32.901Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 98.648 ms
+info: 2024-02-18T06:01:32.986Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T06:01:32.986Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 81.634 ms
+info: 2024-02-18T06:01:32.991Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 0.468 ms
+info: 2024-02-18T06:01:33.001Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 334 - 5.910 ms
+info: 2024-02-18T06:01:33.010Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/65d19d3d4c3ac54b370ba258 HTTP/1.1 200 161 - 2.100 ms
+info: 2024-02-18T06:01:33.018Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 401 - - 1.867 ms
+info: 2024-02-18T06:01:33.025Z Usuario daniel esta autenticado
+warn: 2024-02-18T06:01:33.026Z El producto en el body no cumple con el formato requerido. Detalles: ["nombre" is required]
+info: 2024-02-18T06:01:33.026Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 3.418 ms
+info: 2024-02-18T06:01:33.033Z Usuario daniel esta autenticado
+warn: 2024-02-18T06:01:33.033Z El producto en el body no cumple con el formato requerido. Detalles: ["precio" is required]
+info: 2024-02-18T06:01:33.034Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 2.500 ms
+info: 2024-02-18T06:01:33.039Z Usuario daniel esta autenticado
+info: 2024-02-18T06:01:33.041Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 49 - 3.489 ms
+info: 2024-02-18T06:01:33.050Z Usuario daniel esta autenticado
+info: 2024-02-18T06:01:33.050Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 2.253 ms
+info: 2024-02-18T06:01:33.058Z Usuario daniel esta autenticado
+info: 2024-02-18T06:01:33.059Z Producto con id [5ab8dbcc6539f91c2288b0c1] no existe. Nada que borrar
+info: 2024-02-18T06:01:33.060Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 369 - 4.128 ms
+info: 2024-02-18T06:01:33.068Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19d3d4c3ac54b370ba270 HTTP/1.1 401 - - 1.308 ms
+info: 2024-02-18T06:01:33.077Z Usuario daniel esta autenticado
+info: 2024-02-18T06:01:33.079Z Usuario [daniel] no es dueño de producto con id [65d19d3d4c3ac54b370ba276]. Dueño real es [ricardo98]. Request no será procesado
+info: 2024-02-18T06:01:33.080Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19d3d4c3ac54b370ba276 HTTP/1.1 401 444 - 4.846 ms
+info: 2024-02-18T06:01:33.088Z Usuario daniel esta autenticado
+info: 2024-02-18T06:01:33.091Z Producto con id [65d19d3d4c3ac54b370ba27c] fue borrado
+info: 2024-02-18T06:01:33.091Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19d3d4c3ac54b370ba27c HTTP/1.1 200 161 - 5.415 ms
+info: 2024-02-18T06:01:33.330Z Escuchando el puerto 3000.
+info: 2024-02-18T06:01:33.346Z Creando nueva categoría de producto: Electrónicos
+info: 2024-02-18T06:01:33.351Z Categoría creada con éxito: {
+  nombre: 'Electrónicos',
+  _id: new ObjectId('65d19d3dfbd7600971edbad2'),
+  __v: 0
+}
+info: 2024-02-18T06:01:33.352Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 67 - 5.605 ms
+info: 2024-02-18T06:01:33.359Z Obteniendo todas las categorías de productos
+info: 2024-02-18T06:01:33.362Z Categorías obtenidas con éxito
+info: 2024-02-18T06:01:33.362Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias HTTP/1.1 200 202 - 2.881 ms
+info: 2024-02-18T06:01:33.367Z Creando nueva categoría de producto: Ropa
+info: 2024-02-18T06:01:33.369Z Categoría creada con éxito: {
+  nombre: 'Ropa',
+  _id: new ObjectId('65d19d3dfbd7600971edbadd'),
+  __v: 0
+}
+info: 2024-02-18T06:01:33.369Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 58 - 2.002 ms
+info: 2024-02-18T06:01:33.371Z Obteniendo categoría por ID: 65d19d3dfbd7600971edbadd
+info: 2024-02-18T06:01:33.373Z Categoría obtenida con éxito: {
+  _id: new ObjectId('65d19d3dfbd7600971edbadd'),
+  nombre: 'Ropa',
+  __v: 0
+}
+info: 2024-02-18T06:01:33.373Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias/65d19d3dfbd7600971edbadd HTTP/1.1 200 58 - 2.147 ms
+info: 2024-02-18T06:12:45.235Z Escuchando el puerto 3000.
+info: 2024-02-18T06:12:45.279Z ::ffff:127.0.0.1 - GET /ventas HTTP/1.1 404 145 - 2.272 ms
+info: 2024-02-18T06:12:45.300Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/ventas/vender/123 HTTP/1.1 401 - - 0.809 ms
+info: 2024-02-18T06:12:45.584Z Escuchando el puerto 3000.
+info: 2024-02-18T06:12:45.602Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 2 - 2.561 ms
+info: 2024-02-18T06:12:45.624Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 339 - 3.217 ms
+info: 2024-02-18T06:12:45.732Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 99.273 ms
+warn: 2024-02-18T06:12:45.824Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-02-18T06:12:45.828Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 5.133 ms
+warn: 2024-02-18T06:12:45.839Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-02-18T06:12:45.840Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 2.188 ms
+info: 2024-02-18T06:12:45.846Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-02-18T06:12:45.847Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 1.786 ms
+info: 2024-02-18T06:12:45.853Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-02-18T06:12:45.854Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.637 ms
+info: 2024-02-18T06:12:45.859Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-02-18T06:12:45.859Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.603 ms
+info: 2024-02-18T06:12:45.865Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-02-18T06:12:45.866Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.791 ms
+info: 2024-02-18T06:12:45.873Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-02-18T06:12:45.873Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.765 ms
+info: 2024-02-18T06:12:45.879Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-02-18T06:12:45.880Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.633 ms
+info: 2024-02-18T06:12:45.972Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 84.490 ms
+info: 2024-02-18T06:12:46.057Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.609 ms
+info: 2024-02-18T06:12:46.062Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.548 ms
+info: 2024-02-18T06:12:46.069Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-02-18T06:12:46.070Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 397 - 2.571 ms
+info: 2024-02-18T06:12:46.238Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-02-18T06:12:46.238Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 322 - 82.405 ms
+info: 2024-02-18T06:12:46.407Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T06:12:46.408Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 83.516 ms
+info: 2024-02-18T06:12:46.574Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T06:12:46.574Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 80.757 ms
+info: 2024-02-18T06:12:46.841Z Escuchando el puerto 3000.
+info: 2024-02-18T06:12:46.954Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 93.057 ms
+info: 2024-02-18T06:12:47.039Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T06:12:47.039Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 81.896 ms
+info: 2024-02-18T06:12:47.045Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 0.466 ms
+info: 2024-02-18T06:12:47.056Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 334 - 6.066 ms
+info: 2024-02-18T06:12:47.064Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/65d19fdfc8dbc82f9a687af9 HTTP/1.1 200 161 - 1.922 ms
+info: 2024-02-18T06:12:47.071Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 401 - - 2.120 ms
+info: 2024-02-18T06:12:47.077Z Usuario daniel esta autenticado
+warn: 2024-02-18T06:12:47.078Z El producto en el body no cumple con el formato requerido. Detalles: ["nombre" is required]
+info: 2024-02-18T06:12:47.079Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 3.392 ms
+info: 2024-02-18T06:12:47.085Z Usuario daniel esta autenticado
+warn: 2024-02-18T06:12:47.085Z El producto en el body no cumple con el formato requerido. Detalles: ["precio" is required]
+info: 2024-02-18T06:12:47.086Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 2.633 ms
+info: 2024-02-18T06:12:47.091Z Usuario daniel esta autenticado
+info: 2024-02-18T06:12:47.093Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 49 - 3.439 ms
+info: 2024-02-18T06:12:47.101Z Usuario daniel esta autenticado
+info: 2024-02-18T06:12:47.101Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 2.343 ms
+info: 2024-02-18T06:12:47.109Z Usuario daniel esta autenticado
+info: 2024-02-18T06:12:47.110Z Producto con id [5ab8dbcc6539f91c2288b0c1] no existe. Nada que borrar
+info: 2024-02-18T06:12:47.111Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 369 - 3.745 ms
+info: 2024-02-18T06:12:47.118Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19fdfc8dbc82f9a687b11 HTTP/1.1 401 - - 1.315 ms
+info: 2024-02-18T06:12:47.127Z Usuario daniel esta autenticado
+info: 2024-02-18T06:12:47.129Z Usuario [daniel] no es dueño de producto con id [65d19fdfc8dbc82f9a687b17]. Dueño real es [ricardo98]. Request no será procesado
+info: 2024-02-18T06:12:47.129Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19fdfc8dbc82f9a687b17 HTTP/1.1 401 444 - 4.074 ms
+info: 2024-02-18T06:12:47.138Z Usuario daniel esta autenticado
+info: 2024-02-18T06:12:47.141Z Producto con id [65d19fdfc8dbc82f9a687b1d] fue borrado
+info: 2024-02-18T06:12:47.141Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19fdfc8dbc82f9a687b1d HTTP/1.1 200 161 - 5.593 ms
+info: 2024-02-18T06:12:47.399Z Escuchando el puerto 3000.
+info: 2024-02-18T06:12:47.416Z Creando nueva categoría de producto: Electrónicos
+info: 2024-02-18T06:12:47.421Z Categoría creada con éxito: {
+  nombre: 'Electrónicos',
+  _id: new ObjectId('65d19fdf713a1257ab27566e'),
+  __v: 0
+}
+info: 2024-02-18T06:12:47.421Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 67 - 5.566 ms
+info: 2024-02-18T06:12:47.429Z Obteniendo todas las categorías de productos
+info: 2024-02-18T06:12:47.431Z Categorías obtenidas con éxito
+info: 2024-02-18T06:12:47.431Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias HTTP/1.1 200 202 - 2.346 ms
+info: 2024-02-18T06:12:47.435Z Creando nueva categoría de producto: Ropa
+info: 2024-02-18T06:12:47.437Z Categoría creada con éxito: {
+  nombre: 'Ropa',
+  _id: new ObjectId('65d19fdf713a1257ab275679'),
+  __v: 0
+}
+info: 2024-02-18T06:12:47.438Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 58 - 2.333 ms
+info: 2024-02-18T06:12:47.440Z Obteniendo categoría por ID: 65d19fdf713a1257ab275679
+info: 2024-02-18T06:12:47.442Z Categoría obtenida con éxito: {
+  _id: new ObjectId('65d19fdf713a1257ab275679'),
+  nombre: 'Ropa',
+  __v: 0
+}
+info: 2024-02-18T06:12:47.442Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias/65d19fdf713a1257ab275679 HTTP/1.1 200 58 - 2.031 ms
+info: 2024-02-18T06:12:58.180Z Escuchando el puerto 3000.
+info: 2024-02-18T06:12:58.227Z ::ffff:127.0.0.1 - GET /ventas HTTP/1.1 404 145 - 2.985 ms
+info: 2024-02-18T06:12:58.247Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/ventas/vender/123 HTTP/1.1 401 - - 0.890 ms
+info: 2024-02-18T06:12:58.527Z Escuchando el puerto 3000.
+info: 2024-02-18T06:12:58.544Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 2 - 2.775 ms
+info: 2024-02-18T06:12:58.565Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 339 - 3.087 ms
+info: 2024-02-18T06:12:58.669Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 96.490 ms
+warn: 2024-02-18T06:12:58.760Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-02-18T06:12:58.764Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 5.205 ms
+warn: 2024-02-18T06:12:58.774Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-02-18T06:12:58.775Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 2.425 ms
+info: 2024-02-18T06:12:58.782Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-02-18T06:12:58.782Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 1.622 ms
+info: 2024-02-18T06:12:58.787Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-02-18T06:12:58.788Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.587 ms
+info: 2024-02-18T06:12:58.794Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-02-18T06:12:58.794Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.864 ms
+info: 2024-02-18T06:12:58.801Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-02-18T06:12:58.801Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.646 ms
+info: 2024-02-18T06:12:58.808Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-02-18T06:12:58.809Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.962 ms
+info: 2024-02-18T06:12:58.814Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-02-18T06:12:58.815Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.621 ms
+info: 2024-02-18T06:12:58.903Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 82.530 ms
+info: 2024-02-18T06:12:58.989Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.596 ms
+info: 2024-02-18T06:12:58.994Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.543 ms
+info: 2024-02-18T06:12:59.000Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-02-18T06:12:59.001Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 397 - 2.347 ms
+info: 2024-02-18T06:12:59.168Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-02-18T06:12:59.169Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 322 - 80.835 ms
+info: 2024-02-18T06:12:59.339Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T06:12:59.339Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 82.463 ms
+info: 2024-02-18T06:12:59.506Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T06:12:59.507Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 81.491 ms
+info: 2024-02-18T06:12:59.761Z Escuchando el puerto 3000.
+info: 2024-02-18T06:12:59.872Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 94.128 ms
+info: 2024-02-18T06:12:59.961Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T06:12:59.961Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 85.189 ms
+info: 2024-02-18T06:12:59.966Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 0.473 ms
+info: 2024-02-18T06:12:59.977Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 334 - 7.147 ms
+info: 2024-02-18T06:12:59.986Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/65d19febe28f51efb1fb79da HTTP/1.1 200 161 - 1.998 ms
+info: 2024-02-18T06:12:59.993Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 401 - - 2.044 ms
+info: 2024-02-18T06:13:00.000Z Usuario daniel esta autenticado
+warn: 2024-02-18T06:13:00.001Z El producto en el body no cumple con el formato requerido. Detalles: ["nombre" is required]
+info: 2024-02-18T06:13:00.001Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 3.472 ms
+info: 2024-02-18T06:13:00.008Z Usuario daniel esta autenticado
+warn: 2024-02-18T06:13:00.008Z El producto en el body no cumple con el formato requerido. Detalles: ["precio" is required]
+info: 2024-02-18T06:13:00.008Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 2.500 ms
+info: 2024-02-18T06:13:00.015Z Usuario daniel esta autenticado
+info: 2024-02-18T06:13:00.017Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 49 - 4.160 ms
+info: 2024-02-18T06:13:00.025Z Usuario daniel esta autenticado
+info: 2024-02-18T06:13:00.025Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 2.361 ms
+info: 2024-02-18T06:13:00.035Z Usuario daniel esta autenticado
+info: 2024-02-18T06:13:00.037Z Producto con id [5ab8dbcc6539f91c2288b0c1] no existe. Nada que borrar
+info: 2024-02-18T06:13:00.037Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 369 - 4.010 ms
+info: 2024-02-18T06:13:00.044Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19fece28f51efb1fb79f2 HTTP/1.1 401 - - 1.091 ms
+info: 2024-02-18T06:13:00.053Z Usuario daniel esta autenticado
+info: 2024-02-18T06:13:00.055Z Usuario [daniel] no es dueño de producto con id [65d19fece28f51efb1fb79f8]. Dueño real es [ricardo98]. Request no será procesado
+info: 2024-02-18T06:13:00.055Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19fece28f51efb1fb79f8 HTTP/1.1 401 444 - 3.777 ms
+info: 2024-02-18T06:13:00.064Z Usuario daniel esta autenticado
+info: 2024-02-18T06:13:00.067Z Producto con id [65d19fece28f51efb1fb79fe] fue borrado
+info: 2024-02-18T06:13:00.067Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d19fece28f51efb1fb79fe HTTP/1.1 200 161 - 6.035 ms
+info: 2024-02-18T06:13:00.316Z Escuchando el puerto 3000.
+info: 2024-02-18T06:13:00.332Z Creando nueva categoría de producto: Electrónicos
+info: 2024-02-18T06:13:00.336Z Categoría creada con éxito: {
+  nombre: 'Electrónicos',
+  _id: new ObjectId('65d19fec7ce9de833efbb418'),
+  __v: 0
+}
+info: 2024-02-18T06:13:00.337Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 67 - 5.261 ms
+info: 2024-02-18T06:13:00.344Z Obteniendo todas las categorías de productos
+info: 2024-02-18T06:13:00.347Z Categorías obtenidas con éxito
+info: 2024-02-18T06:13:00.347Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias HTTP/1.1 200 202 - 2.844 ms
+info: 2024-02-18T06:13:00.352Z Creando nueva categoría de producto: Ropa
+info: 2024-02-18T06:13:00.354Z Categoría creada con éxito: {
+  nombre: 'Ropa',
+  _id: new ObjectId('65d19fec7ce9de833efbb423'),
+  __v: 0
+}
+info: 2024-02-18T06:13:00.354Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 58 - 2.172 ms
+info: 2024-02-18T06:13:00.357Z Obteniendo categoría por ID: 65d19fec7ce9de833efbb423
+info: 2024-02-18T06:13:00.358Z Categoría obtenida con éxito: {
+  _id: new ObjectId('65d19fec7ce9de833efbb423'),
+  nombre: 'Ropa',
+  __v: 0
+}
+info: 2024-02-18T06:13:00.359Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias/65d19fec7ce9de833efbb423 HTTP/1.1 200 58 - 2.085 ms
+info: 2024-02-18T06:13:28.477Z Escuchando el puerto 3000.
+info: 2024-02-18T06:13:28.522Z ::ffff:127.0.0.1 - GET /ventas HTTP/1.1 404 145 - 2.461 ms
+info: 2024-02-18T06:13:28.543Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/ventas/vender/123 HTTP/1.1 401 - - 0.843 ms
+info: 2024-02-18T06:13:28.830Z Escuchando el puerto 3000.
+info: 2024-02-18T06:13:28.846Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 2 - 2.959 ms
+info: 2024-02-18T06:13:28.866Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 339 - 2.964 ms
+info: 2024-02-18T06:13:28.970Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 95.660 ms
+warn: 2024-02-18T06:13:29.062Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-02-18T06:13:29.066Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 5.097 ms
+warn: 2024-02-18T06:13:29.077Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-02-18T06:13:29.077Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 2.624 ms
+info: 2024-02-18T06:13:29.084Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-02-18T06:13:29.084Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 1.601 ms
+info: 2024-02-18T06:13:29.089Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-02-18T06:13:29.090Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.574 ms
+info: 2024-02-18T06:13:29.096Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-02-18T06:13:29.096Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.643 ms
+info: 2024-02-18T06:13:29.104Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-02-18T06:13:29.104Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.686 ms
+info: 2024-02-18T06:13:29.112Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-02-18T06:13:29.113Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.792 ms
+info: 2024-02-18T06:13:29.119Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-02-18T06:13:29.120Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.683 ms
+info: 2024-02-18T06:13:29.211Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 83.987 ms
+info: 2024-02-18T06:13:29.297Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.583 ms
+info: 2024-02-18T06:13:29.302Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.529 ms
+info: 2024-02-18T06:13:29.308Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-02-18T06:13:29.309Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 397 - 2.393 ms
+info: 2024-02-18T06:13:29.479Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-02-18T06:13:29.480Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 322 - 80.973 ms
+info: 2024-02-18T06:13:29.647Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T06:13:29.647Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 82.578 ms
+info: 2024-02-18T06:13:29.815Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T06:13:29.815Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 81.048 ms
+info: 2024-02-18T06:13:30.103Z Escuchando el puerto 3000.
+info: 2024-02-18T06:13:30.215Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 94.721 ms
+info: 2024-02-18T06:13:30.301Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T06:13:30.302Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 82.171 ms
+info: 2024-02-18T06:13:30.308Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 0.467 ms
+info: 2024-02-18T06:13:30.318Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 334 - 6.436 ms
+info: 2024-02-18T06:13:30.327Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/65d1a00a05c5be0f54dd0947 HTTP/1.1 200 161 - 2.347 ms
+info: 2024-02-18T06:13:30.335Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 401 - - 2.453 ms
+info: 2024-02-18T06:13:30.341Z Usuario daniel esta autenticado
+warn: 2024-02-18T06:13:30.343Z El producto en el body no cumple con el formato requerido. Detalles: ["nombre" is required]
+info: 2024-02-18T06:13:30.343Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 3.581 ms
+info: 2024-02-18T06:13:30.350Z Usuario daniel esta autenticado
+warn: 2024-02-18T06:13:30.350Z El producto en el body no cumple con el formato requerido. Detalles: ["precio" is required]
+info: 2024-02-18T06:13:30.350Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 2.779 ms
+info: 2024-02-18T06:13:30.357Z Usuario daniel esta autenticado
+info: 2024-02-18T06:13:30.358Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 49 - 3.840 ms
+info: 2024-02-18T06:13:30.367Z Usuario daniel esta autenticado
+info: 2024-02-18T06:13:30.367Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 2.355 ms
+info: 2024-02-18T06:13:30.376Z Usuario daniel esta autenticado
+info: 2024-02-18T06:13:30.377Z Producto con id [5ab8dbcc6539f91c2288b0c1] no existe. Nada que borrar
+info: 2024-02-18T06:13:30.378Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 369 - 4.706 ms
+info: 2024-02-18T06:13:30.386Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d1a00a05c5be0f54dd095f HTTP/1.1 401 - - 1.076 ms
+info: 2024-02-18T06:13:30.395Z Usuario daniel esta autenticado
+info: 2024-02-18T06:13:30.396Z Usuario [daniel] no es dueño de producto con id [65d1a00a05c5be0f54dd0965]. Dueño real es [ricardo98]. Request no será procesado
+info: 2024-02-18T06:13:30.397Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d1a00a05c5be0f54dd0965 HTTP/1.1 401 444 - 4.318 ms
+info: 2024-02-18T06:13:30.406Z Usuario daniel esta autenticado
+info: 2024-02-18T06:13:30.409Z Producto con id [65d1a00a05c5be0f54dd096b] fue borrado
+info: 2024-02-18T06:13:30.409Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d1a00a05c5be0f54dd096b HTTP/1.1 200 161 - 5.774 ms
+info: 2024-02-18T06:13:30.656Z Escuchando el puerto 3000.
+info: 2024-02-18T06:13:30.672Z Creando nueva categoría de producto: Electrónicos
+info: 2024-02-18T06:13:30.676Z Categoría creada con éxito: {
+  nombre: 'Electrónicos',
+  _id: new ObjectId('65d1a00a61ae7c9a0d26c7b7'),
+  __v: 0
+}
+info: 2024-02-18T06:13:30.677Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 67 - 5.205 ms
+info: 2024-02-18T06:13:30.685Z Obteniendo todas las categorías de productos
+info: 2024-02-18T06:13:30.687Z Categorías obtenidas con éxito
+info: 2024-02-18T06:13:30.688Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias HTTP/1.1 200 202 - 2.793 ms
+info: 2024-02-18T06:13:30.692Z Creando nueva categoría de producto: Ropa
+info: 2024-02-18T06:13:30.693Z Categoría creada con éxito: {
+  nombre: 'Ropa',
+  _id: new ObjectId('65d1a00a61ae7c9a0d26c7c2'),
+  __v: 0
+}
+info: 2024-02-18T06:13:30.694Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 58 - 1.908 ms
+info: 2024-02-18T06:13:30.696Z Obteniendo categoría por ID: 65d1a00a61ae7c9a0d26c7c2
+info: 2024-02-18T06:13:30.698Z Categoría obtenida con éxito: {
+  _id: new ObjectId('65d1a00a61ae7c9a0d26c7c2'),
+  nombre: 'Ropa',
+  __v: 0
+}
+info: 2024-02-18T06:13:30.698Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias/65d1a00a61ae7c9a0d26c7c2 HTTP/1.1 200 58 - 2.301 ms
+info: 2024-02-18T06:20:15.027Z Escuchando el puerto 3000.
+info: 2024-02-18T06:20:15.073Z ::ffff:127.0.0.1 - GET /ventas HTTP/1.1 404 145 - 2.763 ms
+info: 2024-02-18T06:20:15.094Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/ventas/vender/123 HTTP/1.1 401 - - 0.807 ms
+info: 2024-02-18T06:20:15.398Z Escuchando el puerto 3000.
+info: 2024-02-18T06:20:15.417Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 2 - 2.804 ms
+info: 2024-02-18T06:20:15.440Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 339 - 3.964 ms
+info: 2024-02-18T06:20:15.548Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 97.990 ms
+warn: 2024-02-18T06:20:15.640Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-02-18T06:20:15.644Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 5.373 ms
+warn: 2024-02-18T06:20:15.654Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-02-18T06:20:15.655Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 2.537 ms
+info: 2024-02-18T06:20:15.662Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-02-18T06:20:15.662Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 1.633 ms
+info: 2024-02-18T06:20:15.667Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-02-18T06:20:15.668Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.586 ms
+info: 2024-02-18T06:20:15.673Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-02-18T06:20:15.674Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.638 ms
+info: 2024-02-18T06:20:15.680Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-02-18T06:20:15.680Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.644 ms
+info: 2024-02-18T06:20:15.687Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-02-18T06:20:15.688Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.743 ms
+info: 2024-02-18T06:20:15.695Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-02-18T06:20:15.695Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.632 ms
+info: 2024-02-18T06:20:15.784Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 83.140 ms
+info: 2024-02-18T06:20:15.870Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.593 ms
+info: 2024-02-18T06:20:15.875Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.584 ms
+info: 2024-02-18T06:20:15.881Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-02-18T06:20:15.882Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 397 - 2.405 ms
+info: 2024-02-18T06:20:16.049Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-02-18T06:20:16.050Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 322 - 81.328 ms
+info: 2024-02-18T06:20:16.220Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T06:20:16.220Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 83.133 ms
+info: 2024-02-18T06:20:16.391Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T06:20:16.392Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 80.717 ms
+info: 2024-02-18T06:20:16.671Z Escuchando el puerto 3000.
+info: 2024-02-18T06:20:16.786Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 97.875 ms
+info: 2024-02-18T06:20:16.871Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T06:20:16.872Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 81.838 ms
+info: 2024-02-18T06:20:16.877Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 0.481 ms
+info: 2024-02-18T06:20:16.887Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 334 - 5.900 ms
+info: 2024-02-18T06:20:16.898Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/65d1a1a0d0cfd62b44af88c9 HTTP/1.1 200 161 - 2.123 ms
+info: 2024-02-18T06:20:16.905Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 401 - - 2.044 ms
+info: 2024-02-18T06:20:16.912Z Usuario daniel esta autenticado
+warn: 2024-02-18T06:20:16.913Z El producto en el body no cumple con el formato requerido. Detalles: ["nombre" is required]
+info: 2024-02-18T06:20:16.913Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 3.425 ms
+info: 2024-02-18T06:20:16.920Z Usuario daniel esta autenticado
+warn: 2024-02-18T06:20:16.920Z El producto en el body no cumple con el formato requerido. Detalles: ["precio" is required]
+info: 2024-02-18T06:20:16.920Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 2.534 ms
+info: 2024-02-18T06:20:16.926Z Usuario daniel esta autenticado
+info: 2024-02-18T06:20:16.928Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 49 - 4.182 ms
+info: 2024-02-18T06:20:16.936Z Usuario daniel esta autenticado
+info: 2024-02-18T06:20:16.936Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 2.242 ms
+info: 2024-02-18T06:20:16.944Z Usuario daniel esta autenticado
+info: 2024-02-18T06:20:16.945Z Producto con id [5ab8dbcc6539f91c2288b0c1] no existe. Nada que borrar
+info: 2024-02-18T06:20:16.946Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 369 - 3.840 ms
+info: 2024-02-18T06:20:16.953Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d1a1a0d0cfd62b44af88e1 HTTP/1.1 401 - - 1.083 ms
+info: 2024-02-18T06:20:16.962Z Usuario daniel esta autenticado
+info: 2024-02-18T06:20:16.963Z Usuario [daniel] no es dueño de producto con id [65d1a1a0d0cfd62b44af88e7]. Dueño real es [ricardo98]. Request no será procesado
+info: 2024-02-18T06:20:16.964Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d1a1a0d0cfd62b44af88e7 HTTP/1.1 401 444 - 3.822 ms
+info: 2024-02-18T06:20:16.972Z Usuario daniel esta autenticado
+info: 2024-02-18T06:20:16.974Z Producto con id [65d1a1a0d0cfd62b44af88ed] fue borrado
+info: 2024-02-18T06:20:16.975Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d1a1a0d0cfd62b44af88ed HTTP/1.1 200 161 - 5.650 ms
+info: 2024-02-18T06:20:17.230Z Escuchando el puerto 3000.
+info: 2024-02-18T06:20:17.246Z Creando nueva categoría de producto: Electrónicos
+info: 2024-02-18T06:20:17.251Z Categoría creada con éxito: {
+  nombre: 'Electrónicos',
+  _id: new ObjectId('65d1a1a1b5cab38a96db56bb'),
+  __v: 0
+}
+info: 2024-02-18T06:20:17.251Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 67 - 5.505 ms
+info: 2024-02-18T06:20:17.259Z Obteniendo todas las categorías de productos
+info: 2024-02-18T06:20:17.261Z Categorías obtenidas con éxito
+info: 2024-02-18T06:20:17.262Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias HTTP/1.1 200 202 - 2.886 ms
+info: 2024-02-18T06:20:17.266Z Creando nueva categoría de producto: Ropa
+info: 2024-02-18T06:20:17.268Z Categoría creada con éxito: {
+  nombre: 'Ropa',
+  _id: new ObjectId('65d1a1a1b5cab38a96db56c6'),
+  __v: 0
+}
+info: 2024-02-18T06:20:17.268Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 58 - 1.801 ms
+info: 2024-02-18T06:20:17.271Z Obteniendo categoría por ID: 65d1a1a1b5cab38a96db56c6
+info: 2024-02-18T06:20:17.272Z Categoría obtenida con éxito: {
+  _id: new ObjectId('65d1a1a1b5cab38a96db56c6'),
+  nombre: 'Ropa',
+  __v: 0
+}
+info: 2024-02-18T06:20:17.273Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias/65d1a1a1b5cab38a96db56c6 HTTP/1.1 200 58 - 2.167 ms
+info: 2024-02-18T06:23:33.810Z Escuchando el puerto 3000.
+info: 2024-02-18T06:23:33.855Z ::ffff:127.0.0.1 - GET /ventas HTTP/1.1 404 145 - 2.489 ms
+info: 2024-02-18T06:23:34.136Z Escuchando el puerto 3000.
+info: 2024-02-18T06:23:34.153Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 2 - 2.927 ms
+info: 2024-02-18T06:23:34.174Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/usuarios HTTP/1.1 200 339 - 3.437 ms
+info: 2024-02-18T06:23:34.285Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 95.375 ms
+warn: 2024-02-18T06:23:34.379Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-02-18T06:23:34.385Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 7.802 ms
+warn: 2024-02-18T06:23:34.397Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-02-18T06:23:34.398Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 409 339 - 2.260 ms
+info: 2024-02-18T06:23:34.404Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-02-18T06:23:34.405Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 1.709 ms
+info: 2024-02-18T06:23:34.411Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-02-18T06:23:34.411Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.599 ms
+info: 2024-02-18T06:23:34.417Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-02-18T06:23:34.417Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.599 ms
+info: 2024-02-18T06:23:34.424Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-02-18T06:23:34.425Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.862 ms
+info: 2024-02-18T06:23:34.431Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-02-18T06:23:34.432Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.729 ms
+info: 2024-02-18T06:23:34.438Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-02-18T06:23:34.439Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 400 66 - 0.729 ms
+info: 2024-02-18T06:23:34.529Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 83.966 ms
+info: 2024-02-18T06:23:34.615Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.570 ms
+info: 2024-02-18T06:23:34.620Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 48 - 0.510 ms
+info: 2024-02-18T06:23:34.627Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-02-18T06:23:34.628Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 397 - 2.430 ms
+info: 2024-02-18T06:23:34.793Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-02-18T06:23:34.794Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 400 322 - 80.702 ms
+info: 2024-02-18T06:23:34.962Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T06:23:34.962Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 82.794 ms
+info: 2024-02-18T06:23:35.131Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T06:23:35.131Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 82.238 ms
+info: 2024-02-18T06:23:35.403Z Escuchando el puerto 3000.
+info: 2024-02-18T06:23:35.515Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios HTTP/1.1 201 29 - 95.078 ms
+info: 2024-02-18T06:23:35.600Z Usuario daniel completo autenticación exitosamente.
+info: 2024-02-18T06:23:35.600Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/usuarios/login HTTP/1.1 200 183 - 81.558 ms
+info: 2024-02-18T06:23:35.605Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 0.601 ms
+info: 2024-02-18T06:23:35.615Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 334 - 5.937 ms
+info: 2024-02-18T06:23:35.624Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/productos/65d1a2677271e0d64dd706a3 HTTP/1.1 200 161 - 2.144 ms
+info: 2024-02-18T06:23:35.632Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 401 - - 2.304 ms
+info: 2024-02-18T06:23:35.638Z Usuario daniel esta autenticado
+warn: 2024-02-18T06:23:35.639Z El producto en el body no cumple con el formato requerido. Detalles: ["nombre" is required]
+info: 2024-02-18T06:23:35.639Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 3.603 ms
+info: 2024-02-18T06:23:35.646Z Usuario daniel esta autenticado
+warn: 2024-02-18T06:23:35.647Z El producto en el body no cumple con el formato requerido. Detalles: ["precio" is required]
+info: 2024-02-18T06:23:35.647Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 97 - 2.897 ms
+info: 2024-02-18T06:23:35.653Z Usuario daniel esta autenticado
+info: 2024-02-18T06:23:35.655Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/productos HTTP/1.1 400 49 - 4.300 ms
+info: 2024-02-18T06:23:35.665Z Usuario daniel esta autenticado
+info: 2024-02-18T06:23:35.665Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/123 HTTP/1.1 400 43 - 2.398 ms
+info: 2024-02-18T06:23:35.673Z Usuario daniel esta autenticado
+info: 2024-02-18T06:23:35.675Z Producto con id [5ab8dbcc6539f91c2288b0c1] no existe. Nada que borrar
+info: 2024-02-18T06:23:35.676Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 369 - 4.252 ms
+info: 2024-02-18T06:23:35.683Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d1a2677271e0d64dd706bb HTTP/1.1 401 - - 1.092 ms
+info: 2024-02-18T06:23:35.694Z Usuario daniel esta autenticado
+info: 2024-02-18T06:23:35.695Z Usuario [daniel] no es dueño de producto con id [65d1a2677271e0d64dd706c1]. Dueño real es [ricardo98]. Request no será procesado
+info: 2024-02-18T06:23:35.696Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d1a2677271e0d64dd706c1 HTTP/1.1 401 444 - 3.892 ms
+info: 2024-02-18T06:23:35.704Z Usuario daniel esta autenticado
+info: 2024-02-18T06:23:35.707Z Producto con id [65d1a2677271e0d64dd706c7] fue borrado
+info: 2024-02-18T06:23:35.707Z ::ffff:127.0.0.1 - DELETE /cosmetics-management/v1/productos/65d1a2677271e0d64dd706c7 HTTP/1.1 200 161 - 5.930 ms
+info: 2024-02-18T06:23:35.981Z Escuchando el puerto 3000.
+info: 2024-02-18T06:23:36.000Z Creando nueva categoría de producto: Electrónicos
+info: 2024-02-18T06:23:36.004Z Categoría creada con éxito: {
+  nombre: 'Electrónicos',
+  _id: new ObjectId('65d1a2686cfa12b375b2f109'),
+  __v: 0
+}
+info: 2024-02-18T06:23:36.005Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 67 - 5.774 ms
+info: 2024-02-18T06:23:36.013Z Obteniendo todas las categorías de productos
+info: 2024-02-18T06:23:36.015Z Categorías obtenidas con éxito
+info: 2024-02-18T06:23:36.016Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias HTTP/1.1 200 202 - 2.857 ms
+info: 2024-02-18T06:23:36.020Z Creando nueva categoría de producto: Ropa
+info: 2024-02-18T06:23:36.022Z Categoría creada con éxito: {
+  nombre: 'Ropa',
+  _id: new ObjectId('65d1a2686cfa12b375b2f114'),
+  __v: 0
+}
+info: 2024-02-18T06:23:36.022Z ::ffff:127.0.0.1 - POST /cosmetics-management/v1/categorias HTTP/1.1 201 58 - 1.771 ms
+info: 2024-02-18T06:23:36.024Z Obteniendo categoría por ID: 65d1a2686cfa12b375b2f114
+info: 2024-02-18T06:23:36.026Z Categoría obtenida con éxito: {
+  _id: new ObjectId('65d1a2686cfa12b375b2f114'),
+  nombre: 'Ropa',
+  __v: 0
+}
+info: 2024-02-18T06:23:36.027Z ::ffff:127.0.0.1 - GET /cosmetics-management/v1/categorias/65d1a2686cfa12b375b2f114 HTTP/1.1 200 58 - 2.447 ms
