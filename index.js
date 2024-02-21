@@ -11,7 +11,8 @@ const mongoose = require("mongoose");
 const errorHandler = require("./src/libs/errorHandler");
 const comentariosRouter = require("./src/recursos/comentarios/comentarios.routes");
 const ventasRouter = require("./src/recursos/ventasDeProducto/ventas.routes");
-const categoriasRouter = require("./src/recursos/categorias/categorias.routes")
+const categoriasRouter = require("./src/recursos/categorias/categorias.routes");
+const carritoRouter = require("./src/recursos/carrito/carrito.router");
 
 //autenticacion de constraseña y username
 passport.use(authJWT);
@@ -36,6 +37,7 @@ app.use("/cosmetics-management/v1/usuarios", usuariosRouter);
 app.use("/cosmetics-management/v1/comentarios", comentariosRouter);
 app.use("/cosmetics-management/v1/ventas", ventasRouter);
 app.use("/cosmetics-management/v1/categorias", categoriasRouter);
+app.use("/cosmetics-management/v1/carrito", carritoRouter);
 
 app.use(errorHandler.procesarErroresDeDB);
 if (config.ambiente === "prod") {
