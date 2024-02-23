@@ -1,5 +1,6 @@
 const Carrito = require("./carrito.model");
 const Producto = require("../productos/productos.model");
+const OrdenDeCompra = require("../ordenCompra/ordenCompra.model");
 
 async function agregarProductoAlCarrito(usuario, productoId, cantidad) {
   const producto = await Producto.findById(productoId);
@@ -52,8 +53,41 @@ async function eliminarProductoDelCarrito(usuario, productoId) {
   }
 }
 
+
+
+async function crearOrdenDeCompra(usuario, productos, total) {
+  const nuevaOrden = new OrdenDeCompra({
+    usuario,
+    productos,
+    total,
+    fecha: new Date(),
+  });
+  return nuevaOrden.save();
+}
+
+
+
+async function obtenerDetalleCarrito(usuario) {
+  try {
+    // Buscar el carrito del usuario en la base de datos
+    const carrito = await Carrito.findOne({ usuario }).populate("productos.productoId");
+    
+    if (!carrito) {
+      throw new Error("No se encontró el carrito del usuario");
+    }
+
+    return carrito;
+  } catch (error) {
+    throw new Error(`Error al obtener el detalle del carrito: ${error.message}`);
+  }
+}
+
+
+
 module.exports = {
   agregarProductoAlCarrito,
   obtenerCarritoPorUsuario,
   eliminarProductoDelCarrito,
+  crearOrdenDeCompra,
+  obtenerDetalleCarrito
 };

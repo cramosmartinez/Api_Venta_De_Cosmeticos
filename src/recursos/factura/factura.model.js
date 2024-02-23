@@ -1,11 +1,19 @@
 const mongoose = require("mongoose");
 
-const carritoSchema = new mongoose.Schema({
+const facturaSchema = new mongoose.Schema({
   usuario: {
     type: String,
-    required: true,
+    required: true
   },
-  productos: [
+  nitConsumidor: {
+    type: String,
+    required: true
+  },
+  correoElectronico: {
+    type: String,
+    required: true
+  },
+  productosOrdenCompra: [
     {
       productoId: {
         type: mongoose.Schema.Types.ObjectId,
@@ -19,11 +27,11 @@ const carritoSchema = new mongoose.Schema({
       }
     }
   ],
-  total: {
+  totalOrdenCompra: {
     type: Number,
-    required: true,
-    default: 0
-  }
+    required: true
+  },
+  
 });
 
-module.exports = mongoose.model("Carrito", carritoSchema);
+module.exports = mongoose.model("Factura", facturaSchema);

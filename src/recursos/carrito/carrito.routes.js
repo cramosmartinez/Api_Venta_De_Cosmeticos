@@ -5,9 +5,10 @@ const passport = require("passport");
 const jwtAuthenticate = passport.authenticate("jwt", { session: false });
 const procesarErrores = require("../../libs/errorHandler").procesarErrores;
 
+
 // Agregar producto al carrito
 carritoRouter.post(
-  "/agregar",
+  "/",
   jwtAuthenticate,
   procesarErrores(async (req, res) => {
     const { productoId, cantidad } = req.body;
@@ -23,7 +24,7 @@ carritoRouter.post(
 
 // Obtener carrito del usuario actual
 carritoRouter.get(
-  "/",
+  "/detalle",
   jwtAuthenticate,
   procesarErrores(async (req, res) => {
     const usuario = req.user.username;
@@ -43,5 +44,7 @@ carritoRouter.delete(
     res.status(200).json({ message: "Producto eliminado del carrito." });
   })
 );
+
+
 
 module.exports = carritoRouter;

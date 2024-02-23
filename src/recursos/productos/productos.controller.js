@@ -1,6 +1,5 @@
 // productos.controller.js
 const Producto = require("./productos.model");
-const Venta = require("../ventasDeProducto/ventas.model");
 const CategoriaProducto = require("../categorias/categorias.model");
 
 async function crearProducto(producto, dueño, categoria) {
