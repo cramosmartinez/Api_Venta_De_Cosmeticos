@@ -73,6 +73,3 @@ Si deseas contribuir a este proyecto, por favor sigue estos pasos:
 Autor
 
 Este proyecto ha sido desarrollado por Carlos Ramos.
-Licencia
-
-Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
